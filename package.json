@@ -1,6 +1,7 @@
 {
   "name": "datazar",
   "private": true,
+  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +9,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b"
 }
