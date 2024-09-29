@@ -5,6 +5,8 @@
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.4",
     "rimraf": "^5.0.5",
     "typescript": "^5.4.3"
   },

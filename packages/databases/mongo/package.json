@@ -5,6 +5,8 @@
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.4",
     "@types/rosie": "^0.0.45",
     "chance": "^1.1.11",
     "dotenv": "^16.4.5",
@@ -20,8 +22,8 @@
     "dev:seed": "node --no-warnings=ExperimentalWarning --loader ts-node/esm -r dotenv/config ./src/test/scripts/seed-mongo.ts dotenv_config_path=.dev.env"
   },
   "dependencies": {
-    "@datazar/base-processor": "workspace:^",
     "@datazar/anonymizers": "workspace:^",
+    "@datazar/base-processor": "workspace:^",
     "@datazar/common": "workspace:^",
     "chalk": "^5.3.0",
     "mongodb": "^4.3.0"
