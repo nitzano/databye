@@ -1,8 +1,7 @@
 {
-  "extends": "../../configs/base.json",
+  "extends": "@tsconfig/node20",
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "dist",
-    "strict": true
   }
 }
