@@ -8,16 +8,18 @@
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^22.7.4",
+    "pkg": "^5.8.1",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
     "typescript": "^5.4.3"
   },
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
-    "dev": "tsc --watch",
+    "build:watch": "tsc --watch",
     "start": "node dist/cli/datazar.js",
-    "dz": "node --no-warnings=ExperimentalWarning --loader ts-node/esm -r dotenv/config src/datazar.ts"
+    "dz": "tsx -r dotenv/config src/datazar.ts"
   },
   "dependencies": {
     "@datazar/anonymizers": "workspace:^",
