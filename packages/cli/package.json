@@ -6,6 +6,8 @@
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.4",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
@@ -32,7 +34,7 @@
   "optionalDependencies": {
     "@datazar/mariadb": "workspace:^",
     "@datazar/mongo": "workspace:^",
-    "@datazar/postgres": "workspace:^",
-    "@datazar/mssql": "workspace:^"
+    "@datazar/mssql": "workspace:^",
+    "@datazar/postgres": "workspace:^"
   }
 }
