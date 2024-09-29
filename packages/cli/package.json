@@ -19,7 +19,7 @@
     "build": "tsc",
     "build:deps": "pnpm -F cli... build",
     "build:watch": "tsc --watch",
-    "start": "node dist/cli/datazar.js",
+    "start": "node dist/datazar.js",
     "dz": "tsx -r dotenv/config src/datazar.ts"
   },
   "dependencies": {
