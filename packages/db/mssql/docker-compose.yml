@@ -1,0 +1,20 @@
+services:
+  mssql:
+    container_name: mssql
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql-volume:/var/opt/mssql
+    environment:
+      ACCEPT_EULA: Y
+      # MSSQL_PID: Express
+      MSSQL_SA_PASSWORD: Example1234!
+
+volumes:
+  mssql-volume:
+
+networks:
+  default:
+    external: true
+    name: datazar_default

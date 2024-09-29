@@ -1,0 +1,20 @@
+{
+  "name": "@datazar/base-processor",
+  "private": true,
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "build:watch": "pnpm run build --watch"
+  },
+  "dependencies": {
+    "@datazar/anonymizers": "workspace:^",
+    "@datazar/common": "workspace:^"
+  }
+}
