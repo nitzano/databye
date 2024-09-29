@@ -1,0 +1,7 @@
+{
+  "extends": "../../configs/base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "dist"
+  }
+}
