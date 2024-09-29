@@ -70,7 +70,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/db/base-processor:
+  packages/databases/base-processor:
     dependencies:
       '@datazar/anonymizers':
         specifier: workspace:^
@@ -86,7 +86,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/db/knex-processor:
+  packages/databases/knex-processor:
     dependencies:
       '@datazar/anonymizers':
         specifier: workspace:^
@@ -111,7 +111,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/db/mariadb:
+  packages/databases/mariadb:
     dependencies:
       '@datazar/common':
         specifier: workspace:^
@@ -139,7 +139,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/db/mongo:
+  packages/databases/mongo:
     dependencies:
       '@datazar/anonymizers':
         specifier: workspace:^
@@ -176,7 +176,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/db/mssql:
+  packages/databases/mssql:
     dependencies:
       '@datazar/common':
         specifier: workspace:^
@@ -204,7 +204,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/db/postgres:
+  packages/databases/postgres:
     dependencies:
       '@datazar/common':
         specifier: workspace:^
