@@ -1,0 +1,40 @@
+{
+  "name": "@datazar/cli",
+  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
+  "private": true,
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.4",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli/datazar.js",
+    "dz": "node --no-warnings=ExperimentalWarning --loader ts-node/esm -r dotenv/config src/datazar.ts"
+  },
+  "dependencies": {
+    "@datazar/anonymizers": "workspace:^",
+    "@datazar/base-processor": "workspace:^",
+    "@datazar/common": "workspace:^",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "connection-string": "^4.4.0",
+    "dotenv": "^16.4.5",
+    "dotenv-expand": "^11.0.6",
+    "enquirer": "^2.4.1",
+    "ora": "^8.0.1"
+  },
+  "optionalDependencies": {
+    "@datazar/mariadb": "workspace:^",
+    "@datazar/mongo": "workspace:^",
+    "@datazar/mssql": "workspace:^",
+    "@datazar/postgres": "workspace:^"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "extends": "@tsconfig/node20",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "dist",
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@datazar/knex-processor",
+  "private": true,
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.4",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "build:watch": "pnpm run build --watch"
+  },
+  "dependencies": {
+    "@datazar/anonymizers": "workspace:^",
+    "@datazar/base-processor": "workspace:^",
+    "@datazar/common": "workspace:^",
+    "dotenv": "^16.4.5",
+    "knex": "^3.1.0"
+  }
+}
