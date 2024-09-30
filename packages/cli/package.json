@@ -4,9 +4,6 @@
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "private": true,
   "type": "module",
-  "bin": {
-    "dz": "./dist/datazar.js"
-  },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^22.7.4",

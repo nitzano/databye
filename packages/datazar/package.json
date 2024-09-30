@@ -9,6 +9,9 @@
     "@types/node": "^22.7.4",
     "typescript": "^5.4.3"
   },
+  "bin": {
+    "dz": "./dist/datazar.js"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
@@ -20,6 +23,7 @@
     "@datazar/mongo": "workspace:^",
     "@datazar/mssql": "workspace:^",
     "@datazar/postgres": "workspace:^",
+    "commander": "^12.1.0",
     "winston": "^3.13.0"
   }
 }
