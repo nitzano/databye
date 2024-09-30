@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { anonColCommand } from "@datazar/cli";
 import { Command } from "commander";
 import process from "node:process";
