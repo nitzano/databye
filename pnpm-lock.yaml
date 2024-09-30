@@ -342,8 +342,20 @@ importers:
   packages/datazar:
     dependencies:
       '@datazar/cli':
-        specifier: workspace:0.0.0-development
+        specifier: workspace:^
         version: link:../cli
+      '@datazar/mariadb':
+        specifier: workspace:^
+        version: link:../databases/mariadb
+      '@datazar/mongo':
+        specifier: workspace:^
+        version: link:../databases/mongo
+      '@datazar/mssql':
+        specifier: workspace:^
+        version: link:../databases/mssql
+      '@datazar/postgres':
+        specifier: workspace:^
+        version: link:../databases/postgres
       winston:
         specifier: ^3.13.0
         version: 3.14.2

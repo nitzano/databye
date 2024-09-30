@@ -15,7 +15,11 @@
     "build:watch": "tsc --watch"
   },
   "dependencies": {
-    "@datazar/cli": "workspace:0.0.0-development",
+    "@datazar/cli":  "workspace:^",
+    "@datazar/mariadb": "workspace:^",
+    "@datazar/mongo": "workspace:^",
+    "@datazar/mssql": "workspace:^",
+    "@datazar/postgres": "workspace:^",
     "winston": "^3.13.0"
   }
 }
