@@ -30,5 +30,8 @@
     "tsx": "^4.19.1",
     "winston": "^3.13.0",
     "pkg": "^5.8.1"
-  }
+  },
+  "pkg": {
+    "options": ["experimental-modules"]
+}
 }
