@@ -1,5 +1,6 @@
 {
   "name": "@datazar/cli",
+  "version": "0.0.0-development",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "private": true,
   "type": "module",
@@ -19,9 +20,11 @@
     "clean": "rimraf dist",
     "build": "tsc",
     "build:deps": "pnpm -F cli... build",
+    "build:deploy": "pnpm deploy -F cli ./out",
     "build:watch": "tsc --watch",
     "start": "node dist/datazar.js",
-    "dz": "tsx -r dotenv/config src/datazar.ts"
+    "dz": "tsx -r dotenv/config src/datazar.ts",
+    "pack": "pkg ./dist/datazar.js"
   },
   "dependencies": {
     "@datazar/anonymizers": "workspace:^",
