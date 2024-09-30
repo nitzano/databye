@@ -5,21 +5,23 @@
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^22.7.4",
+    "@vercel/ncc": "^0.38.2",
     "rimraf": "^5.0.5",
     "typescript": "^5.4.3"
   },
   "bin": {
-    "dz": "./dist/index.js"
+    "dz": "./dist/datazar.js"
   },
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
     "build:deps": "pnpm -F datazar... build",
     "build:watch": "tsc --watch",
-    "build:deploy": "pnpm --filter datazar deploy ./out",
-    "dev": "tsx -r dotenv/config src/index.ts",
-    "start": "node dist/index.js",
-    "deploy": "pkg  -t node*-linux-x64 --out-path cli ./dist/index.js"
+    "build:ncc": "ncc build src/datazar.ts -o out",
+    "build:pkg": "pkg --no-bytecode  -t node*-linux-x64 --out-path cli ./dist/datazar.js",
+    "dev": "tsx -r dotenv/config src/datazar.ts",
+    "start": "node dist/datazar.js"
+    
   },
   "dependencies": {
     "@datazar/cli": "workspace:^",

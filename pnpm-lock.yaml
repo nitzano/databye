@@ -375,6 +375,9 @@ importers:
       '@types/node':
         specifier: ^22.7.4
         version: 22.7.4
+      '@vercel/ncc':
+        specifier: ^0.38.2
+        version: 0.38.2
       rimraf:
         specifier: ^5.0.5
         version: 5.0.10
@@ -418,6 +421,9 @@ importers:
       '@types/node':
         specifier: ^22.7.4
         version: 22.7.4
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.10
       typescript:
         specifier: ^5.4.3
         version: 5.6.2
@@ -1060,6 +1066,10 @@ packages:
 
   '@types/whatwg-url@8.2.2':
     resolution: {integrity: sha512-FtQu10RWgn3D9U4aazdwIE2yzphmTJREDqNdODHrbrZmmMqI0vMheC/6NE/J1Yveaj8H+ela+YwWTjq5PGmuhA==}
+
+  '@vercel/ncc@0.38.2':
+    resolution: {integrity: sha512-3yel3jaxUg9pHBv4+KeC9qlbdZPug+UMtUOlhvpDYCMSgcNSrS2Hv1LoqMsOV7hf2lYscx+BESfJOIla1WsmMQ==}
+    hasBin: true
 
   abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -3250,6 +3260,8 @@ snapshots:
     dependencies:
       '@types/node': 22.7.4
       '@types/webidl-conversions': 7.0.3
+
+  '@vercel/ncc@0.38.2': {}
 
   abort-controller@3.0.0:
     dependencies:
