@@ -339,6 +339,22 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
+  packages/template:
+    dependencies:
+      winston:
+        specifier: ^3.13.0
+        version: 3.14.2
+    devDependencies:
+      '@tsconfig/node20':
+        specifier: ^20.1.4
+        version: 20.1.4
+      '@types/node':
+        specifier: ^22.7.4
+        version: 22.7.4
+      typescript:
+        specifier: ^5.4.3
+        version: 5.6.2
+
 packages:
 
   '@aws-crypto/sha256-browser@5.2.0':
