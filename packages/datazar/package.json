@@ -5,10 +5,11 @@
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^22.7.4",
+    "rimraf": "^5.0.5",
     "typescript": "^5.4.3"
   },
   "bin": {
-    "dz": "./dist/datazar.js"
+    "dz": "./dist/index.js"
   },
   "scripts": {
     "clean": "rimraf dist",
@@ -16,9 +17,9 @@
     "build:deps": "pnpm -F datazar... build",
     "build:watch": "tsc --watch",
     "build:deploy": "pnpm --filter datazar deploy ./out",
-    "dev": "tsx -r dotenv/config src/datazar.ts",
-    "start": "node dist/datazar.js",
-    "deploy": "pkg  -t node*-linux-x64 --out-path cli ./dist/datazar.js"    
+    "dev": "tsx -r dotenv/config src/index.ts",
+    "start": "node dist/index.js",
+    "deploy": "pkg  -t node*-linux-x64 --out-path cli ./dist/index.js"
   },
   "dependencies": {
     "@datazar/cli": "workspace:^",
@@ -27,11 +28,13 @@
     "@datazar/mssql": "workspace:^",
     "@datazar/postgres": "workspace:^",
     "commander": "^12.1.0",
+    "pkg": "^5.8.1",
     "tsx": "^4.19.1",
-    "winston": "^3.13.0",
-    "pkg": "^5.8.1"
+    "winston": "^3.13.0"
   },
   "pkg": {
-    "options": ["experimental-modules"]
-}
+    "options": [
+      "experimental-modules"
+    ]
+  }
 }
