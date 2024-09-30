@@ -17,7 +17,7 @@
     "build:watch": "tsc --watch",
     "dev": "tsx -r dotenv/config src/datazar.ts",
     "start": "node dist/datazar.js",
-    "pack": "pkg ./dist/datazar.js"
+    "deploy": "pkg --out-directory cli/ ./dist/datazar.js"
   },
   "dependencies": {
     "@datazar/cli": "workspace:^",
@@ -29,5 +29,15 @@
     "tsx": "^4.19.1",
     "winston": "^3.13.0",
     "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "options": [
+      "experimental-modules"
+    ],
+    "targets": [
+      "node20-linux-x64",
+      "node20-macos-x64",
+      "node20-win-x64"
+    ]
   }
 }
