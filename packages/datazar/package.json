@@ -13,6 +13,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
+    "build:deps": "pnpm -F datazar... build",
     "build:watch": "tsc --watch",
     "dev": "tsx -r dotenv/config src/datazar.ts",
     "start": "node dist/datazar.js",
