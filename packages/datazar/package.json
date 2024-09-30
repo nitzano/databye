@@ -2,8 +2,6 @@
   "name": "datazar",
   "private": false,
   "type": "module",
-  "exports": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^22.7.4",
@@ -15,15 +13,20 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
-    "build:watch": "tsc --watch"
+    "build:watch": "tsc --watch",
+    "dev": "tsx -r dotenv/config src/datazar.ts",
+    "start": "node dist/datazar.js",
+    "pack": "pkg ./dist/datazar.js"
   },
   "dependencies": {
-    "@datazar/cli":  "workspace:^",
+    "@datazar/cli": "workspace:^",
     "@datazar/mariadb": "workspace:^",
     "@datazar/mongo": "workspace:^",
     "@datazar/mssql": "workspace:^",
     "@datazar/postgres": "workspace:^",
     "commander": "^12.1.0",
-    "winston": "^3.13.0"
+    "tsx": "^4.19.1",
+    "winston": "^3.13.0",
+    "pkg": "^5.8.1"
   }
 }

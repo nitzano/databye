@@ -91,9 +91,6 @@ importers:
       '@types/node':
         specifier: ^22.7.4
         version: 22.7.4
-      pkg:
-        specifier: ^5.8.1
-        version: 5.8.1
       rimraf:
         specifier: ^5.0.5
         version: 5.0.10
@@ -359,6 +356,12 @@ importers:
       commander:
         specifier: ^12.1.0
         version: 12.1.0
+      pkg:
+        specifier: ^5.8.1
+        version: 5.8.1
+      tsx:
+        specifier: ^4.19.1
+        version: 4.19.1
       winston:
         specifier: ^3.13.0
         version: 3.14.2

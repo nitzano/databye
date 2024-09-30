@@ -4,10 +4,11 @@
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "private": true,
   "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^22.7.4",
-    "pkg": "^5.8.1",
+    "@types/node": "^22.7.4",    
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.1",
@@ -18,10 +19,7 @@
     "build": "tsc",
     "build:deps": "pnpm -F cli... build",
     "build:deploy": "pnpm deploy -F cli ./out",
-    "build:watch": "tsc --watch",
-    "start": "node dist/datazar.js",
-    "dz": "tsx -r dotenv/config src/datazar.ts",
-    "pack": "pkg ./dist/datazar.js"
+    "build:watch": "tsc --watch"
   },
   "dependencies": {
     "@datazar/anonymizers": "workspace:^",
