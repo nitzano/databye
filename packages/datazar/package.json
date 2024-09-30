@@ -1,0 +1,21 @@
+{
+    "name": "datazar",
+    "private": false,
+    "type": "module",
+    "exports": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "devDependencies": {
+      "@tsconfig/node20": "^20.1.4",
+      "@types/node": "^22.7.4",
+      "typescript": "^5.4.3"
+    },
+    "scripts": {
+      "clean": "rimraf dist",
+      "build": "tsc",
+      "build:watch": "tsc --watch"
+    },
+    "dependencies": {
+      "winston": "^3.13.0"
+    }
+  }
+  
