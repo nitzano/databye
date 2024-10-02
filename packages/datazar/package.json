@@ -1,6 +1,5 @@
 {
   "name": "datazar",
-  "private": false,
   "type": "module",
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
