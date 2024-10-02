@@ -1,5 +1,0 @@
----
-"@databye/anonymizers": patch
----
-
-init
