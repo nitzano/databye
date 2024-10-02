@@ -1,5 +1,5 @@
 {
-  "name": "datazar",
+  "name": "databye",
   "private": true,
   "type": "module",
   "devDependencies": {
@@ -12,26 +12,26 @@
     "pkg": "^5.8.1"
   },
   "bin": {
-    "dz": "./dist/datazar.js",
-    "datazar": "./dist/datazar.js"
+    "dbye": "./dist/databye.js",
+    "databye": "./dist/databye.js"
   },
   "scripts": {
     "clean": "rimraf dist deploy cli",
     "build": "tsc",
-    "build:deps": "pnpm -F datazar... build",
-    "build:deploy": "pnpm --filter=datazar  --prod deploy ./deploy",
+    "build:deps": "pnpm -F databye... build",
+    "build:deploy": "pnpm --filter=databye  --prod deploy ./deploy",
     "build:watch": "tsc --watch",
-    "build:esbuild": "esbuild src/datazar.ts --bundle --outdir=out --format=esm --platform=node",
+    "build:esbuild": "esbuild src/databye.ts --bundle --outdir=out --format=esm --platform=node",
     "build:pkg": "pkg --no-bytecode  -t node*-linux-x64 --out-path cli ./dist/index.js",
-    "dev": "tsx -r dotenv/config src/datazar.ts",
-    "start": "node dist/datazar.js"
+    "dev": "tsx -r dotenv/config src/databye.ts",
+    "start": "node dist/databye.js"
   },
   "dependencies": {
-    "@datazar/cli": "workspace:^",
-    "@datazar/mariadb": "workspace:^",
-    "@datazar/mongo": "workspace:^",
-    "@datazar/mssql": "workspace:^",
-    "@datazar/postgres": "workspace:^",
+    "@databye/cli": "workspace:^",
+    "@databye/mariadb": "workspace:^",
+    "@databye/mongo": "workspace:^",
+    "@databye/mssql": "workspace:^",
+    "@databye/postgres": "workspace:^",
     "commander": "^12.1.0",
     "winston": "^3.13.0"
   },

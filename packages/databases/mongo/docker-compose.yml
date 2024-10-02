@@ -26,4 +26,4 @@ volumes:
 networks:
   default:
     external: true
-    name: datazar_default
+    name: databye_default

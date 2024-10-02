@@ -1,5 +1,5 @@
 {
-  "name": "@datazar/cli",
+  "name": "@databye/cli",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "private": true,
   "type": "module",
@@ -24,9 +24,9 @@
     "build:watch": "tsc --watch"
   },
   "dependencies": {
-    "@datazar/anonymizers": "workspace:^",
-    "@datazar/base-processor": "workspace:^",
-    "@datazar/common": "workspace:^",
+    "@databye/anonymizers": "workspace:^",
+    "@databye/base-processor": "workspace:^",
+    "@databye/common": "workspace:^",
     "chalk": "^5.3.0",
     "commander": "^12.1.0",
     "connection-string": "^4.4.0",
@@ -36,9 +36,9 @@
     "ora": "^8.0.1"
   },
   "optionalDependencies": {
-    "@datazar/mariadb": "workspace:^",
-    "@datazar/mongo": "workspace:^",
-    "@datazar/mssql": "workspace:^",
-    "@datazar/postgres": "workspace:^"
+    "@databye/mariadb": "workspace:^",
+    "@databye/mongo": "workspace:^",
+    "@databye/mssql": "workspace:^",
+    "@databye/postgres": "workspace:^"
   }
 }

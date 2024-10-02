@@ -14,7 +14,7 @@ importers:
 
   packages/anonymizers:
     dependencies:
-      '@datazar/common':
+      '@databye/common':
         specifier: workspace:^
         version: link:../common
       chance:
@@ -45,13 +45,13 @@ importers:
 
   packages/cli:
     dependencies:
-      '@datazar/anonymizers':
+      '@databye/anonymizers':
         specifier: workspace:^
         version: link:../anonymizers
-      '@datazar/base-processor':
+      '@databye/base-processor':
         specifier: workspace:^
         version: link:../databases/base-processor
-      '@datazar/common':
+      '@databye/common':
         specifier: workspace:^
         version: link:../common
       chalk:
@@ -76,16 +76,16 @@ importers:
         specifier: ^8.0.1
         version: 8.1.0
     optionalDependencies:
-      '@datazar/mariadb':
+      '@databye/mariadb':
         specifier: workspace:^
         version: link:../databases/mariadb
-      '@datazar/mongo':
+      '@databye/mongo':
         specifier: workspace:^
         version: link:../databases/mongo
-      '@datazar/mssql':
+      '@databye/mssql':
         specifier: workspace:^
         version: link:../databases/mssql
-      '@datazar/postgres':
+      '@databye/postgres':
         specifier: workspace:^
         version: link:../databases/postgres
     devDependencies:
@@ -141,10 +141,10 @@ importers:
 
   packages/databases/base-processor:
     dependencies:
-      '@datazar/anonymizers':
+      '@databye/anonymizers':
         specifier: workspace:^
         version: link:../../anonymizers
-      '@datazar/common':
+      '@databye/common':
         specifier: workspace:^
         version: link:../../common
     devDependencies:
@@ -163,13 +163,13 @@ importers:
 
   packages/databases/knex-processor:
     dependencies:
-      '@datazar/anonymizers':
+      '@databye/anonymizers':
         specifier: workspace:^
         version: link:../../anonymizers
-      '@datazar/base-processor':
+      '@databye/base-processor':
         specifier: workspace:^
         version: link:../base-processor
-      '@datazar/common':
+      '@databye/common':
         specifier: workspace:^
         version: link:../../common
       dotenv:
@@ -194,10 +194,10 @@ importers:
 
   packages/databases/mariadb:
     dependencies:
-      '@datazar/common':
+      '@databye/common':
         specifier: workspace:^
         version: link:../../common
-      '@datazar/knex-processor':
+      '@databye/knex-processor':
         specifier: workspace:^
         version: link:../knex-processor
       knex:
@@ -228,13 +228,13 @@ importers:
 
   packages/databases/mongo:
     dependencies:
-      '@datazar/anonymizers':
+      '@databye/anonymizers':
         specifier: workspace:^
         version: link:../../anonymizers
-      '@datazar/base-processor':
+      '@databye/base-processor':
         specifier: workspace:^
         version: link:../base-processor
-      '@datazar/common':
+      '@databye/common':
         specifier: workspace:^
         version: link:../../common
       chalk:
@@ -274,10 +274,10 @@ importers:
 
   packages/databases/mssql:
     dependencies:
-      '@datazar/common':
+      '@databye/common':
         specifier: workspace:^
         version: link:../../common
-      '@datazar/knex-processor':
+      '@databye/knex-processor':
         specifier: workspace:^
         version: link:../knex-processor
       knex:
@@ -308,10 +308,10 @@ importers:
 
   packages/databases/postgres:
     dependencies:
-      '@datazar/common':
+      '@databye/common':
         specifier: workspace:^
         version: link:../../common
-      '@datazar/knex-processor':
+      '@databye/knex-processor':
         specifier: workspace:^
         version: link:../knex-processor
       dotenv:
@@ -345,19 +345,19 @@ importers:
 
   packages/datazar:
     dependencies:
-      '@datazar/cli':
+      '@databye/cli':
         specifier: workspace:^
         version: link:../cli
-      '@datazar/mariadb':
+      '@databye/mariadb':
         specifier: workspace:^
         version: link:../databases/mariadb
-      '@datazar/mongo':
+      '@databye/mongo':
         specifier: workspace:^
         version: link:../databases/mongo
-      '@datazar/mssql':
+      '@databye/mssql':
         specifier: workspace:^
         version: link:../databases/mssql
-      '@datazar/postgres':
+      '@databye/postgres':
         specifier: workspace:^
         version: link:../databases/postgres
       commander:

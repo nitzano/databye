@@ -1,38 +1,38 @@
-import {createLogger, EngineType} from '@datazar/common';
-import {ConnectionString} from 'connection-string';
+import { createLogger, EngineType } from "@databye/common";
+import { ConnectionString } from "connection-string";
 
 const logger = createLogger();
 
 export function getProcessorEngineFromUri(
-	connectionString: string,
+  connectionString: string
 ): EngineType | undefined {
-	if (connectionString) {
-		const {protocol} = new ConnectionString(connectionString);
-		if (protocol) {
-			logger.debug(`protocol = ${protocol}`);
-			switch (protocol) {
-				case 'postgresql': {
-					return EngineType.PostGres;
-				}
+  if (connectionString) {
+    const { protocol } = new ConnectionString(connectionString);
+    if (protocol) {
+      logger.debug(`protocol = ${protocol}`);
+      switch (protocol) {
+        case "postgresql": {
+          return EngineType.PostGres;
+        }
 
-				case 'mongodb': {
-					return EngineType.Mongo;
-				}
+        case "mongodb": {
+          return EngineType.Mongo;
+        }
 
-				case 'mariadb': {
-					return EngineType.MariaDB;
-				}
+        case "mariadb": {
+          return EngineType.MariaDB;
+        }
 
-				case 'mysql': {
-					return EngineType.MySQL;
-				}
+        case "mysql": {
+          return EngineType.MySQL;
+        }
 
-				default: {
-					break;
-				}
-			}
-		}
-	}
+        default: {
+          break;
+        }
+      }
+    }
+  }
 
-	return undefined;
+  return undefined;
 }

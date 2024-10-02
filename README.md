@@ -1,9 +1,10 @@
-# datazar
-Anonymize Databases and Files From CLI
+# Data Bye
+
+Database & File CLI Anonymizer
 
 # License
 
-DataZar
+DataBye
 Copyright (C) 2024 Nitzan Ohana
 
 This program is free software: you can redistribute it and/or modify
