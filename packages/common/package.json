@@ -4,7 +4,7 @@
   "type": "module",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": ["dist", "CHANGELOG.md"],
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@types/chance": "^1.1.3",
