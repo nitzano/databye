@@ -1,5 +1,5 @@
 {
-  "name": "@datazar/main",
+  "name": "datazar",
   "private": false,
   "type": "module",
   "devDependencies": {
@@ -16,8 +16,8 @@
   "scripts": {
     "clean": "rimraf dist deploy cli",
     "build": "tsc",
-    "build:deps": "pnpm -F @datazar/main... build",
-    "build:deploy": "pnpm --filter=@datazar/main  --prod deploy ./deploy",
+    "build:deps": "pnpm -F datazar... build",
+    "build:deploy": "pnpm --filter=datazar  --prod deploy ./deploy",
     "build:watch": "tsc --watch",
     "build:esbuild": "esbuild src/datazar.ts --bundle --outdir=out --format=esm --platform=node",
     "build:pkg": "pkg --no-bytecode  -t node*-linux-x64 --out-path cli ./dist/index.js",
