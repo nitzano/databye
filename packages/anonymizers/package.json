@@ -1,5 +1,5 @@
 {
-  "name": "@datazar/anonymizers",
+  "name": "@databye/anonymizers",
   "private": true,
   "type": "module",
   "exports": "./dist/index.js",
@@ -18,7 +18,7 @@
     "dev": "tsc --watch"
   },
   "dependencies": {
-    "@datazar/common": "workspace:^",
+    "@databye/common": "workspace:^",
     "chance": "^1.1.8",
     "lodash-es": "^4.17.21"
   }
