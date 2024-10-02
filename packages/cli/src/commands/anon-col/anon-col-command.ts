@@ -1,8 +1,8 @@
-import {EngineType} from '@datazar/common';
-import {Command, Option} from 'commander';
-import {maskCommand} from './commands/mask/mask-command.js';
-import {scrambleCommand} from './commands/scramble/scramble-command.js';
-import {addConnectionOptions} from './helpers/add-connection-options.js';
+import { EngineType } from '@databye/common';
+import { Command, Option } from 'commander';
+import { maskCommand } from './commands/mask/mask-command.js';
+import { scrambleCommand } from './commands/scramble/scramble-command.js';
+import { addConnectionOptions } from './helpers/add-connection-options.js';
 
 export const anonColCommand: Command = new Command('anon-col');
 
