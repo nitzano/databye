@@ -1,5 +1,5 @@
 {
-  "name": "@datazar/mariadb",
+  "name": "@databye/mariadb",
   "private": true,
   "type": "module",
   "exports": "./dist/index.js",
@@ -19,8 +19,8 @@
     "db:seed": "node --no-warnings=ExperimentalWarning --loader ts-node/esm -r dotenv/config ./src/test/scripts/seed-mariadb.ts dotenv_config_path=.dev.env"
   },
   "dependencies": {
-    "@datazar/common": "workspace:^",
-    "@datazar/knex-processor": "workspace:^",
+    "@databye/common": "workspace:^",
+    "@databye/knex-processor": "workspace:^",
     "knex": "^3.1.0",
     "mysql": "^2.18.1"
   }

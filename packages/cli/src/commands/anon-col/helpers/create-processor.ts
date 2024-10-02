@@ -30,7 +30,7 @@ export async function createProcessor(
     switch (engine) {
       case EngineType.Mongo: {
         logger.debug("creating mongo processor");
-        const mongo = await import("@datazar/mongo");
+        const mongo = await import("@databye/mongo");
         if (!connectionString) throw new Error("invalid connection string uri");
         databaseProcessor = new mongo.MongoProcessor(connectionString);
         break;
@@ -38,7 +38,7 @@ export async function createProcessor(
 
       case EngineType.PostGres: {
         logger.debug("creating postgress processor");
-        const module = await import("@datazar/postgres");
+        const module = await import("@databye/postgres");
         databaseProcessor = new module.PostgresProcessor(connectionOptions);
         break;
       }
@@ -46,7 +46,7 @@ export async function createProcessor(
       case EngineType.MariaDB:
       case EngineType.MySQL: {
         logger.debug("creating mariadb processor");
-        const module = await import("@datazar/mariadb");
+        const module = await import("@databye/mariadb");
         databaseProcessor = new module.MariaDatabaseProcessor(
           connectionOptions
         );
@@ -55,7 +55,7 @@ export async function createProcessor(
 
       case EngineType.MSSQL: {
         logger.debug("creating mssql processor");
-        const module = await import("@datazar/mssql");
+        const module = await import("@databye/mssql");
         databaseProcessor = new module.MsSqlProcessor(connectionOptions);
         break;
       }
