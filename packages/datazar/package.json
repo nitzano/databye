@@ -1,5 +1,6 @@
 {
   "name": "datazar",
+  "private": true,
   "type": "module",
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
@@ -31,7 +32,7 @@
     "@datazar/mongo": "workspace:^",
     "@datazar/mssql": "workspace:^",
     "@datazar/postgres": "workspace:^",
-    "commander": "^12.1.0",    
+    "commander": "^12.1.0",
     "winston": "^3.13.0"
   },
   "pkg": {
