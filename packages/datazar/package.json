@@ -7,7 +7,8 @@
     "@types/node": "^22.7.4",
     "esbuild": "^0.24.0",
     "rimraf": "^5.0.5",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "tsx": "^4.19.1"
   },
   "bin": {
     "dz": "./dist/datazar.js",
@@ -32,7 +33,6 @@
     "@datazar/postgres": "workspace:^",
     "commander": "^12.1.0",
     "pkg": "^5.8.1",
-    "tsx": "^4.19.1",
     "winston": "^3.13.0"
   },
   "pkg": {
