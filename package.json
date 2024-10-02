@@ -1,5 +1,5 @@
 {
-  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
+  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",  
   "license": "AGPL",
   "scripts": {
     "publish": "pnpm -r publish"
