@@ -7,7 +7,6 @@ import process from "node:process";
 
 const program = new Command().alias("dz");
 
-program;
 program.addCommand(anonColCommand);
 
 program.parse(process.argv);
