@@ -1,5 +1,0 @@
----
-"@databye/common": patch
----
-
-init
