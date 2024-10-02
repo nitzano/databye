@@ -10,7 +10,8 @@
     "typescript": "^5.4.3"
   },
   "bin": {
-    "dz": "./dist/datazar.js"
+    "dz": "./dist/datazar.js",
+    "datazar": "./dist/datazar.js"
   },
   "scripts": {
     "clean": "rimraf dist deploy cli",
