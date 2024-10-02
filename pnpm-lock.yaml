@@ -359,9 +359,6 @@ importers:
       commander:
         specifier: ^12.1.0
         version: 12.1.0
-      pkg:
-        specifier: ^5.8.1
-        version: 5.8.1
       winston:
         specifier: ^3.13.0
         version: 3.14.2
@@ -375,6 +372,9 @@ importers:
       esbuild:
         specifier: ^0.24.0
         version: 0.24.0
+      pkg:
+        specifier: ^5.8.1
+        version: 5.8.1
       rimraf:
         specifier: ^5.0.5
         version: 5.0.10
