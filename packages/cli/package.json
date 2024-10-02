@@ -1,6 +1,5 @@
 {
-  "name": "@datazar/cli",
-  "version": "0.0.0-development",
+  "name": "@datazar/cli",  
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "private": true,
   "type": "module",
