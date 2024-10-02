@@ -1,14 +1,16 @@
 {
-  "name": "@datazar/cli",  
+  "name": "@datazar/cli",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "private": true,
   "type": "module",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^22.7.4",    
+    "@types/node": "^22.7.4",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.1",
