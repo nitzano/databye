@@ -1,0 +1,42 @@
+{
+  "name": "datazar",
+  "type": "module",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.4",
+    "esbuild": "^0.24.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.3",
+    "tsx": "^4.19.1",
+    "pkg": "^5.8.1"
+  },
+  "bin": {
+    "dz": "./dist/datazar.js",
+    "datazar": "./dist/datazar.js"
+  },
+  "scripts": {
+    "clean": "rimraf dist deploy cli",
+    "build": "tsc",
+    "build:deps": "pnpm -F datazar... build",
+    "build:deploy": "pnpm --filter=datazar  --prod deploy ./deploy",
+    "build:watch": "tsc --watch",
+    "build:esbuild": "esbuild src/datazar.ts --bundle --outdir=out --format=esm --platform=node",
+    "build:pkg": "pkg --no-bytecode  -t node*-linux-x64 --out-path cli ./dist/index.js",
+    "dev": "tsx -r dotenv/config src/datazar.ts",
+    "start": "node dist/datazar.js"
+  },
+  "dependencies": {
+    "@datazar/cli": "workspace:^",
+    "@datazar/mariadb": "workspace:^",
+    "@datazar/mongo": "workspace:^",
+    "@datazar/mssql": "workspace:^",
+    "@datazar/postgres": "workspace:^",
+    "commander": "^12.1.0",    
+    "winston": "^3.13.0"
+  },
+  "pkg": {
+    "options": [
+      "experimental-modules"
+    ]
+  }
+}

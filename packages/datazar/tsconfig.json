@@ -2,7 +2,8 @@
   "extends": "@tsconfig/node20",
   "compilerOptions": {
     "rootDir": "./src",
-    "declaration": true,
     "outDir": "dist",
-  }
+    "declaration": false
+  },
+  "include": ["src/**/*"]
 }

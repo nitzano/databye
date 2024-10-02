@@ -12,6 +12,7 @@
     "dotenv": "^16.4.5",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
     "typescript": "^5.4.3"
   },
   "scripts": {
@@ -19,7 +20,7 @@
     "build": "tsc",
     "build:watch": "pnpm run build --watch",
     "dev": "tsc --watch",
-    "dev:seed": "node --no-warnings=ExperimentalWarning --loader ts-node/esm -r dotenv/config ./src/test/scripts/seed-mongo.ts dotenv_config_path=.dev.env"
+    "dev:seed": "tsx -r dotenv/config ./src/test/scripts/seed-mongo.ts dotenv_config_path=.dev.env"
   },
   "dependencies": {
     "@datazar/anonymizers": "workspace:^",

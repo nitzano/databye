@@ -1,23 +1,26 @@
 {
   "name": "@datazar/cli",
+  "version": "0.0.0-development",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "private": true,
   "type": "module",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": ["dist"],
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^22.7.4",
+    "@types/node": "^22.7.4",    
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
     "typescript": "^5.4.3"
   },
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
-    "dev": "tsc --watch",
-    "start": "node dist/cli/datazar.js",
-    "dz": "node --no-warnings=ExperimentalWarning --loader ts-node/esm -r dotenv/config src/datazar.ts"
+    "build:deps": "pnpm -F cli... build",
+    "build:deploy": "pnpm deploy -F cli ./out",
+    "build:watch": "tsc --watch"
   },
   "dependencies": {
     "@datazar/anonymizers": "workspace:^",
