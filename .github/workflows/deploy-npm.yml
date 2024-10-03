@@ -2,12 +2,12 @@ name: Deploy npm
 
 on:
   push:
-    branches:
-      - main
+    # branches:
+    #   - main
   pull_request:
     branches:
       - main
-      - 19-add-changesets-to-ci
+    #   - 19-add-changesets-to-ci
 
 jobs:
   lint:
