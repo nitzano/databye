@@ -1,5 +1,11 @@
 # @databye/common
 
+## 0.0.3
+
+### Patch Changes
+
+- 3b1a28b: test for ci
+
 ## 0.0.2
 
 ### Patch Changes
