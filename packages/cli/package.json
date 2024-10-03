@@ -2,7 +2,6 @@
   "name": "@databye/cli",
   "version": "0.0.0-development",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "private": true,
   "type": "module",
   "license": "AGPL-3.0-only",
   "exports": "./dist/index.js",
