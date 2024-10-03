@@ -3,10 +3,12 @@
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "private": true,
   "type": "module",
+  "license": "AGPL-3.0-only",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md"
   ],
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
