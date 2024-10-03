@@ -3,11 +3,7 @@ name: Deploy npm
 on:
   push:
     branches:
-      #   - main
-      - 19-add-changesets-to-ci
-  # pull_request:
-  #   branches:
-  #     - main
+      - main
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
