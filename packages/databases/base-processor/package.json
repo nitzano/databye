@@ -1,8 +1,14 @@
 {
   "name": "@databye/base-processor",
-  "private": true,
   "type": "module",
+  "version": "0.0.0-development",
+  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
+  "license": "AGPL-3.0-only",
   "exports": "./dist/index.js",
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
   "types": "./dist/index.d.ts",
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
@@ -13,7 +19,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
-    "build:watch": "pnpm run build --watch"
+    "build:watch": "pnpm run build --watch",
+    "prepare": "pnpm -F base-processor... build"
   },
   "dependencies": {
     "@databye/anonymizers": "workspace:^",

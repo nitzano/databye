@@ -1,12 +1,14 @@
 {
   "name": "@databye/cli",
+  "version": "0.0.0-development",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "private": true,
   "type": "module",
+  "license": "AGPL-3.0-only",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md"
   ],
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
@@ -21,7 +23,8 @@
     "build": "tsc",
     "build:deps": "pnpm -F cli... build",
     "build:deploy": "pnpm deploy -F cli ./out",
-    "build:watch": "tsc --watch"
+    "build:watch": "tsc --watch",
+    "prepare": "pnpm -F cli... build"
   },
   "dependencies": {
     "@databye/anonymizers": "workspace:^",
