@@ -1,6 +1,9 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
-import { DataBaseProcessor, type ColumnInfo } from "@databye/base-processor";
-import { createLogger } from "@databye/common";
+import {
+  createLogger,
+  DataBaseProcessor,
+  type ColumnInfo,
+} from "@databye/common";
 import { MongoClient, type Db } from "mongodb";
 
 const logger = createLogger();
