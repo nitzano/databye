@@ -12,7 +12,9 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 permissions:
+  packages: write
   contents: write
+  pull-requests: write
 
 jobs:
   deploy_npm:
