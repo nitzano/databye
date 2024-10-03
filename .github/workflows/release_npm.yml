@@ -11,6 +11,9 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
+permissions:
+  contents: write
+
 jobs:
   deploy_npm:
     runs-on: ubuntu-latest
