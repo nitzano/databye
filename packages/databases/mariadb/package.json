@@ -1,12 +1,12 @@
 {
   "name": "@databye/mariadb",
-  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",  
-  "version": "0.0.0",
+  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
+  "version": "0.0.1",
   "files": [
     "dist",
     "CHANGELOG.md"
   ],
-  "license": "AGPL-3.0-only",  
+  "license": "AGPL-3.0-only",
   "type": "module",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
