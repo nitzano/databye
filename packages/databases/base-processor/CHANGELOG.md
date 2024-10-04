@@ -1,5 +1,14 @@
 # @databye/base-processor
 
+## 0.0.4
+
+### Patch Changes
+
+- bc8e0e4: update license
+- Updated dependencies [bc8e0e4]
+  - @databye/anonymizers@0.0.7
+  - @databye/common@0.0.8
+
 ## 0.0.3
 
 ### Patch Changes
