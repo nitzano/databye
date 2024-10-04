@@ -1,5 +1,11 @@
 # @databye/common
 
+## 1.0.1
+
+### Patch Changes
+
+- a6d3f7b: remove test from build
+
 ## 1.0.0
 
 ### Major Changes
