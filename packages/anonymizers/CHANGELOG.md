@@ -1,5 +1,13 @@
 # @databye/anonymizers
 
+## 0.0.8
+
+### Patch Changes
+
+- a46eb87: change titles
+- Updated dependencies [a46eb87]
+  - @databye/common@0.0.9
+
 ## 0.0.7
 
 ### Patch Changes
