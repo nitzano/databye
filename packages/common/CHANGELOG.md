@@ -1,5 +1,11 @@
 # @databye/common
 
+## 0.0.4
+
+### Patch Changes
+
+- 05a3076: build before packing
+
 ## 0.0.3
 
 ### Patch Changes
