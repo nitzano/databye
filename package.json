@@ -1,6 +1,6 @@
 {
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",  
-  "license": "AGPL",
+  "license": "AGPL-3.0-only",
   "scripts": {
     "build:all": "pnpm -r build",
     "change:add": "pnpm changeset",
