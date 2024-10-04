@@ -22,7 +22,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepare": "pnpm -F common... build"
   },
   "dependencies": {
     "winston": "^3.13.0"
