@@ -27,8 +27,5 @@
   },
   "dependencies": {
     "winston": "^3.13.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
