@@ -25,5 +25,8 @@
   "dependencies": {
     "@databye/anonymizers": "workspace:^",
     "@databye/common": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
