@@ -1,5 +1,11 @@
 # @databye/common
 
+## 0.0.8
+
+### Patch Changes
+
+- bc8e0e4: update license
+
 ## 0.0.7
 
 ### Patch Changes

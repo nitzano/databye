@@ -1,5 +1,13 @@
 # @databye/anonymizers
 
+## 0.0.7
+
+### Patch Changes
+
+- bc8e0e4: update license
+- Updated dependencies [bc8e0e4]
+  - @databye/common@0.0.8
+
 ## 0.0.6
 
 ### Patch Changes
