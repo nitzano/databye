@@ -1,5 +1,13 @@
 # @databye/base-processor
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [9d6ef51]
+  - @databye/common@0.0.7
+  - @databye/anonymizers@0.0.6
+
 ## 0.0.2
 
 ### Patch Changes
