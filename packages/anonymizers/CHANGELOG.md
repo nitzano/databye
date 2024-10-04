@@ -1,5 +1,12 @@
 # @databye/anonymizers
 
+## 0.0.5
+
+### Patch Changes
+
+- Updated dependencies [871667b]
+  - @databye/common@0.0.6
+
 ## 0.0.4
 
 ### Patch Changes
