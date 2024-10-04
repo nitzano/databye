@@ -1,5 +1,11 @@
 # @databye/common
 
+## 1.0.0
+
+### Major Changes
+
+- b15ea61: first init
+
 ## 0.0.9
 
 ### Patch Changes
