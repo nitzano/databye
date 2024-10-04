@@ -24,8 +24,7 @@
     "build": "tsc",
     "build:deps": "pnpm -F cli... build",
     "build:deploy": "pnpm deploy -F cli ./out",
-    "build:watch": "tsc --watch",
-    "prepare": "pnpm -F cli... build"
+    "build:watch": "tsc --watch"
   },
   "dependencies": {
     "@databye/anonymizers": "workspace:^",

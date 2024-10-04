@@ -19,8 +19,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
-    "build:watch": "pnpm run build --watch",
-    "prepare": "pnpm -F base-processor... build"
+    "build:watch": "pnpm run build --watch"
   },
   "dependencies": {
     "@databye/anonymizers": "workspace:^",
