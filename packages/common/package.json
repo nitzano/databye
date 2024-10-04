@@ -1,5 +1,6 @@
 {
   "name": "@databye/common",
+  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",  
   "version": "0.0.9",
   "license": "AGPL-3.0-only",
   "type": "module",
