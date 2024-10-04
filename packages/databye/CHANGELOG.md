@@ -1,5 +1,11 @@
 # databye
 
+## 1.0.4
+
+### Patch Changes
+
+- 6648a2d: update pack
+
 ## 1.0.3
 
 ### Patch Changes
