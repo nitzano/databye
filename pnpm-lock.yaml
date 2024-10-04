@@ -343,7 +343,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/datazar:
+  packages/databye:
     dependencies:
       '@databye/cli':
         specifier: workspace:^
