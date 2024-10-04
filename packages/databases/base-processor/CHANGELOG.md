@@ -1,5 +1,14 @@
 # @databye/base-processor
 
+## 0.0.5
+
+### Patch Changes
+
+- a46eb87: change titles
+- Updated dependencies [a46eb87]
+  - @databye/anonymizers@0.0.8
+  - @databye/common@0.0.9
+
 ## 0.0.4
 
 ### Patch Changes

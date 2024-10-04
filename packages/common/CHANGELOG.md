@@ -1,5 +1,11 @@
 # @databye/common
 
+## 0.0.9
+
+### Patch Changes
+
+- a46eb87: change titles
+
 ## 0.0.8
 
 ### Patch Changes
