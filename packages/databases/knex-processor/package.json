@@ -1,7 +1,7 @@
 {
   "name": "@databye/knex-processor",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "AGPL-3.0-only",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",

@@ -1,5 +1,16 @@
 # @databye/anonymizers
 
+## 1.0.0
+
+### Major Changes
+
+- b15ea61: first init
+
+### Patch Changes
+
+- Updated dependencies [b15ea61]
+  - @databye/common@1.0.0
+
 ## 0.0.8
 
 ### Patch Changes

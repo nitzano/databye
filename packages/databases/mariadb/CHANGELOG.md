@@ -1,5 +1,17 @@
 # @databye/mariadb
 
+## 1.0.0
+
+### Major Changes
+
+- b15ea61: first init
+
+### Patch Changes
+
+- Updated dependencies [b15ea61]
+  - @databye/common@1.0.0
+  - @databye/knex-processor@1.0.0
+
 ## 0.0.1
 
 ### Patch Changes
