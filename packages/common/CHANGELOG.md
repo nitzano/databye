@@ -1,5 +1,11 @@
 # @databye/common
 
+## 1.0.2
+
+### Patch Changes
+
+- 957eb0e: add rosie
+
 ## 1.0.1
 
 ### Patch Changes
