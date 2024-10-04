@@ -1,4 +1,4 @@
-# Data Bye
+# DataBye
 
 Database & File CLI Anonymizer
 
