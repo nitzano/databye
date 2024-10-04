@@ -1,5 +1,13 @@
 # @databye/mssql
 
+## 1.0.1
+
+### Patch Changes
+
+- Updated dependencies [a6d3f7b]
+  - @databye/common@1.0.1
+  - @databye/knex-processor@1.0.1
+
 ## 1.0.0
 
 ### Major Changes
