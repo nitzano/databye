@@ -1,7 +1,7 @@
 {
   "name": "@databye/base-processor",
   "type": "module",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "license": "AGPL-3.0-only",
   "exports": "./dist/index.js",
