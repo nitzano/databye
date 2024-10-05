@@ -1,5 +1,11 @@
 # databye
 
+## 1.0.5
+
+### Patch Changes
+
+- 50f3e4c: readme
+
 ## 1.0.4
 
 ### Patch Changes
