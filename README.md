@@ -1,6 +1,4 @@
-# 📊👋 DataBye 
-
-CLI Database & File Anonymizer
+Databye
 
 # License
 
