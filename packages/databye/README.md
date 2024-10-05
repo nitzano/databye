@@ -2,6 +2,12 @@
 
 Database & File CLI Anonymizer
 
+[![npm](https://img.shields.io/npm/v/databye)](https://www.npmjs.com/package/databye)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+![GitHub License](https://img.shields.io/github/license/nitzano/databye)
+[![GitHub Repo stars](https://img.shields.io/github/stars/nitzano/databye?style=flat)](https://github.com/nitzano/databye/stargazers)
+![npm](https://img.shields.io/npm/dw/databye)
+
 # License
 
 DataBye
