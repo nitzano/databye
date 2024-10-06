@@ -19,7 +19,7 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 - [Example](#example)
 - [CLI](#cli)
   - [anon-col](#anon-col)
-- [✅ Supported](#-supported)
+- [✅ Supported Databases \& Files](#-supported-databases--files)
   - [Databases](#databases)
   - [Files](#files)
 - [License](#license)
@@ -92,7 +92,7 @@ Commands:
   help [command]                 display help for command
 ```
 
-# ✅ Supported 
+# ✅ Supported Databases & Files
 
 ## Databases
 
