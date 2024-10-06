@@ -1,5 +1,0 @@
----
-"@databye/processor": patch
----
-
-change
