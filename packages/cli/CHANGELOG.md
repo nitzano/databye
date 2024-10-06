@@ -1,5 +1,11 @@
 # @databye/cli
 
+## 1.0.4
+
+### Patch Changes
+
+- 492876a: move depdencies in cli to be required
+
 ## 1.0.3
 
 ### Patch Changes

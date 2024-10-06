@@ -1,5 +1,13 @@
 # databye
 
+## 1.0.10
+
+### Patch Changes
+
+- 492876a: move depdencies in cli to be required
+- Updated dependencies [492876a]
+  - @databye/cli@1.0.4
+
 ## 1.0.9
 
 ### Patch Changes
