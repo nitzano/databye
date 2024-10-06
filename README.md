@@ -28,8 +28,6 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 
 # How to use
 
-No installation is required 
-
 NPM:
 ```
 npx databye <command> [options]
