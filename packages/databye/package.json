@@ -33,7 +33,8 @@
     "build:esbuild": "esbuild src/databye.ts --bundle --outdir=out --format=esm --platform=node",
     "build:pkg": "pkg --no-bytecode  -t node*-linux-x64 --out-path cli ./dist/index.js",
     "dev": "tsx -r dotenv/config src/databye.ts",
-    "start": "node dist/databye.js"
+    "start": "node dist/databye.js",
+    "prepare": "pnpm readme:gen"
   },
   "dependencies": {
     "@databye/cli": "workspace:^",
