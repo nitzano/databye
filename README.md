@@ -15,8 +15,8 @@
 
 Databye is a command-line tool to anonymize and transform sensitive data in databases, files, and datasets without writing a single line of code. It supports various databases types and file formats. 
 
-- [Usage](#usage)
-- [Example](#example)
+- [How to use](#how-to-use)
+- [Basic Example](#basic-example)
 - [CLI](#cli)
   - [anon-col](#anon-col)
 - [Anonymizers](#anonymizers)
@@ -26,7 +26,7 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 - [License](#license)
 
 
-# Usage
+# How to use
 
 No installation is required 
 
@@ -46,7 +46,7 @@ yarn dlx databye <command> [options]
 ```
 
 
-# Example
+# Basic Example
 
 1. Mask "firstName" in PostgresDB
 ```
