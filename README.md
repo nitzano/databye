@@ -20,7 +20,7 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 - [CLI](#cli)
   - [anon-col](#anon-col)
 - [Anonymizers](#anonymizers)
-- [✅ Supported Databases \& Files](#-supported-databases--files)
+- [✅ Supported Formats](#-supported-formats)
   - [Databases](#databases)
   - [Files](#files)
 - [License](#license)
@@ -106,7 +106,7 @@ Future support:
 4. ✏️ **Replace** – Substitutes sensitive words or phrases with placeholders or predefined values.
 5. 🔐 **Hash** – Replaces the value with a cryptographic hash, making it irrecoverable.
 
-# ✅ Supported Databases & Files
+# ✅ Supported Formats
 
 ## Databases
 
