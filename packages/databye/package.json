@@ -24,6 +24,7 @@
     "databye": "./dist/databye.js"
   },
   "scripts": {
+    "readme:gen": "cp -f ../../README.md ./",
     "clean": "rimraf dist deploy cli",
     "build": "tsc",
     "build:deps": "pnpm -F databye... build",
