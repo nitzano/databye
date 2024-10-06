@@ -1,5 +1,11 @@
 # databye
 
+## 1.0.6
+
+### Patch Changes
+
+- 4096390: update readme dynamically
+
 ## 1.0.5
 
 ### Patch Changes
