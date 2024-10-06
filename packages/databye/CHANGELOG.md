@@ -1,5 +1,12 @@
 # databye
 
+## 1.0.7
+
+### Patch Changes
+
+- 7637b8b: readme update
+- 605d6d7: update readme
+
 ## 1.0.6
 
 ### Patch Changes
