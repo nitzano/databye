@@ -13,7 +13,7 @@
 
 </div>
 
-Databye is a command-line tool to anonymize and transform sensitive data in databases, files, and datasets without writing a single line of code. It supports various databases types and file formats. 
+Databye is a command-line tool to anonymize and transform sensitive data in databases, files, and datasets without writing a single line of code. Supports various databases types and file formats. 
 
 - [How to use](#how-to-use)
 - [Basic Example](#basic-example)
