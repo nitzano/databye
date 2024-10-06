@@ -17,10 +17,10 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 
 - [Usage](#usage)
 - [Examples](#examples)
+- [Anonymizers](#anonymizers)
 - [Support](#support)
   - [Databases](#databases)
   - [Files](#files)
-- [Anonymizers](#anonymizers)
 - [CLI](#cli)
   - [anon-col](#anon-col)
 - [License](#license)
@@ -60,6 +60,19 @@ npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastNa
 // { "lastName": "Smith" } => { "lastName": "hSmti" }
 ```
 
+# Anonymizers
+
+1. 🎭 **Mask** - Masks some or all of the letters of the previous value.
+2. 🔀 **Scramble** - Scrambles the order of characters inside a string randomly.
+
+Future support:
+
+1. 🍀 **Fake** - Generate fake data instead of the previous value
+2. 🧽 **Erase**  - removes the entire data
+3. 👓 **Blur** – Adds random variation to numerical values while keeping them within a reasonable range.
+4. ✏️ **Replace** – Substitutes sensitive words or phrases with placeholders or predefined values.
+5. 🔐 **Hash** – Replaces the value with a cryptographic hash, making it irrecoverable.
+
 # Support
 
 ## Databases
@@ -83,18 +96,7 @@ npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastNa
 5. Parquet (Coming Soon)
 6. YAML (Coming Soon)
 
-# Anonymizers
 
-1. 🎭 **Mask** - Masks some or all of the letters of the previous value.
-2. 🔀 **Scramble** - Scrambles the order of characters inside a string randomly.
-
-Future support:
-
-1. 🍀 **Fake** - Generate fake data instead of the previous value
-2. 🧽 **Erase**  - removes the entire data
-3. 👓 **Blur** – Adds random variation to numerical values while keeping them within a reasonable range.
-4. ✏️ **Replace** – Substitutes sensitive words or phrases with placeholders or predefined values.
-5. 🔐 **Hash** – Replaces the value with a cryptographic hash, making it irrecoverable.
 
 # CLI
 
