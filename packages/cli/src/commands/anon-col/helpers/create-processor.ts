@@ -1,9 +1,9 @@
-import { type DataBaseProcessor } from "@databye/base-processor";
 import {
   EngineType,
   createLogger,
   type ConnectionOptions,
 } from "@databye/common";
+import { type DataBaseProcessor } from "@databye/processor";
 import { getProcessorEngineFromUri } from "../../../utils/get-processor-engine-from-uri.js";
 
 const logger = createLogger();

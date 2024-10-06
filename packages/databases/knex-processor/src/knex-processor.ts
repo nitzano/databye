@@ -1,6 +1,6 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
-import { DataBaseProcessor, type ColumnInfo } from "@databye/base-processor";
 import { createLogger, type ConnectionOptions } from "@databye/common";
+import { DataBaseProcessor, type ColumnInfo } from "@databye/processor";
 import { type Knex } from "knex";
 
 const logger = createLogger();

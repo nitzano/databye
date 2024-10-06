@@ -1,4 +1,4 @@
-# @databye/base-processor
+# @databye/processor
 
 ## 1.0.2
 

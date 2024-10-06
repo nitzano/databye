@@ -1,6 +1,6 @@
 import { type Anonymizer } from "@databye/anonymizers";
-import { type DataBaseProcessor } from "@databye/base-processor";
 import { createLogger, type ConnectionOptions } from "@databye/common";
+import { type DataBaseProcessor } from "@databye/processor";
 import ora from "ora";
 import { createProcessor } from "./create-processor.js";
 import { isUserConfirmed } from "./is-user-confirmed.js";

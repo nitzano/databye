@@ -48,12 +48,12 @@ importers:
       '@databye/anonymizers':
         specifier: workspace:^
         version: link:../anonymizers
-      '@databye/base-processor':
-        specifier: workspace:^
-        version: link:../databases/base-processor
       '@databye/common':
         specifier: workspace:^
         version: link:../common
+      '@databye/processor':
+        specifier: workspace:^
+        version: link:../processor
       chalk:
         specifier: ^5.3.0
         version: 5.3.0
@@ -139,39 +139,17 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/databases/base-processor:
-    dependencies:
-      '@databye/anonymizers':
-        specifier: workspace:^
-        version: link:../../anonymizers
-      '@databye/common':
-        specifier: workspace:^
-        version: link:../../common
-    devDependencies:
-      '@tsconfig/node20':
-        specifier: ^20.1.4
-        version: 20.1.4
-      '@types/node':
-        specifier: ^22.7.4
-        version: 22.7.4
-      rimraf:
-        specifier: ^5.0.5
-        version: 5.0.10
-      typescript:
-        specifier: ^5.4.3
-        version: 5.6.2
-
   packages/databases/knex-processor:
     dependencies:
       '@databye/anonymizers':
         specifier: workspace:^
         version: link:../../anonymizers
-      '@databye/base-processor':
-        specifier: workspace:^
-        version: link:../base-processor
       '@databye/common':
         specifier: workspace:^
         version: link:../../common
+      '@databye/processor':
+        specifier: workspace:^
+        version: link:../../processor
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -231,12 +209,12 @@ importers:
       '@databye/anonymizers':
         specifier: workspace:^
         version: link:../../anonymizers
-      '@databye/base-processor':
-        specifier: workspace:^
-        version: link:../base-processor
       '@databye/common':
         specifier: workspace:^
         version: link:../../common
+      '@databye/processor':
+        specifier: workspace:^
+        version: link:../../processor
       chalk:
         specifier: ^5.3.0
         version: 5.3.0
@@ -385,6 +363,28 @@ importers:
       tsx:
         specifier: ^4.19.1
         version: 4.19.1
+      typescript:
+        specifier: ^5.4.3
+        version: 5.6.2
+
+  packages/processor:
+    dependencies:
+      '@databye/anonymizers':
+        specifier: workspace:^
+        version: link:../anonymizers
+      '@databye/common':
+        specifier: workspace:^
+        version: link:../common
+    devDependencies:
+      '@tsconfig/node20':
+        specifier: ^20.1.4
+        version: 20.1.4
+      '@types/node':
+        specifier: ^22.7.4
+        version: 22.7.4
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.10
       typescript:
         specifier: ^5.4.3
         version: 5.6.2
