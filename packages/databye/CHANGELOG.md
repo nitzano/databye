@@ -1,5 +1,12 @@
 # databye
 
+## 1.0.8
+
+### Patch Changes
+
+- 07e60d5: update readme
+- 564d4a1: add keywords
+
 ## 1.0.7
 
 ### Patch Changes
