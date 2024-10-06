@@ -23,6 +23,16 @@
     "dbye": "./dist/databye.js",
     "databye": "./dist/databye.js"
   },
+  "keywords": [
+    "anonymizer",
+    "database",
+    "db",
+    "fake",
+    "file",
+    "mock",
+    "obfuscate",
+    "pii"
+  ],
   "scripts": {
     "readme:gen": "cp -f ../../README.md ./",
     "clean": "rimraf dist deploy cli",
