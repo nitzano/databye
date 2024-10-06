@@ -19,6 +19,7 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 - [Example](#example)
 - [CLI](#cli)
   - [anon-col](#anon-col)
+- [Anonymizers](#anonymizers)
 - [✅ Supported Databases \& Files](#-supported-databases--files)
   - [Databases](#databases)
   - [Files](#files)
@@ -91,6 +92,16 @@ Commands:
   mask [options]                 mask a single column
   help [command]                 display help for command
 ```
+
+# Anonymizers
+
+1. 🎭 Mask - Masks some or all of the letters of the previous value.
+2. 🔀 Scramble - Scrambles the order of characters inside a string randomly.
+3. 🍀 Fake - Generate fake data instead of the previous value
+4. 🧽 Erase  - removes the entire data
+5. 👓 Blur – Adds random variation to numerical values while keeping them within a reasonable range.
+6. ✏️ Replace – Substitutes sensitive words or phrases with placeholders or predefined values.
+7. 🔐 Hash – Replaces the value with a cryptographic hash, making it irrecoverable.
 
 # ✅ Supported Databases & Files
 
