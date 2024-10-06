@@ -1,5 +1,12 @@
 # @databye/mongo
 
+## 1.0.3
+
+### Patch Changes
+
+- Updated dependencies [ef888f9]
+  - @databye/processor@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes

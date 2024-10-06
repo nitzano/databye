@@ -1,7 +1,7 @@
 {
   "name": "@databye/mssql",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "files": [
     "dist",
     "CHANGELOG.md"

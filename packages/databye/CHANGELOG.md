@@ -1,5 +1,15 @@
 # databye
 
+## 1.0.9
+
+### Patch Changes
+
+- @databye/cli@1.0.3
+- @databye/mongo@1.0.3
+- @databye/mariadb@1.0.3
+- @databye/mssql@1.0.3
+- @databye/postgres@1.0.3
+
 ## 1.0.8
 
 ### Patch Changes
