@@ -19,8 +19,9 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 - [Example](#example)
 - [CLI](#cli)
   - [anon-col](#anon-col)
-- [✅ Supported Databases](#-supported-databases)
-- [✅ Supported Files](#-supported-files)
+- [✅ Supported](#-supported)
+  - [Databases](#databases)
+  - [Files](#files)
 - [License](#license)
 
 
@@ -91,7 +92,9 @@ Commands:
   help [command]                 display help for command
 ```
 
-# ✅ Supported Databases
+# ✅ Supported 
+
+## Databases
 
 1. MongoDB 
 2. PostgresSQL
@@ -103,7 +106,7 @@ Commands:
 8. DynamoDB (Coming Soon)
 9. Redis (Coming Soon)
 
-# ✅ Supported Files 
+## Files 
 
 1. JSON (Coming Soon)
 2. CSV (Coming Soon)
