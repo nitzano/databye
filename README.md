@@ -46,14 +46,14 @@ yarn dlx databye <command> [options]
 
 # Basic Example
 
-1. Mask "firstName" in PostgresDB
+1. Mask "firstName" column in PostgresSQL database:
 ```
 npx databye anon-col mask -u postgresql:/localhost -db test -t users -c firstName
 
 // { "firstName": "John" } => { "firstName": "****" }
 ```
 
-2. Scramble "lastName" in MongoDB
+2. Scramble "lastName" column in a MongoDB database:
 ```
 npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastName
 
