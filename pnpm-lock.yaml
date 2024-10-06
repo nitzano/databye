@@ -325,18 +325,6 @@ importers:
       '@databye/cli':
         specifier: workspace:^
         version: link:../cli
-      '@databye/mariadb':
-        specifier: workspace:^
-        version: link:../databases/mariadb
-      '@databye/mongo':
-        specifier: workspace:^
-        version: link:../databases/mongo
-      '@databye/mssql':
-        specifier: workspace:^
-        version: link:../databases/mssql
-      '@databye/postgres':
-        specifier: workspace:^
-        version: link:../databases/postgres
       commander:
         specifier: ^12.1.0
         version: 12.1.0

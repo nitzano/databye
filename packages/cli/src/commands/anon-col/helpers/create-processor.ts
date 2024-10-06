@@ -3,6 +3,10 @@ import {
   createLogger,
   type ConnectionOptions,
 } from "@databye/common";
+import { MariaDatabaseProcessor } from "@databye/mariadb";
+import { MongoProcessor } from "@databye/mongo";
+import { MsSqlProcessor } from "@databye/mssql";
+import { PostgresProcessor } from "@databye/postgres";
 import { type DataBaseProcessor } from "@databye/processor";
 import { getProcessorEngineFromUri } from "../../../utils/get-processor-engine-from-uri.js";
 
@@ -30,33 +34,27 @@ export async function createProcessor(
     switch (engine) {
       case EngineType.Mongo: {
         logger.debug("creating mongo processor");
-        const mongo = await import("@databye/mongo");
         if (!connectionString) throw new Error("invalid connection string uri");
-        databaseProcessor = new mongo.MongoProcessor(connectionString);
+        databaseProcessor = new MongoProcessor(connectionString);
         break;
       }
 
       case EngineType.PostGres: {
         logger.debug("creating postgress processor");
-        const module = await import("@databye/postgres");
-        databaseProcessor = new module.PostgresProcessor(connectionOptions);
+        databaseProcessor = new PostgresProcessor(connectionOptions);
         break;
       }
 
       case EngineType.MariaDB:
       case EngineType.MySQL: {
         logger.debug("creating mariadb processor");
-        const module = await import("@databye/mariadb");
-        databaseProcessor = new module.MariaDatabaseProcessor(
-          connectionOptions
-        );
+        databaseProcessor = new MariaDatabaseProcessor(connectionOptions);
         break;
       }
 
       case EngineType.MSSQL: {
         logger.debug("creating mssql processor");
-        const module = await import("@databye/mssql");
-        databaseProcessor = new module.MsSqlProcessor(connectionOptions);
+        databaseProcessor = new MsSqlProcessor(connectionOptions);
         break;
       }
     }
