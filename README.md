@@ -15,18 +15,18 @@
 
 Databye is a command-line tool to anonymize and transform sensitive data in databases, files, and datasets without writing a single line of code. Supports various databases types and file formats. 
 
-- [How to use](#how-to-use)
-- [Basic Example](#basic-example)
-- [CLI](#cli)
-  - [anon-col](#anon-col)
-- [Anonymizers](#anonymizers)
-- [Supported Formats](#supported-formats)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Support](#support)
   - [Databases](#databases)
   - [Files](#files)
+- [Anonymizers](#anonymizers)
+- [CLI](#cli)
+  - [anon-col](#anon-col)
 - [License](#license)
 
 
-# How to use
+# Usage
 
 NPM:
 ```
@@ -44,7 +44,7 @@ yarn dlx databye <command> [options]
 ```
 
 
-# Basic Example
+# Examples
 
 1. Mask "firstName" column in PostgresSQL database:
 ```
@@ -60,6 +60,41 @@ npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastNa
 // { "lastName": "Smith" } => { "lastName": "hSmti" }
 ```
 
+# Support
+
+## Databases
+
+1. MongoDB 
+2. PostgresSQL
+3. MariaDB
+4. MySQL
+5. MSSQL
+6. Neo4J (Coming Soon)
+7. SQLite (Coming Soon)
+8. DynamoDB (Coming Soon)
+9. Redis (Coming Soon)
+
+## Files 
+
+1. JSON (Coming Soon)
+2. CSV (Coming Soon)
+3. XML (Coming Soon)
+4. XSLX (Coming Soon)
+5. Parquet (Coming Soon)
+6. YAML (Coming Soon)
+
+# Anonymizers
+
+1. 🎭 **Mask** - Masks some or all of the letters of the previous value.
+2. 🔀 **Scramble** - Scrambles the order of characters inside a string randomly.
+
+Future support:
+
+1. 🍀 **Fake** - Generate fake data instead of the previous value
+2. 🧽 **Erase**  - removes the entire data
+3. 👓 **Blur** – Adds random variation to numerical values while keeping them within a reasonable range.
+4. ✏️ **Replace** – Substitutes sensitive words or phrases with placeholders or predefined values.
+5. 🔐 **Hash** – Replaces the value with a cryptographic hash, making it irrecoverable.
 
 # CLI
 
@@ -91,41 +126,9 @@ Commands:
   help [command]                 display help for command
 ```
 
-# Anonymizers
 
-1. 🎭 **Mask** - Masks some or all of the letters of the previous value.
-2. 🔀 **Scramble** - Scrambles the order of characters inside a string randomly.
 
-Future support:
 
-1. 🍀 **Fake** - Generate fake data instead of the previous value
-2. 🧽 **Erase**  - removes the entire data
-3. 👓 **Blur** – Adds random variation to numerical values while keeping them within a reasonable range.
-4. ✏️ **Replace** – Substitutes sensitive words or phrases with placeholders or predefined values.
-5. 🔐 **Hash** – Replaces the value with a cryptographic hash, making it irrecoverable.
-
-# Supported Formats
-
-## Databases
-
-1. MongoDB 
-2. PostgresSQL
-3. MariaDB
-4. MySQL
-5. MSSQL
-6. Neo4J (Coming Soon)
-7. SQLite (Coming Soon)
-8. DynamoDB (Coming Soon)
-9. Redis (Coming Soon)
-
-## Files 
-
-1. JSON (Coming Soon)
-2. CSV (Coming Soon)
-3. XML (Coming Soon)
-4. XSLX (Coming Soon)
-5. Parquet (Coming Soon)
-6. YAML (Coming Soon)
 
 # License
 
