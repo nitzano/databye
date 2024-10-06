@@ -13,7 +13,7 @@
 
 </div>
 
-Databye is a command-line tool to anonymize and transform sensitive data in databases, files, and datasets. It supports various databases types and file formats.
+Databye is a command-line tool to anonymize and transform sensitive data in databases, files, and datasets without writing a single line of code. It supports various databases types and file formats. 
 
 
 # Usage
@@ -33,7 +33,7 @@ YARN:
 yarn dlx databye <command> [options]
 ```
 
-# Install (Optional)
+## Local install
 
 You can also add `databye` locally
 
@@ -43,6 +43,36 @@ npm i --save-dev databye
 yarn add -D databye
 
 pnpm add -D databye
+```
+
+# CLI
+
+## anon-col 
+
+Anonymize a single column
+
+```
+Usage: databye anon-col [options] [command]
+
+Anonymize a single column in a table
+
+Options:
+  -e --engine <engine>           Engine (choices: "postgres", "mongo", "mariadb", "mysql", "mssql")
+  --confirm                      Confirm before running (default: true)
+  --no-confirm                   skip confirmation
+  -db --database <databaseName>  Database name
+  -col --column <columnName>     Column name
+  -t --table <tableName>         Table name
+  -pass --password <password>    database password
+  -srv --server <serverName>     server to connect to
+  -u --uri <connectionString>    Connection string
+  -usr --user <userName>         Username to use
+  -h, --help                     display help for command
+
+Commands:
+  scramble                       scramble a single column
+  mask [options]                 mask a single column
+  help [command]                 display help for command
 ```
 
 # ✅ Supported Databases
