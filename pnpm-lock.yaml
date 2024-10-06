@@ -51,6 +51,18 @@ importers:
       '@databye/common':
         specifier: workspace:^
         version: link:../common
+      '@databye/mariadb':
+        specifier: workspace:^
+        version: link:../databases/mariadb
+      '@databye/mongo':
+        specifier: workspace:^
+        version: link:../databases/mongo
+      '@databye/mssql':
+        specifier: workspace:^
+        version: link:../databases/mssql
+      '@databye/postgres':
+        specifier: workspace:^
+        version: link:../databases/postgres
       '@databye/processor':
         specifier: workspace:^
         version: link:../processor
@@ -75,19 +87,6 @@ importers:
       ora:
         specifier: ^8.0.1
         version: 8.1.0
-    optionalDependencies:
-      '@databye/mariadb':
-        specifier: workspace:^
-        version: link:../databases/mariadb
-      '@databye/mongo':
-        specifier: workspace:^
-        version: link:../databases/mongo
-      '@databye/mssql':
-        specifier: workspace:^
-        version: link:../databases/mssql
-      '@databye/postgres':
-        specifier: workspace:^
-        version: link:../databases/postgres
     devDependencies:
       '@tsconfig/node20':
         specifier: ^20.1.4
