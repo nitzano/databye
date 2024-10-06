@@ -7,7 +7,7 @@
 - Updated dependencies [957eb0e]
   - @databye/common@1.0.2
   - @databye/anonymizers@1.0.2
-  - @databye/base-processor@1.0.2
+  - @databye/processor@1.0.2
 
 ## 1.0.1
 
@@ -16,7 +16,7 @@
 - Updated dependencies [a6d3f7b]
   - @databye/common@1.0.1
   - @databye/anonymizers@1.0.1
-  - @databye/base-processor@1.0.1
+  - @databye/processor@1.0.1
 
 ## 1.0.0
 
@@ -29,7 +29,7 @@
 - Updated dependencies [b15ea61]
   - @databye/anonymizers@1.0.0
   - @databye/common@1.0.0
-  - @databye/base-processor@1.0.0
+  - @databye/processor@1.0.0
 
 ## 0.0.1
 
