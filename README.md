@@ -15,8 +15,18 @@
 
 Databye is a command-line tool to anonymize and transform sensitive data in databases, files, and datasets without writing a single line of code. It supports various databases types and file formats. 
 
+- [Usage](#usage)
+- [Example](#example)
+- [CLI](#cli)
+  - [anon-col](#anon-col)
+- [✅ Supported Databases](#-supported-databases)
+- [✅ Supported Files](#-supported-files)
+- [License](#license)
+
 
 # Usage
+
+No installation is required 
 
 NPM:
 ```
@@ -33,17 +43,23 @@ YARN:
 yarn dlx databye <command> [options]
 ```
 
-## Local install
 
-You can also add `databye` locally
+# Example
 
+1. Mask "firstName" in PostgresDB
 ```
-npm i --save-dev databye
+npx databye anon-col mask -u postgresql:/localhost -db test -t users -c firstName
 
-yarn add -D databye
-
-pnpm add -D databye
+// { "firstName": "John" } => { "firstName": "****" }
 ```
+
+2. Scramble "lastName" in MongoDB
+```
+npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastName
+
+// { "lastName": "Smith" } => { "lastName": "hSmti" }
+```
+
 
 # CLI
 
@@ -95,7 +111,6 @@ Commands:
 4. XSLX (Coming Soon)
 5. Parquet (Coming Soon)
 6. YAML (Coming Soon)
-
 
 # License
 
