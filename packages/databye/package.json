@@ -48,10 +48,6 @@
   },
   "dependencies": {
     "@databye/cli": "workspace:^",
-    "@databye/mariadb": "workspace:^",
-    "@databye/mongo": "workspace:^",
-    "@databye/mssql": "workspace:^",
-    "@databye/postgres": "workspace:^",
     "commander": "^12.1.0",
     "winston": "^3.13.0"
   },
