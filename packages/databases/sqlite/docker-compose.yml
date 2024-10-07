@@ -1,18 +1,8 @@
-
 services:
-  db:
-    image: mariadb
-    restart: always
-    environment:
-      MARIADB_ROOT_PASSWORD: root123
-      MARIADB_USER: example
-      MARIADB_PASSWORD: example
-      MYSQL_DATABASE: test
-    ports:
-      - "3306:3306"
-
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080
+  sqlite_editor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./db:/app/db
