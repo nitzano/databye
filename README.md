@@ -13,13 +13,14 @@
 
 </div>
 
-Databye is a command-line tool to anonymize and transform sensitive data in databases, files, and datasets without writing a single line of code. Supports various databases types and file formats. 
+A command-line tool to anonymize and transform sensitive data in databases, files, and datasets without writing a single line of code. Supports various databases types and file formats. 
 
 - [Usage](#usage)
 - [Examples](#examples)
   - [PostgresSQL](#postgressql)
-  - [Mongo](#mongo)
+  - [MongoDB](#mongodb)
   - [SQLite](#sqlite)
+  - [CSV](#csv)
 - [Anonymizers](#anonymizers)
 - [Support](#support)
   - [Databases](#databases)
@@ -46,16 +47,17 @@ yarn dlx databye <command> [options]
 # Examples
 
 ## PostgresSQL
-Mask `firstName` column in `users` table in `test` db
+
+Mask `firstName` column in `users` table in `test` db:
 ```
 npx databye anon-col mask -u postgresql:/localhost -db test -t users -c firstName
 
 // { "firstName": "John" } => { "firstName": "****" }
 ```
 
-## Mongo
+## MongoDB
 
-Scramble `lastName` column in `users` table in `test` db
+Scramble `lastName` column in `users` table in `test` db:
 ```
 npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastName
 
@@ -64,9 +66,16 @@ npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastNa
 
 ## SQLite
 
-Mask `firstName` column in `users` table in `dev.db`
+Mask `firstName` column in `users` table in `dev.db`:
 ```
 databye anon-col mask -e sqlite -f /home/dev.db -t users -col firstName
+```
+
+## CSV
+
+Mask `email` column in `file.csv`:
+```
+anon-col mask  -e csv -f /home/file.csv -col email
 ```
 
 # Anonymizers
@@ -74,7 +83,7 @@ databye anon-col mask -e sqlite -f /home/dev.db -t users -col firstName
 1. 🎭 **Mask** - Masks some or all of the letters of the previous value.
 2. 🔀 **Scramble** - Scrambles the order of characters inside a string randomly.
 
-Future support:
+Coming Soon:
 
 1. 🍀 **Fake** - Generate fake data instead of the previous value
 2. 🧽 **Erase**  - removes the entire data
@@ -99,8 +108,8 @@ Future support:
 
 ## Files 
 
-1. JSON (Coming Soon)
-2. CSV (Coming Soon)
+1. CSV 
+2. JSON (Coming Soon)
 3. XML (Coming Soon)
 4. XSLX (Coming Soon)
 5. Parquet (Coming Soon)
