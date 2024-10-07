@@ -11,7 +11,8 @@ async function run() {
   if (connectionString) {
     const client: Knex = knex({
       client: "sqlite",
-      connection: connectionString,
+      connection: { filename: connectionString },
+      useNullAsDefault: true,
     });
     try {
       await client.schema.dropTableIfExists(sampleTableName);
