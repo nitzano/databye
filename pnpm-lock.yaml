@@ -66,6 +66,9 @@ importers:
       '@databye/processor':
         specifier: workspace:^
         version: link:../processor
+      '@databye/sqlite':
+        specifier: ^0.0.1
+        version: 0.0.1
       chalk:
         specifier: ^5.3.0
         version: 5.3.0
@@ -710,6 +713,21 @@ packages:
 
   '@dabh/diagnostics@2.0.3':
     resolution: {integrity: sha512-hrlQOIi7hAfzsMqlGSFyVucrx38O+j6wiGOf//H2ecvIEqYN4ADBSS2iLMh5UFyDunCNniUIPk/q3riFv45xRA==}
+
+  '@databye/anonymizers@1.0.2':
+    resolution: {integrity: sha512-cPOjwPtkrWZJUAUaHJnryp21L9gcTkYGARLCLWAt5KSXVcm8OUbmiyvf29EapC8htClYMj1DXjn9S52RlWWpSA==}
+
+  '@databye/common@1.0.2':
+    resolution: {integrity: sha512-8E3Ocbm1n0uy7aDBnxOnKqiM3rNXu7smyp3QUFIi/7fEcFVZxe9ajj/bdgeguXN8YMBkZaSKt8KOz6ojAdBSWQ==}
+
+  '@databye/knex-processor@1.0.3':
+    resolution: {integrity: sha512-2wOaf6l36T+iOAhGjNEfAW4tfFD8XEN66wBppTqghnuLESRW0aGXwlUliw7t3GFppOMHWbkF5hCSMLjoG2+j8g==}
+
+  '@databye/processor@1.0.3':
+    resolution: {integrity: sha512-l3sY4vBQJ6mto8QCyBBpydfB9fSGzHoqdvBJU5xIwQgqSy6T0byXrQgXyCInMlV4/ZuSdVg/0XbSmEu7GefenA==}
+
+  '@databye/sqlite@0.0.1':
+    resolution: {integrity: sha512-ROGa5HZL1CUhhTZXOSQJXzxOunQ/WPICIUIk/0Vb3lVWlubXKhno/R4BkOWKgPC6vQ0KeexQbwebZ9xMrojDTQ==}
 
   '@esbuild/aix-ppc64@0.23.1':
     resolution: {integrity: sha512-6VhYk1diRqrhBAqpJEdjASR/+WVRtfjpqKuNw11cLiaWpAT/Uu+nokB+UJnevzy/P9C/ty6AOe0dwueMrGh/iQ==}
@@ -3562,6 +3580,55 @@ snapshots:
       colorspace: 1.1.4
       enabled: 2.0.0
       kuler: 2.0.0
+
+  '@databye/anonymizers@1.0.2':
+    dependencies:
+      '@databye/common': 1.0.2
+      chance: 1.1.12
+      lodash-es: 4.17.21
+
+  '@databye/common@1.0.2':
+    dependencies:
+      rosie: 2.1.1
+      winston: 3.14.2
+
+  '@databye/knex-processor@1.0.3(sqlite3@5.1.7)':
+    dependencies:
+      '@databye/anonymizers': 1.0.2
+      '@databye/common': 1.0.2
+      '@databye/processor': 1.0.3
+      dotenv: 16.4.5
+      knex: 3.1.0(sqlite3@5.1.7)
+    transitivePeerDependencies:
+      - better-sqlite3
+      - mysql
+      - mysql2
+      - pg
+      - pg-native
+      - sqlite3
+      - supports-color
+      - tedious
+
+  '@databye/processor@1.0.3':
+    dependencies:
+      '@databye/anonymizers': 1.0.2
+      '@databye/common': 1.0.2
+
+  '@databye/sqlite@0.0.1':
+    dependencies:
+      '@databye/common': 1.0.2
+      '@databye/knex-processor': 1.0.3(sqlite3@5.1.7)
+      knex: 3.1.0(sqlite3@5.1.7)
+      sqlite3: 5.1.7
+    transitivePeerDependencies:
+      - better-sqlite3
+      - bluebird
+      - mysql
+      - mysql2
+      - pg
+      - pg-native
+      - supports-color
+      - tedious
 
   '@esbuild/aix-ppc64@0.23.1':
     optional: true
