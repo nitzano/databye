@@ -50,7 +50,7 @@ yarn dlx databye <command> [options]
 
 Mask `firstName` column in `users` table in `test` db:
 ```
-anon-col mask -u postgresql:/localhost -db test -t users -col firstName
+npx databye anon-col mask -u postgresql:/localhost -db test -t users -col firstName
 
 // { "firstName": "John" } => { "firstName": "****" }
 ```
@@ -59,7 +59,7 @@ anon-col mask -u postgresql:/localhost -db test -t users -col firstName
 
 Scramble `lastName` column in `users` table in `test` db:
 ```
-anon-col scramble -u mongodb://localhost -db test -t users -col lastName
+npx databye anon-col scramble -u mongodb://localhost -db test -t users -col lastName
 
 // { "lastName": "Smith" } => { "lastName": "hSmti" }
 ```
@@ -68,14 +68,14 @@ anon-col scramble -u mongodb://localhost -db test -t users -col lastName
 
 Mask `firstName` column in `users` table in `dev.db`:
 ```
-anon-col mask -e sqlite -f /home/dev.db -t users -col firstName
+npx databye anon-col mask -e sqlite -f /home/dev.db -t users -col firstName
 ```
 
 ## CSV
 
 Mask `email` column in `file.csv`:
 ```
-anon-col mask  -e csv -f /home/file.csv -col email
+npx databye anon-col mask  -e csv -f /home/file.csv -col email
 ```
 
 # Anonymizers
