@@ -83,7 +83,7 @@ anon-col mask  -e csv -f /home/file.csv -col email
 1. 🎭 **Mask** - Masks some or all of the letters of the previous value.
 2. 🔀 **Scramble** - Scrambles the order of characters inside a string randomly.
 
-Future support:
+Coming Soon:
 
 1. 🍀 **Fake** - Generate fake data instead of the previous value
 2. 🧽 **Erase**  - removes the entire data
@@ -108,8 +108,8 @@ Future support:
 
 ## Files 
 
-1. JSON (Coming Soon)
-2. CSV (Coming Soon)
+1. CSV 
+2. JSON (Coming Soon)
 3. XML (Coming Soon)
 4. XSLX (Coming Soon)
 5. Parquet (Coming Soon)
