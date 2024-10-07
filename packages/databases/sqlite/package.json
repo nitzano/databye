@@ -1,7 +1,7 @@
 {
   "name": "@databye/sqlite",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "files": [
     "dist",
     "CHANGELOG.md"
