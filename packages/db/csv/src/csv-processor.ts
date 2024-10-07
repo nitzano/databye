@@ -10,10 +10,6 @@ export class CSVProcessor extends DataBaseProcessor {
     super();
   }
 
-  async getColumnType(columnInfo: ColumnInfo): Promise<ColumnType> {
-    return ColumnType.Unknown;
-  }
-
   async processColumn(
     columnInfo: ColumnInfo,
     columnType: ColumnType,
@@ -34,16 +30,16 @@ function processCsv(
   anonymizer: Anonymizer
 ) {
   // Read the CSV file asynchronously
-  const csvFile = readFileSync(filePath, "utf-8");
+  const csvFileString = readFileSync(filePath, "utf-8");
 
   // Parse the CSV data
-  const results = parse(csvFile, {
+  const csvFile = parse(csvFileString, {
     header: true,
     dynamicTyping: true,
   });
 
   // Mask the specified column
-  results.data.forEach((row: any) => {
+  csvFile.data.forEach((row: any) => {
     if (row[columnName]) {
       // Anonymize
       const anonymizedValue: any = anonymizer.anonymize(
@@ -55,7 +51,7 @@ function processCsv(
   });
 
   // Convert back to CSV
-  const updatedCsv = unparse(results.data);
+  const updatedCsv = unparse(csvFile.data);
 
   // Write the updated CSV to a file asynchronously
   writeFileSync(filePath, updatedCsv);
