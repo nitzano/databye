@@ -27,6 +27,9 @@
     "db:seed": "tsx -r dotenv/config ./src/test/scripts/seed-db.ts dotenv_config_path=.dev.env"
   },
   "dependencies": {
-    "@databye/common": "workspace:^"
+    "@databye/common": "workspace:^",
+    "@databye/processor": "workspace:^",
+    "@databye/anonymizers": "workspace:^"
+    
   }
 }
