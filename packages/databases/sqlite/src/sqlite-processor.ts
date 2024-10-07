@@ -18,6 +18,7 @@ export class SQLiteProcessor extends KnexProcessor {
 
     return knex({
       client: "sqlite3",
+      useNullAsDefault: true,
       connection: {
         filename:
           this.connectionOptions.filePath! ??
