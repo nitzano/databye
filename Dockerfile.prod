@@ -10,12 +10,12 @@ COPY packages/anonymizers/package.json /app/packages/anonymizers/package.json
 COPY packages/cli/package.json /app/packages/cli/package.json
 COPY packages/common/package.json /app/packages/common/package.json
 
-COPY packages/databases/base-processor/package.json /app/databases/base-processor/package.json
-COPY packages/databases/knex-processor/package.json /app/databases/knex-processor/package.json
-COPY packages/databases/mariadb/package.json /app/databases/mariadb/package.json
-COPY packages/databases/mongo/package.json /app/databases/mongo/package.json
-COPY packages/databases/mssql/package.json /app/databases/mssql/package.json
-COPY packages/databases/postgres/package.json /app/databases/postgres/package.json
+COPY packages/db/base-processor/package.json /app/db/base-processor/package.json
+COPY packages/db/knex-processor/package.json /app/db/knex-processor/package.json
+COPY packages/db/mariadb/package.json /app/db/mariadb/package.json
+COPY packages/db/mongo/package.json /app/db/mongo/package.json
+COPY packages/db/mssql/package.json /app/db/mssql/package.json
+COPY packages/db/postgres/package.json /app/db/postgres/package.json
 
 RUN pnpm i
 
