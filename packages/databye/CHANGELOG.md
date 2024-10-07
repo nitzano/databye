@@ -1,5 +1,16 @@
 # databye
 
+## 1.1.0
+
+### Minor Changes
+
+- 8f0ac4e: added sqlite support
+
+### Patch Changes
+
+- Updated dependencies [8f0ac4e]
+  - @databye/cli@1.0.5
+
 ## 1.0.10
 
 ### Patch Changes
