@@ -17,6 +17,9 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 
 - [Usage](#usage)
 - [Examples](#examples)
+  - [PostgresSQL](#postgressql)
+  - [Mongo](#mongo)
+  - [SQLite](#sqlite)
 - [Anonymizers](#anonymizers)
 - [Support](#support)
   - [Databases](#databases)
@@ -28,36 +31,42 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 
 # Usage
 
-NPM:
+
 ```
+# npm
 npx databye <command> [options]
-```
 
-PNPM:
-```
+# pnpm
 pnpm dlx databye <command> [options]
-```
 
-YARN:
-```
+# yarn
 yarn dlx databye <command> [options]
 ```
 
-
 # Examples
 
-1. Mask "firstName" column in PostgresSQL database:
+## PostgresSQL
+Mask `firstName` column in `users` table in `test` db
 ```
 npx databye anon-col mask -u postgresql:/localhost -db test -t users -c firstName
 
 // { "firstName": "John" } => { "firstName": "****" }
 ```
 
-2. Scramble "lastName" column in a MongoDB database:
+## Mongo
+
+Scramble `lastName` column in `users` table in `test` db
 ```
 npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastName
 
 // { "lastName": "Smith" } => { "lastName": "hSmti" }
+```
+
+## SQLite
+
+Mask `firstName` column in `users` table in `dev.db`
+```
+databye anon-col mask -e sqlite -f /home/dev.db -t users -col firstName
 ```
 
 # Anonymizers
@@ -82,10 +91,11 @@ Future support:
 3. MariaDB
 4. MySQL
 5. MSSQL
-6. Neo4J (Coming Soon)
-7. SQLite (Coming Soon)
+6. SQLite
+7. Neo4J (Coming Soon)
 8. DynamoDB (Coming Soon)
 9. Redis (Coming Soon)
+10. CouchDB (Coming Soon)
 
 ## Files 
 
@@ -110,15 +120,16 @@ Usage: databye anon-col [options] [command]
 Anonymize a single column in a table
 
 Options:
-  -e --engine <engine>           Engine (choices: "postgres", "mongo", "mariadb", "mysql", "mssql")
+  -e --engine <engine>           Engine (choices: "postgres", "mongo", "mariadb", "mysql", "mssql", "sqlite")
   --confirm                      Confirm before running (default: true)
   --no-confirm                   skip confirmation
-  -db --database <databaseName>  Database name
-  -col --column <columnName>     Column name
   -t --table <tableName>         Table name
+  -col --column <columnName>     Column name
+  -db --database <databaseName>  Database name
   -pass --password <password>    database password
   -srv --server <serverName>     server to connect to
   -u --uri <connectionString>    Connection string
+  -f --file <filePath>           DB File path
   -usr --user <userName>         Username to use
   -h, --help                     display help for command
 
@@ -127,10 +138,6 @@ Commands:
   mask [options]                 mask a single column
   help [command]                 display help for command
 ```
-
-
-
-
 
 # License
 

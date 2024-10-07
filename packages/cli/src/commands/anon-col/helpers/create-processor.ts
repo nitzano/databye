@@ -8,6 +8,7 @@ import { MongoProcessor } from "@databye/mongo";
 import { MsSqlProcessor } from "@databye/mssql";
 import { PostgresProcessor } from "@databye/postgres";
 import { type DataBaseProcessor } from "@databye/processor";
+import { SQLiteProcessor } from "@databye/sqlite";
 import { getProcessorEngineFromUri } from "../../../utils/get-processor-engine-from-uri.js";
 
 const logger = createLogger();
@@ -55,6 +56,12 @@ export async function createProcessor(
       case EngineType.MSSQL: {
         logger.debug("creating mssql processor");
         databaseProcessor = new MsSqlProcessor(connectionOptions);
+        break;
+      }
+
+      case EngineType.SQLite: {
+        logger.debug("creating sqlite processor");
+        databaseProcessor = new SQLiteProcessor(connectionOptions);
         break;
       }
     }
