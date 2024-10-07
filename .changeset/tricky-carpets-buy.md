@@ -1,5 +1,0 @@
----
-"@databye/csv": patch
----
-
-init

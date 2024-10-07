@@ -1,5 +1,12 @@
 # databye
 
+## 1.1.1
+
+### Patch Changes
+
+- Updated dependencies [2d10e45]
+  - @databye/cli@1.0.6
+
 ## 1.1.0
 
 ### Minor Changes
