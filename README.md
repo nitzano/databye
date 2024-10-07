@@ -95,6 +95,7 @@ Future support:
 7. Neo4J (Coming Soon)
 8. DynamoDB (Coming Soon)
 9. Redis (Coming Soon)
+10. CouchDB (Coming Soon)
 
 ## Files 
 
