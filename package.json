@@ -2,6 +2,7 @@
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",  
   "license": "AGPL-3.0-only",
   "scripts": {
+    "dy": "pnpm -F databye start",
     "build:all": "pnpm -r build",
     "change:add": "pnpm changeset",
     "changeset:publish": "pnpm changeset publish",
