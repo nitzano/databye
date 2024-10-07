@@ -1,5 +1,11 @@
 # databye
 
+## 1.2.1
+
+### Patch Changes
+
+- 9fa6d84: fix readme examples
+
 ## 1.2.0
 
 ### Minor Changes
