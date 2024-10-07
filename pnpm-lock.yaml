@@ -51,6 +51,9 @@ importers:
       '@databye/common':
         specifier: workspace:^
         version: link:../common
+      '@databye/csv':
+        specifier: workspace:^
+        version: link:../db/csv
       '@databye/mariadb':
         specifier: workspace:^
         version: link:../db/mariadb
@@ -231,7 +234,7 @@ importers:
         version: 16.4.5
       knex:
         specifier: ^3.1.0
-        version: 3.1.0(sqlite3@5.1.7)
+        version: 3.1.0(pg@8.13.0)
     devDependencies:
       '@tsconfig/node20':
         specifier: ^20.1.4

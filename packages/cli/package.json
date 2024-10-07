@@ -28,6 +28,7 @@
   "dependencies": {
     "@databye/anonymizers": "workspace:^",
     "@databye/common": "workspace:^",
+    "@databye/csv": "workspace:^",
     "@databye/mariadb": "workspace:^",
     "@databye/mongo": "workspace:^",
     "@databye/mssql": "workspace:^",
