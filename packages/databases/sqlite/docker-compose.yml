@@ -6,3 +6,5 @@ services:
     tty: true
     volumes:
       - ./db:/app/db
+    environment:
+      - SQLITE_HOME=/app/db
