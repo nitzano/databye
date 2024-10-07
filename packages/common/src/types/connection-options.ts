@@ -5,7 +5,7 @@ export type ConnectionOptions = {
   connectionString?: string;
   databaseName: string;
   engine?: EngineType;
-  fileName?: string;
+  filePath?: string;
   password?: string;
   serverName?: string;
   tableName: string;

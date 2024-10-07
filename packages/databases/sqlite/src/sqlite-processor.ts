@@ -11,7 +11,7 @@ export class SQLiteProcessor extends KnexProcessor {
   buildClient(): Knex {
     if (
       !this.connectionOptions.connectionString &&
-      !this.connectionOptions.fileName
+      !this.connectionOptions.filePath
     ) {
       throw new Error("connection string or file name are required");
     }
@@ -20,7 +20,7 @@ export class SQLiteProcessor extends KnexProcessor {
       client: "sqlite3", // or 'better-sqlite3'
       connection: {
         filename:
-          this.connectionOptions.fileName! ??
+          this.connectionOptions.filePath! ??
           this.connectionOptions.connectionString!,
       },
     });
