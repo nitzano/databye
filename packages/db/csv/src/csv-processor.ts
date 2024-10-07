@@ -1,0 +1,62 @@
+import { ColumnType, type Anonymizer } from "@databye/anonymizers";
+import { createLogger } from "@databye/common";
+import { DataBaseProcessor, type ColumnInfo } from "@databye/processor";
+import { readFileSync, writeFileSync } from "fs";
+import { parse, unparse } from "papaparse";
+const logger = createLogger();
+
+export class CSVProcessor extends DataBaseProcessor {
+  constructor(private readonly filePath: string) {
+    super();
+  }
+
+  async getColumnType(columnInfo: ColumnInfo): Promise<ColumnType> {
+    return ColumnType.Unknown;
+  }
+
+  async processColumn(
+    columnInfo: ColumnInfo,
+    columnType: ColumnType,
+    anonymizer: Anonymizer
+  ) {
+    processCsv(this.filePath, columnType, columnInfo.columnName, anonymizer);
+  }
+  catch(error: unknown) {
+    logger.error(error);
+  }
+}
+
+// Function to process the CSV and mask values in the specified column
+function processCsv(
+  filePath: string,
+  columnType: ColumnType,
+  columnName: string,
+  anonymizer: Anonymizer
+) {
+  // Read the CSV file asynchronously
+  const csvFile = readFileSync(filePath, "utf-8");
+
+  // Parse the CSV data
+  const results = parse(csvFile, {
+    header: true,
+    dynamicTyping: true,
+  });
+
+  // Mask the specified column
+  results.data.forEach((row: any) => {
+    if (row[columnName]) {
+      // Anonymize
+      const anonymizedValue: any = anonymizer.anonymize(
+        row[columnName],
+        columnType
+      );
+      row[columnName] = anonymizedValue;
+    }
+  });
+
+  // Convert back to CSV
+  const updatedCsv = unparse(results.data);
+
+  // Write the updated CSV to a file asynchronously
+  writeFileSync(filePath, updatedCsv);
+}

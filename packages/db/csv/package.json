@@ -13,6 +13,7 @@
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^22.7.4",
+    "@types/papaparse": "^5.3.14",
     "dotenv": "^16.4.5",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
@@ -27,9 +28,9 @@
     "db:seed": "tsx -r dotenv/config ./src/test/scripts/seed-db.ts dotenv_config_path=.dev.env"
   },
   "dependencies": {
+    "@databye/anonymizers": "workspace:^",
     "@databye/common": "workspace:^",
     "@databye/processor": "workspace:^",
-    "@databye/anonymizers": "workspace:^"
-    
+    "papaparse": "^5.4.1"
   }
 }
