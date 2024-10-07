@@ -1,12 +1,13 @@
-import {type EngineType} from './engine-type.js';
+import { type EngineType } from "./engine-type.js";
 
 export type ConnectionOptions = {
-	columnName: string;
-	databaseName: string;
-	password?: string;
-	serverName?: string;
-	tableName: string;
-	connectionString?: string;
-	userName?: string;
-	engine?: EngineType;
+  columnName: string;
+  connectionString?: string;
+  databaseName: string;
+  engine?: EngineType;
+  fileName?: string;
+  password?: string;
+  serverName?: string;
+  tableName: string;
+  userName?: string;
 };
