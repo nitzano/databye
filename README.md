@@ -18,7 +18,7 @@ Databye is a command-line tool to anonymize and transform sensitive data in data
 - [Usage](#usage)
 - [Examples](#examples)
   - [PostgresSQL](#postgressql)
-  - [Mongo](#mongo)
+  - [MongoDB](#mongodb)
   - [SQLite](#sqlite)
   - [CSV](#csv)
 - [Anonymizers](#anonymizers)
@@ -47,6 +47,7 @@ yarn dlx databye <command> [options]
 # Examples
 
 ## PostgresSQL
+
 Mask `firstName` column in `users` table in `test` db:
 ```
 npx databye anon-col mask -u postgresql:/localhost -db test -t users -c firstName
@@ -54,7 +55,7 @@ npx databye anon-col mask -u postgresql:/localhost -db test -t users -c firstNam
 // { "firstName": "John" } => { "firstName": "****" }
 ```
 
-## Mongo
+## MongoDB
 
 Scramble `lastName` column in `users` table in `test` db:
 ```
