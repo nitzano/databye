@@ -1,5 +1,14 @@
 # @databye/cli
 
+## 1.0.6
+
+### Patch Changes
+
+- 2d10e45: bind csv to cli
+- Updated dependencies [2d10e45]
+- Updated dependencies [3ac90ee]
+  - @databye/csv@0.0.1
+
 ## 1.0.5
 
 ### Patch Changes
