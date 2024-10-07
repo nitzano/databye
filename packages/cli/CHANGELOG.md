@@ -1,5 +1,11 @@
 # @databye/cli
 
+## 1.0.5
+
+### Patch Changes
+
+- 8f0ac4e: add sqlite as dep
+
 ## 1.0.4
 
 ### Patch Changes
