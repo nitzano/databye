@@ -1,5 +1,11 @@
 # databye
 
+## 1.2.0
+
+### Minor Changes
+
+- 5fb251a: allow to anonymize csv files
+
 ## 1.1.1
 
 ### Patch Changes
