@@ -53,16 +53,16 @@ importers:
         version: link:../common
       '@databye/mariadb':
         specifier: workspace:^
-        version: link:../databases/mariadb
+        version: link:../db/mariadb
       '@databye/mongo':
         specifier: workspace:^
-        version: link:../databases/mongo
+        version: link:../db/mongo
       '@databye/mssql':
         specifier: workspace:^
-        version: link:../databases/mssql
+        version: link:../db/mssql
       '@databye/postgres':
         specifier: workspace:^
-        version: link:../databases/postgres
+        version: link:../db/postgres
       '@databye/processor':
         specifier: workspace:^
         version: link:../processor
@@ -141,7 +141,69 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/databases/knex-processor:
+  packages/databye:
+    dependencies:
+      '@databye/cli':
+        specifier: workspace:^
+        version: link:../cli
+      commander:
+        specifier: ^12.1.0
+        version: 12.1.0
+      winston:
+        specifier: ^3.13.0
+        version: 3.14.2
+    devDependencies:
+      '@tsconfig/node20':
+        specifier: ^20.1.4
+        version: 20.1.4
+      '@types/node':
+        specifier: ^22.7.4
+        version: 22.7.4
+      esbuild:
+        specifier: ^0.24.0
+        version: 0.24.0
+      pkg:
+        specifier: ^5.8.1
+        version: 5.8.1(encoding@0.1.13)
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.10
+      tsx:
+        specifier: ^4.19.1
+        version: 4.19.1
+      typescript:
+        specifier: ^5.4.3
+        version: 5.6.2
+
+  packages/db/csv:
+    dependencies:
+      '@databye/common':
+        specifier: workspace:^
+        version: link:../../common
+    devDependencies:
+      '@tsconfig/node20':
+        specifier: ^20.1.4
+        version: 20.1.4
+      '@types/node':
+        specifier: ^22.7.4
+        version: 22.7.4
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.10
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.7.4)(typescript@5.6.2)
+      tsx:
+        specifier: ^4.19.1
+        version: 4.19.1
+      typescript:
+        specifier: ^5.4.3
+        version: 5.6.2
+
+  packages/db/knex-processor:
     dependencies:
       '@databye/anonymizers':
         specifier: workspace:^
@@ -172,7 +234,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/databases/mariadb:
+  packages/db/mariadb:
     dependencies:
       '@databye/common':
         specifier: workspace:^
@@ -206,7 +268,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/databases/mongo:
+  packages/db/mongo:
     dependencies:
       '@databye/anonymizers':
         specifier: workspace:^
@@ -252,7 +314,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/databases/mssql:
+  packages/db/mssql:
     dependencies:
       '@databye/common':
         specifier: workspace:^
@@ -286,7 +348,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/databases/postgres:
+  packages/db/postgres:
     dependencies:
       '@databye/common':
         specifier: workspace:^
@@ -323,7 +385,7 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
-  packages/databases/sqlite:
+  packages/db/sqlite:
     dependencies:
       '@databye/common':
         specifier: workspace:^
@@ -353,40 +415,6 @@ importers:
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.7.4)(typescript@5.6.2)
-      tsx:
-        specifier: ^4.19.1
-        version: 4.19.1
-      typescript:
-        specifier: ^5.4.3
-        version: 5.6.2
-
-  packages/databye:
-    dependencies:
-      '@databye/cli':
-        specifier: workspace:^
-        version: link:../cli
-      commander:
-        specifier: ^12.1.0
-        version: 12.1.0
-      winston:
-        specifier: ^3.13.0
-        version: 3.14.2
-    devDependencies:
-      '@tsconfig/node20':
-        specifier: ^20.1.4
-        version: 20.1.4
-      '@types/node':
-        specifier: ^22.7.4
-        version: 22.7.4
-      esbuild:
-        specifier: ^0.24.0
-        version: 0.24.0
-      pkg:
-        specifier: ^5.8.1
-        version: 5.8.1(encoding@0.1.13)
-      rimraf:
-        specifier: ^5.0.5
-        version: 5.0.10
       tsx:
         specifier: ^4.19.1
         version: 4.19.1

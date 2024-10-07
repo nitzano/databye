@@ -1,0 +1,10 @@
+services:
+  sqlite_editor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./db:/app/db
+    environment:
+      SQLITE_HOME: /app/db
