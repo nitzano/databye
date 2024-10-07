@@ -1,4 +1,4 @@
-// Create a fake maria db
+// Create a fake sqlite db
 import { userFactory } from "@databye/common";
 import "dotenv/config"; // eslint-disable-line import/no-unassigned-import
 import knex, { type Knex } from "knex";
@@ -7,10 +7,10 @@ import process from "node:process";
 const sampleTableName = "users";
 
 async function run() {
-  const connectionString = process.env.MARIADB_DB_URI;
+  const connectionString = process.env.SQLITE_URI;
   if (connectionString) {
     const client: Knex = knex({
-      client: "mysql",
+      client: "sqlite",
       connection: connectionString,
     });
     try {
