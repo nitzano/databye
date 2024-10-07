@@ -1,5 +1,11 @@
 # databye
 
+## 1.2.2
+
+### Patch Changes
+
+- d05947b: fix readme examples again
+
 ## 1.2.1
 
 ### Patch Changes
