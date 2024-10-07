@@ -50,7 +50,7 @@ yarn dlx databye <command> [options]
 
 Mask `firstName` column in `users` table in `test` db:
 ```
-anon-col mask -u postgresql:/localhost -db test -t users -c firstName
+anon-col mask -u postgresql:/localhost -db test -t users -col firstName
 
 // { "firstName": "John" } => { "firstName": "****" }
 ```
@@ -59,7 +59,7 @@ anon-col mask -u postgresql:/localhost -db test -t users -c firstName
 
 Scramble `lastName` column in `users` table in `test` db:
 ```
-anon-col scramble -u mongodb://localhost -db test -t users -c lastName
+anon-col scramble -u mongodb://localhost -db test -t users -col lastName
 
 // { "lastName": "Smith" } => { "lastName": "hSmti" }
 ```
