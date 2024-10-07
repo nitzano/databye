@@ -11,6 +11,11 @@ export class CSVProcessor extends DataBaseProcessor {
     super();
   }
 
+  async getColumnType(_columnInfo: ColumnInfo): Promise<ColumnType> {
+    // everything is a string in csv
+    return ColumnType.String;
+  }
+
   async processColumn(
     columnInfo: ColumnInfo,
     columnType: ColumnType,
