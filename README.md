@@ -82,8 +82,8 @@ Future support:
 3. MariaDB
 4. MySQL
 5. MSSQL
-6. Neo4J (Coming Soon)
-7. SQLite (Coming Soon)
+6. SQLite
+7. Neo4J (Coming Soon)
 8. DynamoDB (Coming Soon)
 9. Redis (Coming Soon)
 
@@ -110,15 +110,16 @@ Usage: databye anon-col [options] [command]
 Anonymize a single column in a table
 
 Options:
-  -e --engine <engine>           Engine (choices: "postgres", "mongo", "mariadb", "mysql", "mssql")
+  -e --engine <engine>           Engine (choices: "postgres", "mongo", "mariadb", "mysql", "mssql", "sqlite")
   --confirm                      Confirm before running (default: true)
   --no-confirm                   skip confirmation
-  -db --database <databaseName>  Database name
-  -col --column <columnName>     Column name
   -t --table <tableName>         Table name
+  -col --column <columnName>     Column name
+  -db --database <databaseName>  Database name
   -pass --password <password>    database password
   -srv --server <serverName>     server to connect to
   -u --uri <connectionString>    Connection string
+  -f --file <filePath>           DB File path
   -usr --user <userName>         Username to use
   -h, --help                     display help for command
 
