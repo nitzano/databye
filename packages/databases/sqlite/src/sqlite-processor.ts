@@ -1,7 +1,7 @@
 import { KnexProcessor } from "@databye/knex-processor";
 import knex, { type Knex } from "knex";
 
-export class MariaDatabaseProcessor extends KnexProcessor {
+export class SQLiteProcessor extends KnexProcessor {
   /**
    * Build the mariadb client
    *
@@ -14,8 +14,10 @@ export class MariaDatabaseProcessor extends KnexProcessor {
     }
 
     return knex({
-      client: "mysql",
-      connection: this.connectionOptions.connectionString,
+      client: "sqlite3", // or 'better-sqlite3'
+      connection: {
+        filename: this.connectionOptions.connectionString,
+      },
     });
   }
 }

@@ -1,1 +1,1 @@
-export * from './mariadb-processor.js';
+export * from './sqlite-processor.js';
