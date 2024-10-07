@@ -5,4 +5,5 @@ export enum EngineType {
   MySQL = "mysql",
   MSSQL = "mssql",
   SQLite = "sqlite",
+  CSV = "csv",
 }

@@ -3,6 +3,7 @@ import {
   createLogger,
   type ConnectionOptions,
 } from "@databye/common";
+import { CSVProcessor } from "@databye/csv";
 import { MariaDatabaseProcessor } from "@databye/mariadb";
 import { MongoProcessor } from "@databye/mongo";
 import { MsSqlProcessor } from "@databye/mssql";
@@ -62,6 +63,15 @@ export async function createProcessor(
       case EngineType.SQLite: {
         logger.debug("creating sqlite processor");
         databaseProcessor = new SQLiteProcessor(connectionOptions);
+        break;
+      }
+
+      case EngineType.CSV: {
+        logger.debug("creating csv processor");
+        if (!connectionOptions.filePath) {
+          throw new Error("invalid file path");
+        }
+        databaseProcessor = new CSVProcessor(connectionOptions.filePath);
         break;
       }
     }
