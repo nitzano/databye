@@ -320,6 +320,37 @@ importers:
         specifier: ^5.4.3
         version: 5.6.2
 
+  packages/databases/sqlite:
+    dependencies:
+      '@databye/common':
+        specifier: workspace:^
+        version: link:../../common
+      '@databye/knex-processor':
+        specifier: workspace:^
+        version: link:../knex-processor
+      knex:
+        specifier: ^3.1.0
+        version: 3.1.0(pg@8.13.0)
+    devDependencies:
+      '@tsconfig/node20':
+        specifier: ^20.1.4
+        version: 20.1.4
+      '@types/node':
+        specifier: ^22.7.4
+        version: 22.7.4
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.10
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.7.4)(typescript@5.6.2)
+      typescript:
+        specifier: ^5.4.3
+        version: 5.6.2
+
   packages/databye:
     dependencies:
       '@databye/cli':

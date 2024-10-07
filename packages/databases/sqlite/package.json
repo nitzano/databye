@@ -1,0 +1,32 @@
+{
+  "name": "@databye/sqlite",
+  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
+  "version": "0.0.0",
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.4",
+    "dotenv": "^16.4.5",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "db:seed": "node --no-warnings=ExperimentalWarning --loader ts-node/esm -r dotenv/config ./src/test/scripts/seed-mariadb.ts dotenv_config_path=.dev.env"
+  },
+  "dependencies": {
+    "@databye/common": "workspace:^",
+    "@databye/knex-processor": "workspace:^",
+    "knex": "^3.1.0"
+  }
+}
