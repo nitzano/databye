@@ -47,7 +47,7 @@ yarn dlx databye <command> [options]
 
 ## PostgresSQL
 ```
-# mask firstName
+# mask "firstName" column in "users" table in "test" db
 npx databye anon-col mask -u postgresql:/localhost -db test -t users -c firstName
 
 // { "firstName": "John" } => { "firstName": "****" }
@@ -56,7 +56,7 @@ npx databye anon-col mask -u postgresql:/localhost -db test -t users -c firstNam
 ## Mongo
 
 ```
-# Scramble "lastName" column
+# Scramble "lastName" column in "users" table in "test" db
 npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastName
 
 // { "lastName": "Smith" } => { "lastName": "hSmti" }
@@ -65,6 +65,7 @@ npx databye anon-col scramble -u mongodb://localhost -db test -t users -c lastNa
 ## SQLite
 
 ```
+# mask "firstName" column in "users" table
 databye anon-col mask -e sqlite -f /home/dev.db -t users -col firstName
 ```
 
