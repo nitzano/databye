@@ -1,0 +1,5 @@
+---
+"@databye/sqlite": patch
+---
+
+init
