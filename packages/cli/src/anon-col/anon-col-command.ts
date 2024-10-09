@@ -9,8 +9,3 @@ anonColCommand
   .option("--no-confirm", "skip confirmation");
 
 addEngineCommands(anonColCommand);
-
-// @todo: move to anoynmizer commands
-// .addCommand(scrambleCommand)
-// .addCommand(maskCommand);
-// .addCommand(fakeCommand)
