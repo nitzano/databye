@@ -4,6 +4,7 @@ import { addConnectionOptions } from "../anon-col/helpers/add-connection-options
 import { addFileOptions } from "../anon-col/helpers/add-file-options.js";
 import { addColumnOption } from "../anon-col/helpers/column-option.js";
 import { addAnonymizerCommands } from "../anoymizers/add-anonymizer-commands.js";
+import { addEngineAction } from "./add-engine-action.js";
 
 const databaseEngines: EngineType[] = [
   EngineType.PostGres,
@@ -37,6 +38,9 @@ function createFileCommands(): Command[] {
 
 export function addEngineCommands(cmd: Command) {
   const engineCommands = [...createDatabaseCommands(), ...createFileCommands()];
+
+  // add engine action
+  engineCommands.forEach((cmd) => addEngineAction(cmd));
 
   // add anonymizer commands to all engine commands
   engineCommands.forEach((cmd) => addAnonymizerCommands(cmd));
