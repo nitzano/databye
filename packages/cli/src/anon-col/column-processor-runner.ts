@@ -1,7 +1,7 @@
 import { type Anonymizer } from "@databye/anonymizers";
 import { BaseColumnProcessor } from "@databye/processor";
 import ora from "ora";
-import { isUserConfirmed } from "./helpers/is-user-confirmed.js";
+import { checkUserConfirm } from "./helpers/check-user-confirm.js";
 
 export class ColumnProcessorRunner {
   constructor(
@@ -11,7 +11,7 @@ export class ColumnProcessorRunner {
 
   async processColumn(columnName: string, checkConfirm = true) {
     if (checkConfirm) {
-      const isConfirmed: boolean = await isUserConfirmed(columnName);
+      const isConfirmed: boolean = await checkUserConfirm(columnName);
       if (!isConfirmed) return;
     }
 

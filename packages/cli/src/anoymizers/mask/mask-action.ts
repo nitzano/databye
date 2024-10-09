@@ -29,6 +29,7 @@ export async function maskAction(this: Command) {
     const runner = new ColumnProcessorRunner(columnProcessor, maskAnonymizer);
     const isConfirmed = this.optsWithGlobals().confirm as boolean;
     const columnName = this.optsWithGlobals().column as string;
+    logger.debug(`columnName=${columnName} isConfirmed=${isConfirmed}`);
     await runner.processColumn(columnName, isConfirmed);
   }
 }

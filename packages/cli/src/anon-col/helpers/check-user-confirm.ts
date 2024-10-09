@@ -6,12 +6,20 @@ const { prompt } = Enquirer;
 // Cyan
 const color = chalk.cyan;
 
-export async function isUserConfirmed(
+export async function checkUserConfirm(
   column: string,
   database?: string,
   table?: string
 ): Promise<boolean> {
   try {
+    let confirmMessage = `Are you sure you want to anonymize column "${color(
+      column
+    )}"`;
+
+    if (database && table) {
+      confirmMessage += ` in "${color(database)}/${color(table)}"`;
+    }
+
     const answer = await prompt<{ run: boolean }>({
       type: "confirm",
       name: "run",
