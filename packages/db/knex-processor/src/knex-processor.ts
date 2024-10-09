@@ -1,6 +1,6 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
 import { createLogger, type ConnectionOptions } from "@databye/common";
-import { DataBaseProcessor, type ColumnInfo } from "@databye/processor";
+import { DataBaseProcessor } from "@databye/processor";
 import { type Knex } from "knex";
 
 const logger = createLogger();
@@ -21,7 +21,7 @@ export abstract class KnexProcessor extends DataBaseProcessor {
     const client: Knex = this.buildClient();
     try {
       const { tableName } = this.connectionOptions;
-      
+
       const rows = await client(tableName)
         .select(columnName)
         .whereNotNull(columnName)
@@ -56,12 +56,12 @@ export abstract class KnexProcessor extends DataBaseProcessor {
    * @memberof MongoProcessor
    */
   async processColumn(
-    columnInfo: ColumnInfo,
+    columnName: string,
     columnType: ColumnType,
     anonymizer: Anonymizer
   ) {
-    const { tableName, columnName, databaseName } = columnInfo;
     const client: Knex = this.buildClient();
+    const { tableName, databaseName } = this.connectionOptions;
 
     logger.debug(`processing column`);
     try {
