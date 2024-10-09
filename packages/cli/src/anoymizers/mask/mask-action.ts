@@ -12,9 +12,9 @@ export async function maskAction(this: Command) {
   logger.debug(` ${JSON.stringify(maskOptions, null, 2)}`);
   const engineCommand = this.parent;
   if (engineCommand) {
-    logger.debug(`engineCommand = ${engineCommand}`);
+    logger.debug(`engine = ${engineCommand.name()}`);
     const engineOptions = engineCommand?.optsWithGlobals();
-    logger.debug(`engineOptions = ${engineOptions}`);
+    logger.debug(`engineOptions = ${JSON.stringify(engineOptions, null, 2)}`);
   }
 
   // extract processor
