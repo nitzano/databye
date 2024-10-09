@@ -2,6 +2,7 @@ import { EngineType } from "@databye/common";
 import { Command } from "commander";
 import { addConnectionOptions } from "../commands/anon-col/helpers/add-connection-options.js";
 import { addFileOptions } from "../commands/anon-col/helpers/add-file-options.js";
+import { addColumnOption } from "../commands/anon-col/helpers/column-option.js";
 
 const databaseEngines: EngineType[] = [
   EngineType.PostGres,
@@ -17,7 +18,8 @@ const fileEngines: EngineType[] = [EngineType.CSV];
 function createDatabaseCommands(): Command[] {
   const commands = Object.values(databaseEngines).map((val) => {
     let command = new Command(val);
-    command = addConnectionOptions(command);
+    addConnectionOptions(command);
+    addColumnOption(command);
     return command;
   });
   return commands;
@@ -26,7 +28,8 @@ function createDatabaseCommands(): Command[] {
 function createFileCommands(): Command[] {
   const commands = Object.values(fileEngines).map((val) => {
     let command = new Command(val);
-    command = addFileOptions(command);
+    addFileOptions(command);
+    addColumnOption(command);
     return command;
   });
   return commands;
