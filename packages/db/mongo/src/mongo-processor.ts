@@ -1,11 +1,11 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
 import { createLogger } from "@databye/common";
-import { DataBaseProcessor } from "@databye/processor";
+import { BaseColumnProcessor } from "@databye/processor";
 import { MongoClient, type Db } from "mongodb";
 
 const logger = createLogger();
 
-export class MongoProcessor extends DataBaseProcessor {
+export class MongoProcessor extends BaseColumnProcessor {
   constructor(
     private readonly uri: string,
     private readonly databaseName: string,
