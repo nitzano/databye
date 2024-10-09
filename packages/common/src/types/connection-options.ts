@@ -1,10 +1,9 @@
 // @todo: rename to DatabaseOptions
 export type ConnectionOptions = {
   connectionString?: string;
-  databaseName: string;
-  filePath?: string;
+  databaseName?: string;
   password?: string;
   serverName?: string;
-  tableName: string;
+  tableName?: string;
   userName?: string;
 };
