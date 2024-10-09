@@ -24,7 +24,9 @@ export async function maskAction(this: Command) {
   const anonymizer: Anonymizer = maskAnonymizer;
   const isConfirmed = this.optsWithGlobals().confirm as boolean;
   logger.debug(`isConfined CLI = ${isConfirmed}`);
+
   // Anonymize column
-  const runner = new ColumnProcessorRunner(null, anonymizer, isConfirmed);
-  await runner.processColumn(connectionOptions, anonymizer);
+  const runner = new ColumnProcessorRunner(null, anonymizer);
+  const columnName = "col1";
+  await runner.processColumn(columnName, isConfirmed);
 }

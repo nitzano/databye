@@ -6,12 +6,11 @@ import { isUserConfirmed } from "./helpers/is-user-confirmed.js";
 export class ColumnProcessorRunner {
   constructor(
     private readonly columnProcessor: BaseColumnProcessor,
-    private readonly anonymizer: Anonymizer,
-    private checkConfirm = true
+    private readonly anonymizer: Anonymizer
   ) {}
 
-  async processColumn(columnName: string) {
-    if (this.checkConfirm) {
+  async processColumn(columnName: string, checkConfirm = true) {
+    if (checkConfirm) {
       const isConfirmed: boolean = await isUserConfirmed(columnName);
       if (!isConfirmed) return;
     }
