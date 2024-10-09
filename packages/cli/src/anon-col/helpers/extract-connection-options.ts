@@ -1,20 +1,13 @@
-import {
-  createLogger,
-  type ConnectionOptions,
-  type EngineType,
-} from "@databye/common";
+import { createLogger, type ConnectionOptions } from "@databye/common";
 import { type Command } from "commander";
 
 type CliConnectionOptions = {
-  column: string;
   database: string;
   password?: string;
   server?: string;
   uri?: string;
-  file?: string;
   table: string;
   user?: string;
-  engine?: EngineType;
 };
 
 const logger = createLogger();
