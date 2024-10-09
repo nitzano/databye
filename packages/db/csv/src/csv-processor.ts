@@ -1,6 +1,6 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
 import { createLogger } from "@databye/common";
-import { DataBaseProcessor, type ColumnInfo } from "@databye/processor";
+import { DataBaseProcessor } from "@databye/processor";
 import { readFileSync, writeFileSync } from "fs";
 import Papa from "papaparse";
 const { parse, unparse } = Papa;
@@ -17,11 +17,11 @@ export class CSVProcessor extends DataBaseProcessor {
   }
 
   async processColumn(
-    columnInfo: ColumnInfo,
+    columnName: string,
     columnType: ColumnType,
     anonymizer: Anonymizer
   ) {
-    processCsv(this.filePath, columnType, columnInfo.columnName, anonymizer);
+    processCsv(this.filePath, columnType, columnName, anonymizer);
   }
   catch(error: unknown) {
     logger.error(error);
