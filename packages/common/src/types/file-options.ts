@@ -1,3 +1,3 @@
 export type FileOptions = {
-  file: string;
+  filePath: string;
 };
