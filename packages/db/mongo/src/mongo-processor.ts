@@ -6,21 +6,25 @@ import { MongoClient, type Db } from "mongodb";
 const logger = createLogger();
 
 export class MongoProcessor extends DataBaseProcessor {
-  constructor(private readonly uri: string) {
+  constructor(
+    private readonly uri: string,
+    private readonly databaseName: string,
+    private readonly tableName: string
+  ) {
     super();
   }
 
-  async getColumnType(columnInfo: ColumnInfo): Promise<ColumnType> {
+  async getColumnType(columnName: string): Promise<ColumnType> {
     const client = new MongoClient(this.uri);
     try {
-      const database = client.db(columnInfo.databaseName);
-      const collection = database.collection(columnInfo.tableName);
+      const database = client.db(this.databaseName);
+      const collection = database.collection(this.tableName);
       const sampleDocument = await collection.findOne(
         {},
-        { projection: { [columnInfo.columnName]: 1 } }
+        { projection: { [columnName]: 1 } }
       );
 
-      const fieldName = columnInfo.columnName;
+      const fieldName = columnName;
 
       if (sampleDocument) {
         const columnType = this.getColumnTypeByValue(sampleDocument[fieldName]);
