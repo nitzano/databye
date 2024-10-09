@@ -6,5 +6,5 @@ const columnDescription = "Column name to process";
 export const columnOption = new Option(columnString, columnDescription);
 
 export function addColumnOption(cmd: Command) {
-  cmd.requiredOption(columnString, columnDescription);
+  cmd.option(columnString, columnDescription);
 }
