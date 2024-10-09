@@ -62,7 +62,7 @@ export abstract class KnexProcessor extends BaseColumnProcessor {
   ) {
     const client: Knex = this.buildClient();
     const { tableName, databaseName } = this.connectionOptions;
-
+    if (!tableName) throw new Error("no table name");
     logger.debug(`processing column`);
     try {
       await this.updateColumn(
