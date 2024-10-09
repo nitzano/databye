@@ -7,7 +7,6 @@ export function addConnectionOptions(cmd: Command): Command {
     .option("-db --database <databaseName>", "Database name")
     .option("-pass --password <password>", "database password")
     .option("-srv --server <serverName>", "server to connect to")
-    .option("-u --uri <connectionString>", "Connection string")
-    .option("-f --file <filePath>", "DB File path")
+    .option("-u --uri <connectionString>", "Connection string")    
     .option("-usr --user <userName>", "Username to use");
 }
