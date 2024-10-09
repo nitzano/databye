@@ -6,8 +6,8 @@ import {
 } from "@databye/anonymizers";
 import { createLogger } from "@databye/common";
 import { type Command } from "commander";
+import { ColumnProcessorRunner } from "../../anon-col/column-processor-runner.js";
 import { extractConnectionOptions } from "../../anon-col/helpers/extract-connection-options.js";
-import { processColumnHelper } from "../../anon-col/helpers/process-column-helper.js";
 
 const logger = createLogger();
 
@@ -25,5 +25,6 @@ export async function maskAction(this: Command) {
   const isConfirmed = this.optsWithGlobals().confirm as boolean;
   logger.debug(`isConfined CLI = ${isConfirmed}`);
   // Anonymize column
-  await processColumnHelper(connectionOptions, anonymizer, isConfirmed);
+  const runner = new ColumnProcessorRunner(null, anonymizer, isConfirmed);
+  await runner.processColumn(connectionOptions, anonymizer);
 }
