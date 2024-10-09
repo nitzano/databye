@@ -1,9 +1,9 @@
 import { EngineType } from "@databye/common";
 import { Command } from "commander";
+import { addAnonymizerCommands } from "../../anoymizers/add-anonymizer-commands.js";
 import { addColumnOption } from "../helpers/add-column-option.js";
 import { addConnectionOptions } from "../helpers/add-connection-options.js";
 import { addFileOptions } from "../helpers/add-file-options.js";
-import { addAnonymizerCommands } from "../../anoymizers/add-anonymizer-commands.js";
 
 const databaseEngines: EngineType[] = [
   EngineType.PostGres,
@@ -36,9 +36,9 @@ function createFileCommands(): Command[] {
 }
 
 export function addEngineCommands(cmd: Command) {
-  const engineCommands = [...createDatabaseCommands(), ...createFileCommands()];
+  let engineCommands = [...createDatabaseCommands(), ...createFileCommands()];
 
-  engineCommands.map((cmd) => addAnonymizerCommands(cmd));
+  engineCommands.forEach((cmd) => addAnonymizerCommands(cmd));
 
   // add commands to parent
   for (const engineCommand of engineCommands) {
