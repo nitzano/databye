@@ -11,7 +11,8 @@ import { PostgresProcessor } from "@databye/postgres";
 import { type DataBaseProcessor } from "@databye/processor";
 import { SQLiteProcessor } from "@databye/sqlite";
 import { getProcessorEngineFromUri } from "../../../utils/get-processor-engine-from-uri.js";
-nst logger = createLogger();
+
+const logger = createLogger();
 
 export async function createProcessor(
   connectionOptions: ConnectionOptions
