@@ -1,5 +1,5 @@
 import { type MaskOptions } from "@databye/anonymizers";
-import { createLogger } from "@databye/common";
+import { createLogger, EngineType } from "@databye/common";
 import { type Command } from "commander";
 
 const logger = createLogger();
@@ -13,9 +13,10 @@ export async function maskAction(this: Command) {
   const engineCommand = this.parent;
   if (engineCommand) {
     // engineType
-    logger.debug(`engine = ${engineCommand.name()}`);
+    const engineType = engineCommand.name() as EngineType;
+    logger.debug(`engineType = ${engineType}`);
     const engineOptions = engineCommand?.optsWithGlobals();
-    logger.debug(`engineOptions = ${JSON.stringify(engineOptions, null, 2)}`);
+    
   }
 
   // extract processor
