@@ -1,5 +1,6 @@
 import { EngineType } from "@databye/common";
 import { Command } from "commander";
+import { addAnonymizerCommands } from "../anoymizers/add-anonymizer-commands.js";
 import { addConnectionOptions } from "../commands/anon-col/helpers/add-connection-options.js";
 import { addFileOptions } from "../commands/anon-col/helpers/add-file-options.js";
 import { addColumnOption } from "../commands/anon-col/helpers/column-option.js";
@@ -38,6 +39,7 @@ export function addEngineCommands(cmd: Command) {
   const engineCommands = [...createDatabaseCommands(), ...createFileCommands()];
 
   // add anonymizer commands to all engine commands
+  engineCommands.forEach((cmd) => addAnonymizerCommands(cmd));
 
   // add commands to parent
   for (const engineCommand of engineCommands) {
