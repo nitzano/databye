@@ -1,5 +1,6 @@
 import { type EngineType } from "./engine-type.js";
 
+// @todo: rename to DatabaseOptions
 export type ConnectionOptions = {
   columnName: string;
   connectionString?: string;
