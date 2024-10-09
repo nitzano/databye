@@ -1,9 +1,9 @@
 import { EngineType } from "@databye/common";
 import { Command } from "commander";
+import { addAnonymizerCommands } from "../../anoymizers/add-anonymizer-commands.js";
 import { addConnectionOptions } from "../helpers/add-connection-options.js";
 import { addFileOptions } from "../helpers/add-file-options.js";
 import { addColumnOption } from "../helpers/column-option.js";
-import { addAnonymizerCommands } from "../../anoymizers/add-anonymizer-commands.js";
 
 const databaseEngines: EngineType[] = [
   EngineType.PostGres,

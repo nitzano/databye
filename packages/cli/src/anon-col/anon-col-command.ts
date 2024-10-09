@@ -1,5 +1,5 @@
 import { Command } from "commander";
-import { addEngineCommands } from "../engine/add-engine-commands.js";
+import { addEngineCommands } from "./engine/add-engine-commands.js";
 
 export const anonColCommand: Command = new Command("anon-col");
 
