@@ -61,8 +61,9 @@ export function createProcessor(
 
     case EngineType.CSV: {
       logger.debug("creating csv processor");
+      logger.debug(`options = ${JSON.stringify(options, null, 2)}`);
       const fileOptions = options as FileOptions;
-      return new CSVProcessor(fileOptions.filePath);
+      return new CSVProcessor(fileOptions.file);
     }
   }
 }

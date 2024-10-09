@@ -22,6 +22,7 @@
     "clean": "rimraf dist",
     "build": "tsc",
     "dev": "tsx -r dotenv/config src/dev-cli.ts",
+    "dev:cli": "node ./dist/dev-cli.js",
     "build:deps": "pnpm -F cli... build",
     "build:deploy": "pnpm deploy -F cli ./out",
     "build:watch": "tsc --watch"
