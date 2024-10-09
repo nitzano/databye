@@ -24,18 +24,14 @@ export function extractConnectionOptions(command: Command): ConnectionOptions {
   logger.debug(
     `cli connection options = ${JSON.stringify(cliOptions, null, 2)}`
   );
-  const { uri, column, database, password, server, table, user, engine, file } =
-    cliOptions;
+  const { uri, database, password, server, table, user } = cliOptions;
 
   return {
-    columnName: column,
     databaseName: database,
     password,
     serverName: server,
     tableName: table,
     connectionString: uri,
-    filePath: file,
     userName: user,
-    engine,
   };
 }
