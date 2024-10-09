@@ -3,9 +3,7 @@ import {
   createLogger,
   type ConnectionOptions,
 } from "@databye/common";
-import { CSVProcessor } from "@databye/csv";
 import { MariaDatabaseProcessor } from "@databye/mariadb";
-import { MongoProcessor } from "@databye/mongo";
 import { MsSqlProcessor } from "@databye/mssql";
 import { PostgresProcessor } from "@databye/postgres";
 import { type ColumnProcessor } from "@databye/processor";
@@ -35,9 +33,9 @@ export async function createProcessor(
   if (engine) {
     switch (engine) {
       case EngineType.Mongo: {
-        logger.debug("creating mongo processor");
-        if (!connectionString) throw new Error("invalid connection string uri");
-        columnProcessor = new MongoProcessor(connectionString);
+        // logger.debug("creating mongo processor");
+        // if (!connectionString) throw new Error("invalid connection string uri");
+        // columnProcessor = new MongoProcessor(connectionString);
         break;
       }
 
@@ -67,11 +65,11 @@ export async function createProcessor(
       }
 
       case EngineType.CSV: {
-        logger.debug("creating csv processor");
-        if (!connectionOptions.filePath) {
-          throw new Error("invalid file path");
-        }
-        columnProcessor = new CSVProcessor(connectionOptions.filePath);
+        // logger.debug("creating csv processor");
+        // if (!connectionOptions.filePath) {
+        //   throw new Error("invalid file path");
+        // }
+        // columnProcessor = new CSVProcessor(connectionOptions.filePath);
         break;
       }
     }
