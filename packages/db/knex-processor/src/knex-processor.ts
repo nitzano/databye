@@ -17,10 +17,11 @@ export abstract class KnexProcessor extends DataBaseProcessor {
    * @return {*}  {Promise<ColumnType>}
    * @memberof KnexProcessor
    */
-  async getColumnType(columnInfo: ColumnInfo): Promise<ColumnType> {
+  async getColumnType(columnName: string): Promise<ColumnType> {
     const client: Knex = this.buildClient();
     try {
-      const { tableName, columnName } = columnInfo;
+      const { tableName } = this.connectionOptions;
+      
       const rows = await client(tableName)
         .select(columnName)
         .whereNotNull(columnName)

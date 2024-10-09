@@ -2,7 +2,7 @@ import { type Anonymizer, type ColumnType } from "@databye/anonymizers";
 import { type ColumnInfo } from "./types/column-info.js";
 
 export type ColumnProcessor = {
-  getColumnType(columnInfo: ColumnInfo): Promise<ColumnType | undefined>;
+  getColumnType(columnName: string): Promise<ColumnType | undefined>;
 
   processColumn(
     columnInfo: ColumnInfo,
