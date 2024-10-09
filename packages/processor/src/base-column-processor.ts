@@ -4,7 +4,8 @@ import { type ColumnProcessor } from "./column-processor.js";
 
 const logger = createLogger();
 
-export abstract class DataBaseProcessor implements ColumnProcessor {
+// BaseColumnProcessor
+export abstract class BaseColumnProcessor implements ColumnProcessor {
   async anonymizeColumn(columnName: string, anonymizer: Anonymizer) {
     const columnType = await this.getColumnType(columnName);
     logger.debug(`columnType = ${columnType}`);
