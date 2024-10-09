@@ -1,24 +1,23 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
 import { createLogger } from "@databye/common";
 import { type ColumnProcessor } from "./column-processor.js";
-import { type ColumnInfo } from "./types/column-info.js";
 
 const logger = createLogger();
 
 export abstract class DataBaseProcessor implements ColumnProcessor {
-  async anonymizeColumn(columnInfo: ColumnInfo, anonymizer: Anonymizer) {
-    const columnType = await this.getColumnType(columnInfo);
+  async anonymizeColumn(columnName: string, anonymizer: Anonymizer) {
+    const columnType = await this.getColumnType(columnName);
     logger.debug(`columnType = ${columnType}`);
     if (columnType) {
-      await this.processColumn(columnInfo, columnType, anonymizer);
+      await this.processColumn(columnName, columnType, anonymizer);
     }
   }
 
-  async getColumnType(_columnInfo: ColumnInfo): Promise<ColumnType> {
+  async getColumnType(_columnName: string): Promise<ColumnType> {
     return ColumnType.Unknown;
   }
   abstract processColumn(
-    columnInfo: ColumnInfo,
+    columnName: string,
     columnType: ColumnType,
     anonymizer: Anonymizer
   ): Promise<void>;
