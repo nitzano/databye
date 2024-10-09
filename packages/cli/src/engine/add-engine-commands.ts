@@ -37,6 +37,9 @@ function createFileCommands(): Command[] {
 export function addEngineCommands(cmd: Command) {
   const engineCommands = [...createDatabaseCommands(), ...createFileCommands()];
 
+  // add anonymizer commands to all engine commands
+
+  // add commands to parent
   for (const engineCommand of engineCommands) {
     cmd.addCommand(engineCommand);
   }
