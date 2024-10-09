@@ -1,12 +1,12 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
 import { createLogger } from "@databye/common";
-import { DataBaseProcessor } from "@databye/processor";
+import { BaseColumnProcessor } from "@databye/processor";
 import { readFileSync, writeFileSync } from "fs";
 import Papa from "papaparse";
 const { parse, unparse } = Papa;
 const logger = createLogger();
 
-export class CSVProcessor extends DataBaseProcessor {
+export class CSVProcessor extends BaseColumnProcessor {
   constructor(private readonly filePath: string) {
     super();
   }

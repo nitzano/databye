@@ -1,11 +1,11 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
 import { createLogger, type ConnectionOptions } from "@databye/common";
-import { DataBaseProcessor } from "@databye/processor";
+import { BaseColumnProcessor } from "@databye/processor";
 import { type Knex } from "knex";
 
 const logger = createLogger();
 
-export abstract class KnexProcessor extends DataBaseProcessor {
+export abstract class KnexProcessor extends BaseColumnProcessor {
   constructor(protected readonly connectionOptions: ConnectionOptions) {
     super();
   }

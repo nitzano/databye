@@ -1,6 +1,6 @@
 import { type Anonymizer } from "@databye/anonymizers";
 import { createLogger, type ConnectionOptions } from "@databye/common";
-import { type DataBaseProcessor } from "@databye/processor";
+import { type ColumnProcessor } from "@databye/processor";
 import ora from "ora";
 import { createProcessor } from "./create-processor.js";
 import { isUserConfirmed } from "./is-user-confirmed.js";
@@ -14,10 +14,11 @@ export async function processColumnHelper(
 ) {
   const { databaseName, tableName, columnName } = connectionOptions;
 
-  const databaseProcessor: DataBaseProcessor | undefined =
-    await createProcessor(connectionOptions);
+  const columnProcessor: ColumnProcessor | undefined = await createProcessor(
+    connectionOptions
+  );
 
-  if (databaseProcessor) {
+  if (columnProcessor) {
     // Check confirm
     logger.debug(`checkConfirm: ${checkConfirm}`);
     if (checkConfirm) {
@@ -32,7 +33,7 @@ export async function processColumnHelper(
     logger.debug("calling column processor");
     const spinner = ora("Anonymizing column").start();
 
-    await databaseProcessor.anonymizeColumn(
+    await columnProcessor.anonymizeColumn(
       {
         databaseName,
         tableName,
