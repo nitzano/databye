@@ -14,12 +14,11 @@ import { SQLiteProcessor } from "@databye/sqlite";
 
 const logger = createLogger();
 
-export async function createProcessor(
+export function createProcessor(
   engineType: EngineType,
   options: unknown
-): Promise<BaseColumnProcessor> {
+): BaseColumnProcessor {
   logger.debug(`engine = ${engineType}`);
-  let columnProcessor: BaseColumnProcessor | undefined;
   switch (engineType) {
     case EngineType.Mongo: {
       const connectionsOptions = options as ConnectionOptions;

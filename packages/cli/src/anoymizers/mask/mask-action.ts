@@ -1,6 +1,7 @@
 import { type MaskOptions } from "@databye/anonymizers";
 import { createLogger, EngineType } from "@databye/common";
 import { type Command } from "commander";
+import { createProcessor } from "../../anon-col/helpers/create-processor.js";
 
 const logger = createLogger();
 
@@ -16,7 +17,7 @@ export async function maskAction(this: Command) {
     const engineType = engineCommand.name() as EngineType;
     logger.debug(`engineType = ${engineType}`);
     const engineOptions = engineCommand?.optsWithGlobals();
-    
+    const columnProcessor = createProcessor(engineType, engineOptions);
   }
 
   // extract processor
