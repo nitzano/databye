@@ -8,25 +8,23 @@ import { MsSqlProcessor } from "@databye/mssql";
 import { PostgresProcessor } from "@databye/postgres";
 import { type ColumnProcessor } from "@databye/processor";
 import { SQLiteProcessor } from "@databye/sqlite";
-import { getProcessorEngineFromUri } from "../../utils/get-processor-engine-from-uri.js";
 
 const logger = createLogger();
 
 export async function createProcessor(
+  engine: EngineType | undefined,
   connectionOptions: ConnectionOptions
 ): Promise<ColumnProcessor | undefined> {
   // Parse the engine
-  const { connectionString, engine: connectionEngine } = connectionOptions;
-  let engine: EngineType | undefined;
 
-  if (connectionEngine) {
-    engine = connectionEngine;
-  } else if (connectionString) {
-    logger.debug("detecting engine from connection uri");
-    engine = getProcessorEngineFromUri(connectionString);
-  } else {
-    throw new Error("could not detect engine source");
-  }
+  // if (connectionEngine) {
+  //   engine = connectionEngine;
+  // } else if (connectionString) {
+  //   logger.debug("detecting engine from connection uri");
+  //   engine = getProcessorEngineFromUri(connectionString);
+  // } else {
+  //   throw new Error("could not detect engine source");
+  // }
 
   logger.debug(`engine = ${engine}`);
   let columnProcessor: ColumnProcessor | undefined;
