@@ -1,4 +1,10 @@
-import { ConnectionOptions, EngineType, createLogger } from "@databye/common";
+import {
+  ConnectionOptions,
+  EngineType,
+  FileOptions,
+  createLogger,
+} from "@databye/common";
+import { CSVProcessor } from "@databye/csv";
 import { MariaDatabaseProcessor } from "@databye/mariadb";
 import { MongoProcessor } from "@databye/mongo";
 import { MsSqlProcessor } from "@databye/mssql";
@@ -27,43 +33,37 @@ export async function createProcessor(
         connectionsOptions.databaseName,
         connectionsOptions.tableName
       );
-      break;
     }
 
     case EngineType.PostGres: {
-      logger.debug("creating postgress processor");
-      columnProcessor = new PostgresProcessor(connectionOptions);
-      break;
+      logger.debug("creating postgres processor");
+      const connectionsOptions = options as ConnectionOptions;
+      return new PostgresProcessor(connectionsOptions);
     }
 
     case EngineType.MariaDB:
     case EngineType.MySQL: {
       logger.debug("creating mariadb processor");
-      columnProcessor = new MariaDatabaseProcessor(connectionOptions);
-      break;
+      const connectionsOptions = options as ConnectionOptions;
+      return new MariaDatabaseProcessor(connectionsOptions);
     }
 
     case EngineType.MSSQL: {
       logger.debug("creating mssql processor");
-      columnProcessor = new MsSqlProcessor(connectionOptions);
-      break;
+      const connectionsOptions = options as ConnectionOptions;
+      return new MsSqlProcessor(connectionsOptions);
     }
 
     case EngineType.SQLite: {
       logger.debug("creating sqlite processor");
-      columnProcessor = new SQLiteProcessor(connectionOptions);
-      break;
+      const connectionsOptions = options as ConnectionOptions;
+      return new SQLiteProcessor(connectionsOptions);
     }
 
     case EngineType.CSV: {
-      // logger.debug("creating csv processor");
-      // if (!connectionOptions.filePath) {
-      //   throw new Error("invalid file path");
-      // }
-      // columnProcessor = new CSVProcessor(connectionOptions.filePath);
-      break;
+      logger.debug("creating csv processor");
+      const fileOptions = options as FileOptions;
+      return new CSVProcessor(fileOptions.filePath);
     }
   }
-
-  return columnProcessor;
 }
