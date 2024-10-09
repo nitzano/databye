@@ -10,10 +10,9 @@ const databaseEngines: EngineType[] = [
   EngineType.MariaDB,
   EngineType.MSSQL,
   EngineType.MySQL,
-  EngineType.SQLite,
 ];
 
-const fileEngines: EngineType[] = [EngineType.CSV];
+const fileEngines: EngineType[] = [EngineType.CSV, EngineType.SQLite];
 
 function createDatabaseCommands(): Command[] {
   const commands = Object.values(databaseEngines).map((val) => {
