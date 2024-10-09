@@ -6,8 +6,8 @@ import {
 } from "@databye/anonymizers";
 import { createLogger } from "@databye/common";
 import { type Command } from "commander";
-import { extractConnectionOptions } from "../../commands/anon-col/helpers/extract-connection-options.js";
-import { processColumnHelper } from "../../commands/anon-col/helpers/process-column-helper.js";
+import { extractConnectionOptions } from "../../anon-col/helpers/extract-connection-options.js";
+import { processColumnHelper } from "../../anon-col/helpers/process-column-helper.js";
 
 const logger = createLogger();
 

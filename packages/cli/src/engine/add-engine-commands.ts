@@ -1,9 +1,9 @@
 import { EngineType } from "@databye/common";
 import { Command } from "commander";
+import { addConnectionOptions } from "../anon-col/helpers/add-connection-options.js";
+import { addFileOptions } from "../anon-col/helpers/add-file-options.js";
+import { addColumnOption } from "../anon-col/helpers/column-option.js";
 import { addAnonymizerCommands } from "../anoymizers/add-anonymizer-commands.js";
-import { addConnectionOptions } from "../commands/anon-col/helpers/add-connection-options.js";
-import { addFileOptions } from "../commands/anon-col/helpers/add-file-options.js";
-import { addColumnOption } from "../commands/anon-col/helpers/column-option.js";
 
 const databaseEngines: EngineType[] = [
   EngineType.PostGres,

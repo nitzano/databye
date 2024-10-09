@@ -1,1 +1,1 @@
-export * from "./commands/anon-col/anon-col-command.js";
+export * from "./anon-col/anon-col-command.js";

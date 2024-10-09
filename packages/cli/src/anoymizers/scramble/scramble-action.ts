@@ -3,8 +3,8 @@ import {
   type ScrambleAnonymizer,
 } from "@databye/anonymizers";
 import { type Command } from "commander";
-import { extractConnectionOptions } from "../../commands/anon-col/helpers/extract-connection-options.js";
-import { processColumnHelper } from "../../commands/anon-col/helpers/process-column-helper.js";
+import { extractConnectionOptions } from "../../anon-col/helpers/extract-connection-options.js";
+import { processColumnHelper } from "../../anon-col/helpers/process-column-helper.js";
 
 export async function scrambleAction(this: Command) {
   const connectionOptions = extractConnectionOptions(this);
