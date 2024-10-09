@@ -32,6 +32,12 @@ function createFileCommands(): Command[] {
   return commands;
 }
 
-export function getEngineCommands(): Command[] {
-  return [...createDatabaseCommands(), ...createFileCommands()];
+export function addEngineCommands(cmd: Command) {
+  const engineCommands = [...createDatabaseCommands(), ...createFileCommands()];
+
+  for (const engineCommand of engineCommands) {
+    cmd.addCommand(engineCommand);
+  }
+
+  // todo - add to every engine command - anonymizer command
 }
