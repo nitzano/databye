@@ -23,7 +23,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
-    "build:deps": "pnpm -F sqlite... build",
+    "build:deps": "pnpm -F csv... build",
     "dev": "tsc --watch",
     "db:seed": "tsx -r dotenv/config ./src/test/scripts/seed-db.ts dotenv_config_path=.dev.env"
   },
