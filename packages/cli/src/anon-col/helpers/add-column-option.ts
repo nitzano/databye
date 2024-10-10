@@ -1,6 +1,6 @@
 import { Command, createOption } from "commander";
 
-const columnString = "-col --column <columnName>";
+const columnString = "-c --column <columnName>";
 const columnDescription = "Column name to process";
 
 export const columnOption = createOption(columnString, columnDescription);
