@@ -1,5 +1,16 @@
 # @databye/cli
 
+## 2.0.0
+
+### Major Changes
+
+- b9740bc: changed cli to new format
+
+### Patch Changes
+
+- Updated dependencies [b9740bc]
+  - @databye/sqlite@0.0.2
+
 ## 1.0.6
 
 ### Patch Changes
