@@ -7,6 +7,5 @@ export function addConnectionOptions(cmd: Command): Command {
     .option("--password <password>", "database password")
     .option("--server <serverName>", "server to connect to")
     .option("--uri <connectionString>", "Connection string")
-    .option("--file <filePath>", "file to open")
     .option("--user <userName>", "Username to use");
 }

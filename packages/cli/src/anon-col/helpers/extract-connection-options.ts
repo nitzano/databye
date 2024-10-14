@@ -5,7 +5,6 @@ type CliConnectionOptions = {
   database: string;
   password?: string;
   server?: string;
-  file?: string;
   uri?: string;
   table: string;
   user?: string;
@@ -18,7 +17,7 @@ export function extractConnectionOptions(command: Command): ConnectionOptions {
   logger.debug(
     `cli connection options = ${JSON.stringify(cliOptions, null, 2)}`
   );
-  const { uri, database, password, server, table, user, file } = cliOptions;
+  const { uri, database, password, server, table, user } = cliOptions;
 
   return {
     databaseName: database,
@@ -27,6 +26,5 @@ export function extractConnectionOptions(command: Command): ConnectionOptions {
     tableName: table,
     connectionString: uri,
     userName: user,
-    file,
   };
 }
