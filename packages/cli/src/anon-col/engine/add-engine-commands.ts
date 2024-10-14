@@ -30,15 +30,8 @@ function createDatabaseCommands(): Command[] {
 function createFileCommands(): Command[] {
   const commands = Object.values(fileEngines).map((val) => {
     let command = new Command(val);
-
     addColumnOption(command);
     addFileOptions(command);
-
-    logger.debug(
-      JSON.stringify(command.options.map((opt) => opt.flags)),
-      null,
-      2
-    );
     return command;
   });
   return commands;
@@ -49,8 +42,5 @@ export function addEngineCommands(cmd: Command) {
 
   engineCommands.forEach((cmd) => addAnonymizerCommands(cmd));
 
-  // add commands to parent
-  for (const engineCommand of engineCommands) {
-    cmd.addCommand(engineCommand);
-  }
+  return engineCommands;
 }

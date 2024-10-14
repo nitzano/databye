@@ -8,4 +8,9 @@ anonColCommand
   .option("--confirm", "Confirm before running", true)
   .option("--no-confirm", "skip confirmation");
 
-addEngineCommands(anonColCommand);
+const engineCommands = addEngineCommands(anonColCommand);
+
+// add commands to parent
+for (const engineCommand of engineCommands) {
+  anonColCommand.addCommand(engineCommand);
+}
