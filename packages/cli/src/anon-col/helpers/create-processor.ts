@@ -67,6 +67,9 @@ export function createProcessor(
       const connectionsOptions = extractConnectionOptions(
         options as CliConnectionOptions
       );
+      logger.debug(
+        `connectionsOptions = ${JSON.stringify(connectionsOptions, null, 2)}`
+      );
       return new SQLiteProcessor(connectionsOptions);
     }
 
