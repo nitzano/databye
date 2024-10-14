@@ -1,4 +1,4 @@
-import { EngineType } from "@databye/common";
+import { createLogger, EngineType } from "@databye/common";
 import { Command } from "commander";
 import { addAnonymizerCommands } from "../../anoymizers/add-anonymizer-commands.js";
 import { addColumnOption } from "../helpers/add-column-option.js";
@@ -12,6 +12,8 @@ const databaseEngines: EngineType[] = [
   EngineType.MSSQL,
   EngineType.MySQL,
 ];
+
+const logger = createLogger();
 
 const fileEngines: EngineType[] = [EngineType.CSV, EngineType.SQLite];
 
@@ -28,8 +30,15 @@ function createDatabaseCommands(): Command[] {
 function createFileCommands(): Command[] {
   const commands = Object.values(fileEngines).map((val) => {
     let command = new Command(val);
-    addFileOptions(command);
+
     addColumnOption(command);
+    addFileOptions(command);
+
+    logger.debug(
+      JSON.stringify(command.options.map((opt) => opt.flags)),
+      null,
+      2
+    );
     return command;
   });
   return commands;
