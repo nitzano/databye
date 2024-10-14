@@ -133,31 +133,11 @@ Coming Soon:
 
 ## anon-col 
 
-Anonymize a single column
-
-```
-Usage: databye anon-col [options] [command]
-
 Anonymize a single column in a table
 
-Options:
-  -e --engine <engine>           Engine (choices: "postgres", "mongo", "mariadb", "mysql", "mssql", "sqlite")
-  --confirm                      Confirm before running (default: true)
-  --no-confirm                   skip confirmation
-  -t --table <tableName>         Table name
-  -col --column <columnName>     Column name
-  -db --database <databaseName>  Database name
-  -pass --password <password>    database password
-  -srv --server <serverName>     server to connect to
-  -u --uri <connectionString>    Connection string
-  -f --file <filePath>           DB File path
-  -usr --user <userName>         Username to use
-  -h, --help                     display help for command
+```
+Usage: databye anon-col <engine> [engine_options] <anonymizer> [anonymizer_options]
 
-Commands:
-  scramble                       scramble a single column
-  mask [options]                 mask a single column
-  help [command]                 display help for command
 ```
 
 # License
