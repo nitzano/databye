@@ -11,6 +11,10 @@ import { MsSqlProcessor } from "@databye/mssql";
 import { PostgresProcessor } from "@databye/postgres";
 import { BaseColumnProcessor } from "@databye/processor";
 import { SQLiteProcessor } from "@databye/sqlite";
+import {
+  CliConnectionOptions,
+  extractConnectionOptions,
+} from "./extract-connection-options.js";
 
 const logger = createLogger();
 
@@ -36,26 +40,36 @@ export function createProcessor(
 
     case EngineType.PostGres: {
       logger.debug("creating postgres processor");
-      const connectionsOptions = options as ConnectionOptions;
+      const connectionsOptions = extractConnectionOptions(
+        options as CliConnectionOptions
+      );
+
       return new PostgresProcessor(connectionsOptions);
     }
 
     case EngineType.MariaDB:
     case EngineType.MySQL: {
       logger.debug("creating mariadb processor");
-      const connectionsOptions = options as ConnectionOptions;
+      const connectionsOptions = extractConnectionOptions(
+        options as CliConnectionOptions
+      );
       return new MariaDatabaseProcessor(connectionsOptions);
     }
 
     case EngineType.MSSQL: {
       logger.debug("creating mssql processor");
-      const connectionsOptions = options as ConnectionOptions;
+      const connectionsOptions = extractConnectionOptions(
+        options as CliConnectionOptions
+      );
       return new MsSqlProcessor(connectionsOptions);
     }
 
     case EngineType.SQLite: {
       logger.debug("creating sqlite processor");
-      const connectionsOptions = options as ConnectionOptions;
+      logger.debug(`options = ${JSON.stringify(options, null, 2)}`);
+      const connectionsOptions = extractConnectionOptions(
+        options as CliConnectionOptions
+      );
       return new SQLiteProcessor(connectionsOptions);
     }
 

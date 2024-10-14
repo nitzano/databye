@@ -1,5 +1,4 @@
 import { createLogger, type ConnectionOptions } from "@databye/common";
-import { type Command } from "commander";
 
 export type CliConnectionOptions = {
   database: string;
@@ -12,8 +11,9 @@ export type CliConnectionOptions = {
 
 const logger = createLogger();
 
-export function extractConnectionOptions(command: Command): ConnectionOptions {
-  const cliOptions = command.optsWithGlobals<CliConnectionOptions>();
+export function extractConnectionOptions(
+  cliOptions: CliConnectionOptions
+): ConnectionOptions {
   logger.debug(
     `cli connection options = ${JSON.stringify(cliOptions, null, 2)}`
   );
