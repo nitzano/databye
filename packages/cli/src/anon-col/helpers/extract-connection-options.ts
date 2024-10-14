@@ -5,8 +5,8 @@ type CliConnectionOptions = {
   database: string;
   password?: string;
   server?: string;
-  uri?: string;
   table: string;
+  uri?: string;
   user?: string;
 };
 
