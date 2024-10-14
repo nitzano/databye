@@ -1,6 +1,6 @@
 {
   "name": "@databye/cli",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "type": "module",
   "license": "AGPL-3.0-only",

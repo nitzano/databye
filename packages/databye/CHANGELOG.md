@@ -1,5 +1,13 @@
 # databye
 
+## 2.0.2
+
+### Patch Changes
+
+- 73c9d7c: remove col option from cli, update databye docs
+- Updated dependencies [73c9d7c]
+  - @databye/cli@2.0.2
+
 ## 2.0.1
 
 ### Patch Changes
