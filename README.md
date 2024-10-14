@@ -50,7 +50,12 @@ yarn dlx databye <command> [options]
 
 Mask `firstName` column in `users` table in `test` db:
 ```
-npx databye anon-col mask -u postgresql:/localhost -db test -t users -col firstName
+npx databye anon-col postgres \ 
+  --uri postgresql:/localhost \
+  --database test \
+  --table users \
+  --column firstName \
+  mask
 
 // { "firstName": "John" } => { "firstName": "****" }
 ```
