@@ -21,6 +21,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
+    "dev": "tsx -r dotenv/config src/dev-cli.ts",
+    "dev:cli": "node ./dist/dev-cli.js",
     "build:deps": "pnpm -F cli... build",
     "build:deploy": "pnpm deploy -F cli ./out",
     "build:watch": "tsc --watch"
@@ -34,7 +36,7 @@
     "@databye/mssql": "workspace:^",
     "@databye/postgres": "workspace:^",
     "@databye/processor": "workspace:^",
-    "@databye/sqlite": "^0.0.1",
+    "@databye/sqlite": "workspace:^",
     "chalk": "^5.3.0",
     "commander": "^12.1.0",
     "connection-string": "^4.4.0",

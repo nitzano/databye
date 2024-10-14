@@ -59,7 +59,12 @@ npx databye anon-col mask -u postgresql:/localhost -db test -t users -col firstN
 
 Scramble `lastName` column in `users` table in `test` db:
 ```
-npx databye anon-col scramble -u mongodb://localhost -db test -t users -col lastName
+npx databye anon-col mongo 
+  --uri mongodb://localhost
+  --database test 
+  --table users 
+  --column lastName
+  scramble
 
 // { "lastName": "Smith" } => { "lastName": "hSmti" }
 ```
@@ -68,14 +73,21 @@ npx databye anon-col scramble -u mongodb://localhost -db test -t users -col last
 
 Mask `firstName` column in `users` table in `dev.db`:
 ```
-npx databye anon-col mask -e sqlite -f /home/dev.db -t users -col firstName
+npx databye anon-col sqlite
+   --uri /home/dev.db
+   --table users
+   --column firstName
+    mask
 ```
 
 ## CSV
 
 Mask `email` column in `file.csv`:
 ```
-npx databye anon-col mask  -e csv -f /home/file.csv -col email
+npx databye anon-col csv 
+  --file /home/file.csv 
+  --column email 
+  mask
 ```
 
 # Anonymizers

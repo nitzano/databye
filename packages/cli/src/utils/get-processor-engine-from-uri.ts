@@ -3,6 +3,7 @@ import { ConnectionString } from "connection-string";
 
 const logger = createLogger();
 
+//@deprecated
 export function getProcessorEngineFromUri(
   connectionString: string
 ): EngineType | undefined {

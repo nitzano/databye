@@ -9,10 +9,7 @@ export class SQLiteProcessor extends KnexProcessor {
    * @memberof MariaDatabaseProcessor
    */
   buildClient(): Knex {
-    if (
-      !this.connectionOptions.connectionString &&
-      !this.connectionOptions.filePath
-    ) {
+    if (!this.connectionOptions.connectionString) {
       throw new Error("connection string or file name are required");
     }
 
@@ -20,9 +17,7 @@ export class SQLiteProcessor extends KnexProcessor {
       client: "sqlite3",
       useNullAsDefault: true,
       connection: {
-        filename:
-          this.connectionOptions.filePath! ??
-          this.connectionOptions.connectionString!,
+        filename: this.connectionOptions.connectionString,
       },
     });
   }

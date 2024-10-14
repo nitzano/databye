@@ -1,27 +1,27 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
 import { createLogger } from "@databye/common";
-import { DataBaseProcessor, type ColumnInfo } from "@databye/processor";
+import { BaseColumnProcessor } from "@databye/processor";
 import { readFileSync, writeFileSync } from "fs";
 import Papa from "papaparse";
 const { parse, unparse } = Papa;
 const logger = createLogger();
 
-export class CSVProcessor extends DataBaseProcessor {
+export class CSVProcessor extends BaseColumnProcessor {
   constructor(private readonly filePath: string) {
     super();
   }
 
-  async getColumnType(_columnInfo: ColumnInfo): Promise<ColumnType> {
+  async getColumnType(_columnName: string): Promise<ColumnType> {
     // everything is a string in csv
     return ColumnType.String;
   }
 
   async processColumn(
-    columnInfo: ColumnInfo,
+    columnName: string,
     columnType: ColumnType,
     anonymizer: Anonymizer
   ) {
-    processCsv(this.filePath, columnType, columnInfo.columnName, anonymizer);
+    processCsv(this.filePath, columnType, columnName, anonymizer);
   }
   catch(error: unknown) {
     logger.error(error);
@@ -35,6 +35,7 @@ function processCsv(
   columnName: string,
   anonymizer: Anonymizer
 ) {
+  logger.debug(`csv:reading file: ${filePath}`);
   // Read the CSV file asynchronously
   const csvFileString = readFileSync(filePath, "utf-8");
 

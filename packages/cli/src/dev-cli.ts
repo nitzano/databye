@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import { anonColCommand } from "@databye/cli";
-import { Command, } from "commander";
+import { Command } from "commander";
 import process from "node:process";
+import { anonColCommand } from "./anon-col/anon-col-command.js";
 
 const program = new Command().alias("dbye");
 

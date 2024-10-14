@@ -1,11 +1,11 @@
 import { ColumnType, type Anonymizer } from "@databye/anonymizers";
 import { createLogger, type ConnectionOptions } from "@databye/common";
-import { DataBaseProcessor, type ColumnInfo } from "@databye/processor";
+import { BaseColumnProcessor } from "@databye/processor";
 import { type Knex } from "knex";
 
 const logger = createLogger();
 
-export abstract class KnexProcessor extends DataBaseProcessor {
+export abstract class KnexProcessor extends BaseColumnProcessor {
   constructor(protected readonly connectionOptions: ConnectionOptions) {
     super();
   }
@@ -17,10 +17,11 @@ export abstract class KnexProcessor extends DataBaseProcessor {
    * @return {*}  {Promise<ColumnType>}
    * @memberof KnexProcessor
    */
-  async getColumnType(columnInfo: ColumnInfo): Promise<ColumnType> {
+  async getColumnType(columnName: string): Promise<ColumnType> {
     const client: Knex = this.buildClient();
     try {
-      const { tableName, columnName } = columnInfo;
+      const { tableName } = this.connectionOptions;
+
       const rows = await client(tableName)
         .select(columnName)
         .whereNotNull(columnName)
@@ -55,13 +56,13 @@ export abstract class KnexProcessor extends DataBaseProcessor {
    * @memberof MongoProcessor
    */
   async processColumn(
-    columnInfo: ColumnInfo,
+    columnName: string,
     columnType: ColumnType,
     anonymizer: Anonymizer
   ) {
-    const { tableName, columnName, databaseName } = columnInfo;
     const client: Knex = this.buildClient();
-
+    const { tableName, databaseName } = this.connectionOptions;
+    if (!tableName) throw new Error("no table name");
     logger.debug(`processing column`);
     try {
       await this.updateColumn(
