@@ -137,7 +137,6 @@ Anonymize a single column in a table
 
 ```
 Usage: databye anon-col <engine> [engine_options] <anonymizer> [anonymizer_options]
-
 ```
 
 # License
