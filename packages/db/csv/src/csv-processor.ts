@@ -35,6 +35,7 @@ function processCsv(
   columnName: string,
   anonymizer: Anonymizer
 ) {
+  logger.debug(`csv:reading file: ${filePath}`);
   // Read the CSV file asynchronously
   const csvFileString = readFileSync(filePath, "utf-8");
 
