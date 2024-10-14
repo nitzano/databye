@@ -1,5 +1,11 @@
 # databye
 
+## 2.0.3
+
+### Patch Changes
+
+- fdc7da4: docs
+
 ## 2.0.2
 
 ### Patch Changes
