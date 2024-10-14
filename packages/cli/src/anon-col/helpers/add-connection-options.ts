@@ -2,7 +2,7 @@ import { type Command } from "commander";
 
 export function addConnectionOptions(cmd: Command): Command {
   return cmd
-    .option("--tbl <tableName>", "Table name")
+    .option("--table <tableName>", "Table name")
     .option("--db <databaseName>", "Database name")
     .option("--password <password>", "database password")
     .option("--server <serverName>", "server to connect to")
