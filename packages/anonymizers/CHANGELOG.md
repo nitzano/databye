@@ -1,5 +1,13 @@
 # @databye/anonymizers
 
+## 1.0.3
+
+### Patch Changes
+
+- 77c7705: bump all deps to refresh
+- Updated dependencies [77c7705]
+  - @databye/common@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes
