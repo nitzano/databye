@@ -1,6 +1,8 @@
 import { Command } from "commander";
 import { scrambleAction } from "./scramble-action.js";
 
-export const scrambleCommand = new Command("scramble");
-
-scrambleCommand.description("scramble a single column").action(scrambleAction);
+export function getScrambleCommand(): Command {
+  return new Command("scramble")
+    .description("scramble a single column")
+    .action(scrambleAction);
+}

@@ -1,7 +1,8 @@
 import { Command } from "commander";
-import { maskCommand } from "./mask/mask-command.js";
-import { scrambleCommand } from "./scramble/scramble-command.js";
+import { getScrambleCommand } from "./scramble/scramble-command.js";
 
 export function addAnonymizerCommands(cmd: Command) {
-  cmd.addCommand(scrambleCommand).addCommand(maskCommand);
+  const scrambleCommand = getScrambleCommand();
+  cmd.addCommand(scrambleCommand);
+  // .addCommand(maskCommand);
 }
