@@ -1,5 +1,11 @@
 # databye
 
+## 2.0.0
+
+### Major Changes
+
+- 34d75e9: new cli for databye
+
 ## 1.2.3
 
 ### Patch Changes
