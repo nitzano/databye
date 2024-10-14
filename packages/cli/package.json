@@ -36,7 +36,7 @@
     "@databye/mssql": "workspace:^",
     "@databye/postgres": "workspace:^",
     "@databye/processor": "workspace:^",
-    "@databye/sqlite": "^0.0.1",
+    "@databye/sqlite": "workspace:^",
     "chalk": "^5.3.0",
     "commander": "^12.1.0",
     "connection-string": "^4.4.0",
