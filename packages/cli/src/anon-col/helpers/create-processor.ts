@@ -1,9 +1,4 @@
-import {
-  ConnectionOptions,
-  EngineType,
-  FileOptions,
-  createLogger,
-} from "@databye/common";
+import { EngineType, FileOptions, createLogger } from "@databye/common";
 import { CSVProcessor } from "@databye/csv";
 import { MariaDatabaseProcessor } from "@databye/mariadb";
 import { MongoProcessor } from "@databye/mongo";
@@ -25,7 +20,9 @@ export function createProcessor(
   logger.debug(`engine = ${engineType}`);
   switch (engineType) {
     case EngineType.Mongo: {
-      const connectionsOptions = options as ConnectionOptions;
+      const connectionsOptions = extractConnectionOptions(
+        options as CliConnectionOptions
+      );
       logger.debug("creating mongo processor");
       if (!connectionsOptions.connectionString)
         throw new Error("invalid connection string uri");
