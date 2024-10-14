@@ -1,7 +1,7 @@
 import { createLogger, type ConnectionOptions } from "@databye/common";
 import { type Command } from "commander";
 
-type CliConnectionOptions = {
+export type CliConnectionOptions = {
   database: string;
   password?: string;
   server?: string;
