@@ -1,24 +1,23 @@
-export enum FakeStringProviders {
+export enum FakeProvider {
+  Age = "age",
   Animal = "animal",
+  Color = "color",
   Email = "email",
   First = "first",
   Gender = "gender",
-  Last = "last",
-  Color = "color",
   IP = "ip",
+  Last = "last",
   Letter = "letter",
   Name = "name",
+  Natural = "natural",
   Paragraph = "paragraph",
+  Prime = "prime",
   Sentence = "sentence",
   SSN = "ssn",
   Word = "word",
 }
 
-export enum FakeNumberProviders {
-  Age = "age",
-  Natural = "natural",
-  Prime = "prime",
-}
+
 
 // @deprecated
 export const fakeTypes: string[] = [
