@@ -31,4 +31,5 @@ export async function runAnonymizeColumnAction(
   logger.info(`Anonymizing ${chalk.green(columnName)} column with ${chalk.green(engineType)} engine`);
   logger.info(`Using ${anonymizerToIcon[anonymizer.name]} ${chalk.magenta(anonymizer.name)} anonymizer`)
   await runner.processColumn(columnName, isConfirmed);
+  logger.info('✅ Done!')
 }
