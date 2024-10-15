@@ -14,7 +14,7 @@ export class FakeAnonymizer extends BaseAnonymizer {
 	}
 
 	anonymizeString(value: string): string {
-		switch (this.options.provider) {
+		switch (this.options.source) {
 			case FakeSource.First: {
 				return chance.first();
 			}
@@ -48,7 +48,7 @@ export class FakeAnonymizer extends BaseAnonymizer {
 	}
 
 	anonymizeNumber(value: number): number {
-		switch (this.options.provider) {
+		switch (this.options.source) {
 			case FakeSource.Age: {
 				return chance.age();
 			}
