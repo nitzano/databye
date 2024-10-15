@@ -1,5 +1,11 @@
 # @databye/cli
 
+## 2.1.0
+
+### Minor Changes
+
+- 3280698: add fake provider
+
 ## 2.0.3
 
 ### Patch Changes
