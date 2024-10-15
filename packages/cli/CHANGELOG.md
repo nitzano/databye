@@ -1,5 +1,21 @@
 # @databye/cli
 
+## 2.1.2
+
+### Patch Changes
+
+- 47e71f1: improve logger format
+- Updated dependencies [47e71f1]
+  - @databye/anonymizers@1.1.2
+  - @databye/postgres@1.0.7
+  - @databye/mariadb@1.0.7
+  - @databye/sqlite@0.0.6
+  - @databye/processor@1.0.7
+  - @databye/mongo@1.0.7
+  - @databye/mssql@1.0.7
+  - @databye/common@1.0.5
+  - @databye/csv@0.0.5
+
 ## 2.1.1
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @databye/sqlite
 
+## 0.0.5
+
+### Patch Changes
+
+- 47e71f1: improve logger format
+- Updated dependencies [47e71f1]
+  - @databye/processor@1.0.7
+  - @databye/common@1.0.5
+
 ## 0.0.4
 
 ### Patch Changes
