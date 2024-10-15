@@ -1,6 +1,6 @@
-import {type FakeOptions} from '../fake/fake-options.js';
-import {type MaskOptions} from '../mask/mask-options.js';
-import {type BaseAnonymizer} from './base-anonymizer.js';
+import { Anonymizer } from '@databye/common';
+import { type FakeOptions } from '../fake/fake-options.js';
+import { type MaskOptions } from '../mask/mask-options.js';
 
 export type ProviderType = 'mask' | 'fake' | 'const' | 'scramble' | 'remove';
 
@@ -13,16 +13,16 @@ export type BaseProvider = {
 export type FakeProvider = {
 	type: 'fake';
 	options?: FakeOptions;
-} & BaseAnonymizer;
+} & Anonymizer;
 
 export type MaskProvider = {
 	type: 'mask';
 	options?: MaskOptions;
-} & BaseAnonymizer;
+} & Anonymizer;
 
 export type ScrambleProvider = {
 	type: 'scramble';
 	options: undefined;
-} & BaseAnonymizer;
+} & Anonymizer;
 
 export type Provider = FakeProvider | MaskProvider | ScrambleProvider;
