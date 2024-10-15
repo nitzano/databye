@@ -48,8 +48,8 @@ export class FakeAnonymizer extends BaseAnonymizer {
 	}
 
 	anonymizeNumber(value: number): number {
-		switch (this.options.fakeValue) {
-			case 'age': {
+		switch (this.options.provider) {
+			case FakeProvider.Age: {
 				return chance.age();
 			}
 
