@@ -6,6 +6,8 @@ import { createProcessor } from "../anon-col/helpers/create-processor.js";
 
 const { cyanBright } = chalk
 
+const color = cyanBright
+
 const logger = createLogger();
 
 const anonymizerToIcon: Record<ProviderType, string | undefined> = {
@@ -27,8 +29,8 @@ export async function runAnonymizeColumnAction(
   const runner = new ColumnProcessorRunner(columnProcessor, anonymizer);
   const isConfirmed = engineCommand.optsWithGlobals().confirm as boolean;
   const columnName = engineCommand.optsWithGlobals().column as string;
-  logger.info(`Anonymizing ${chalk.cyan(columnName)} column with ${chalk.cyan(engineType)} engine`);
-  logger.info(`Using ${anonymizerToIcon[anonymizer.name]} ${chalk.cyan(anonymizer.name)} anonymizer`)
+  logger.info(`Anonymizing ${color(columnName)} column with ${color(engineType)} engine`);
+  logger.info(`Using ${anonymizerToIcon[anonymizer.name]} ${color(anonymizer.name)} anonymizer`)
   await runner.processColumn(columnName, isConfirmed);
   logger.info('✅ Done!')
 }
