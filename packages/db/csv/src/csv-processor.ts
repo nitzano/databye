@@ -1,5 +1,5 @@
-import { ColumnType, type Anonymizer } from "@databye/anonymizers";
-import { createLogger } from "@databye/common";
+import { type Anonymizer } from "@databye/anonymizers";
+import { ColumnType, createLogger } from "@databye/common";
 import { BaseColumnProcessor } from "@databye/processor";
 import { readFileSync, writeFileSync } from "fs";
 import Papa from "papaparse";
