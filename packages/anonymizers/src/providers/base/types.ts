@@ -4,7 +4,7 @@ import {type BaseAnonymizer} from './base-anonymizer.js';
 
 export type ProviderType = 'mask' | 'fake' | 'const' | 'scramble' | 'remove';
 
-export type Anonymizer = BaseAnonymizer;
+
 
 export type BaseProvider = {
 	type: ProviderType;
