@@ -1,5 +1,12 @@
 # @databye/cli
 
+## 2.1.4
+
+### Patch Changes
+
+- Updated dependencies [97aef75]
+  - @databye/sqlite@1.0.0
+
 ## 2.1.3
 
 ### Patch Changes
