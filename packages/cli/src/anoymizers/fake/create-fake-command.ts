@@ -6,6 +6,6 @@ export function createFakeCommand(): Command {
     return new Command("fake")
         .description("Fill with a fake value")
         .addOption(
-            new Option('--source --provider <source>', 'Fake Provider').default(FakeSource.Word).choices(Object.values(FakeSource))
+            new Option('--source <source>', 'Fake Provider').default(FakeSource.Word).choices(Object.values(FakeSource))
         ).action(fakeAction)
 }
