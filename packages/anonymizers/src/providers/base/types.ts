@@ -2,8 +2,14 @@ import { Anonymizer } from '@databye/common';
 import { type FakeOptions } from '../fake/fake-options.js';
 import { type MaskOptions } from '../mask/mask-options.js';
 
-export type ProviderType = 'mask' | 'fake' | 'const' | 'scramble' | 'remove';
 
+export enum ProviderType {
+	Mask = 'mask',
+	Fake = 'fake',
+	Constant = 'const',
+	Scramble = 'scramble',
+	Remove = 'remove'
+}
 
 
 export type BaseProvider = {
@@ -11,17 +17,17 @@ export type BaseProvider = {
 };
 
 export type FakeProvider = {
-	type: 'fake';
+	type: ProviderType.Fake;
 	options?: FakeOptions;
 } & Anonymizer;
 
 export type MaskProvider = {
-	type: 'mask';
+	type: ProviderType.Mask;
 	options?: MaskOptions;
 } & Anonymizer;
 
 export type ScrambleProvider = {
-	type: 'scramble';
+	type: ProviderType.Scramble;
 	options: undefined;
 } & Anonymizer;
 
