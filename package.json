@@ -1,8 +1,8 @@
 {
-  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",  
+  "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "license": "AGPL-3.0-only",
   "scripts": {
-    "dev": "pnpm -F databye dev",
+    "dev": "pnpm -F cli dev",
     "build:all": "pnpm -r build",
     "change:add": "pnpm changeset",
     "changeset:publish": "pnpm changeset publish",
