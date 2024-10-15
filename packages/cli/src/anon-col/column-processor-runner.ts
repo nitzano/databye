@@ -1,7 +1,7 @@
-import { type Anonymizer } from "@databye/anonymizers";
 import { BaseColumnProcessor } from "@databye/processor";
 import ora from "ora";
 import { checkUserConfirm } from "./helpers/check-user-confirm.js";
+import { Anonymizer } from "@databye/common";
 
 export class ColumnProcessorRunner {
   constructor(
