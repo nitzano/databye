@@ -1,5 +1,13 @@
 # @databye/anonymizers
 
+## 1.1.3
+
+### Patch Changes
+
+- b036ef3: docs
+- Updated dependencies [b036ef3]
+  - @databye/common@1.0.6
+
 ## 1.1.2
 
 ### Patch Changes

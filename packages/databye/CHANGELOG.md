@@ -1,5 +1,12 @@
 # databye
 
+## 2.1.2
+
+### Patch Changes
+
+- Updated dependencies [562cd53]
+  - @databye/cli@2.1.3
+
 ## 2.1.1
 
 ### Patch Changes

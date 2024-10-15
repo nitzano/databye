@@ -1,5 +1,14 @@
 # @databye/sqlite
 
+## 0.0.6
+
+### Patch Changes
+
+- b036ef3: docs
+- Updated dependencies [b036ef3]
+  - @databye/common@1.0.6
+  - @databye/processor@1.0.8
+
 ## 0.0.5
 
 ### Patch Changes
