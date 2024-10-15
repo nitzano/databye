@@ -104,9 +104,9 @@ npx databye anon-col csv \
 Coming Soon:
 
 1. 🧽 **Remove**  - removes the entire data
-2. 👓 **Blur** – Adds random variation to numerical values while keeping them within a reasonable range.
-3. 🖋️ **Constant** – Substitutes sensitive words or phrases with placeholders or predefined values.
-4. 🔐 **Hash** – Replaces the value with a cryptographic hash, making it irrecoverable.
+2. 🖋️ **Constant** – Substitutes sensitive words or phrases with placeholders or predefined values.
+3. 🔐 **Hash** – Replaces the value with a cryptographic hash, making it irrecoverable.
+4. 👓 **Blur** – Adds random variation to numerical values while keeping them within a reasonable range.
 
 # Support
 
