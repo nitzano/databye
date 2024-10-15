@@ -92,8 +92,7 @@ Fake `email` column in `file.csv` with a fake one:
 npx databye anon-col csv \ 
   --file /home/file.csv \ 
   --column email \ 
-  fake \
-  --source email
+  fake email
 ```
 
 # Anonymizers
