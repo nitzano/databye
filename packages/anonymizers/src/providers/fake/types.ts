@@ -1,14 +1,23 @@
 export enum FakeStringProviders {
-  FirstName = "first_name",
-  LastName = "last_name",
-  Word = "word",
-  Name = "name",
   Animal = "animal",
   Email = "email",
+  First = "first",
+  Gender = "gender",
+  Last = "last",
+  Color = "color",
+  IP = "ip",
+  Letter = "letter",
+  Name = "name",
+  Paragraph = "paragraph",
+  Sentence = "sentence",
+  SSN = "ssn",
+  Word = "word",
 }
 
 export enum FakeNumberProviders {
   Age = "age",
+  Natural = "natural",
+  Prime = "prime",
 }
 
 // @deprecated
