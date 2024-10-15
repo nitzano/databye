@@ -1,5 +1,11 @@
 # @databye/anonymizers
 
+## 1.1.0
+
+### Minor Changes
+
+- 306083d: added fake anonymizer
+
 ## 1.0.3
 
 ### Patch Changes

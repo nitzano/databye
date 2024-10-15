@@ -1,5 +1,13 @@
 # @databye/mongo
 
+## 1.0.5
+
+### Patch Changes
+
+- Updated dependencies [306083d]
+  - @databye/anonymizers@1.1.0
+  - @databye/processor@1.0.5
+
 ## 1.0.4
 
 ### Patch Changes

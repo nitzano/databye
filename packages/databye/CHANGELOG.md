@@ -1,5 +1,11 @@
 # databye
 
+## 2.0.4
+
+### Patch Changes
+
+- @databye/cli@2.0.3
+
 ## 2.0.3
 
 ### Patch Changes

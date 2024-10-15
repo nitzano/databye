@@ -1,5 +1,13 @@
 # @databye/sqlite
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [306083d]
+  - @databye/anonymizers@1.1.0
+  - @databye/processor@1.0.5
+
 ## 0.0.2
 
 ### Patch Changes
