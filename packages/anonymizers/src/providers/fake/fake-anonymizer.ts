@@ -1,8 +1,11 @@
+import { createLogger } from '@databye/common';
 import { Chance } from 'chance';
 import { BaseAnonymizer } from '../base/base-anonymizer.js';
 import { type ProviderType } from '../base/types.js';
 import { type FakeOptions } from './fake-options.js';
 import { FakeSource } from './types.js';
+
+const logger = createLogger()
 
 const chance = new Chance();
 
@@ -14,6 +17,7 @@ export class FakeAnonymizer extends BaseAnonymizer {
 	}
 
 	anonymizeString(value: string): string {
+		logger.debug(`fake source=${this.options.source}`)
 		switch (this.options.source) {
 			case FakeSource.First: {
 				return chance.first();
