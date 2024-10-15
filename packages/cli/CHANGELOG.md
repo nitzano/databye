@@ -1,5 +1,19 @@
 # @databye/cli
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [306083d]
+  - @databye/anonymizers@1.1.0
+  - @databye/csv@0.0.3
+  - @databye/mongo@1.0.5
+  - @databye/processor@1.0.5
+  - @databye/mariadb@1.0.5
+  - @databye/mssql@1.0.5
+  - @databye/postgres@1.0.5
+  - @databye/sqlite@0.0.4
+
 ## 2.0.2
 
 ### Patch Changes
