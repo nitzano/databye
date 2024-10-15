@@ -5,7 +5,7 @@ import {
     FakeSource
 } from "@databye/anonymizers";
 import { type Command } from "commander";
-import { runColumnAnonymizerAction } from "../run-anonymizer-command.js";
+import { runAnonymizeColumnAction } from "../run-anonymize-column-action.js";
 
 
 export async function fakeAction(this: Command) {
@@ -14,5 +14,5 @@ export async function fakeAction(this: Command) {
     };
 
     const fakeAnonymizer: FakeAnonymizer = createFakeAnonymizer(fakeOptions);
-    await runColumnAnonymizerAction(this.parent!, fakeAnonymizer);
+    await runAnonymizeColumnAction(this.parent!, fakeAnonymizer);
 }

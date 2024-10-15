@@ -3,9 +3,9 @@ import {
   ScrambleAnonymizer,
 } from "@databye/anonymizers";
 import { type Command } from "commander";
-import { runColumnAnonymizerAction } from "../run-anonymizer-command.js";
+import { runAnonymizeColumnAction } from "../run-anonymize-column-action.js";
 
 export async function scrambleAction(this: Command) {
   const scrambleAnonymizer: ScrambleAnonymizer = createScrambleAnonymizer();
-  await runColumnAnonymizerAction(this.parent!, scrambleAnonymizer);
+  await runAnonymizeColumnAction(this.parent!, scrambleAnonymizer);
 }
