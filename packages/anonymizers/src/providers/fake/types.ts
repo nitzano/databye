@@ -1,4 +1,4 @@
-export enum FakeProvider {
+export enum FakeSource {
   Age = "age",
   Animal = "animal",
   Color = "color",

@@ -1,9 +1,9 @@
-import { FakeProvider } from "./types.js";
+import { FakeSource } from "./types.js";
 
 export type FakeOptions = {
-	provider: FakeProvider;
+	provider: FakeSource;
 };
 
 export const defaultFakeOptions: FakeOptions = {
-	provider: FakeProvider.Word,
+	provider: FakeSource.Word,
 };
