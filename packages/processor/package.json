@@ -22,7 +22,6 @@
     "build:watch": "pnpm run build --watch"
   },
   "dependencies": {
-    "@databye/anonymizers": "workspace:^",
     "@databye/common": "workspace:^"
   }
 }

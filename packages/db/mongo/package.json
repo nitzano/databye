@@ -29,7 +29,6 @@
     "dev:seed": "tsx -r dotenv/config ./src/test/scripts/seed-mongo.ts dotenv_config_path=.dev.env"
   },
   "dependencies": {
-    "@databye/anonymizers": "workspace:^",
     "@databye/processor": "workspace:^",
     "@databye/common": "workspace:^",
     "chalk": "^5.3.0",
