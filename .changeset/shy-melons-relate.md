@@ -1,5 +1,0 @@
----
-"@databye/sqlite": major
----
-
-bump

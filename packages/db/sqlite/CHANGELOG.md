@@ -1,5 +1,11 @@
 # @databye/sqlite
 
+## 1.0.0
+
+### Major Changes
+
+- 97aef75: bump
+
 ## 0.0.7
 
 ### Patch Changes
