@@ -1,5 +1,4 @@
-import { type Anonymizer } from "@databye/anonymizers";
-import { ColumnType } from "@databye/common";
+import { Anonymizer, ColumnType } from "@databye/common";
 
 export type ColumnProcessor = {
   getColumnType(columnName: string): Promise<ColumnType | undefined>;

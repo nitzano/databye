@@ -1,5 +1,4 @@
-import { type Anonymizer } from "@databye/anonymizers";
-import { ColumnType, createLogger } from "@databye/common";
+import { Anonymizer, ColumnType, createLogger } from "@databye/common";
 import { BaseColumnProcessor } from "@databye/processor";
 import { MongoClient, type Db } from "mongodb";
 
