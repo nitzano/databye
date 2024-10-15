@@ -87,26 +87,27 @@ npx databye anon-col sqlite \
 
 ## CSV
 
-Mask `email` column in `file.csv`:
+Fake `email` column in `file.csv` with a fake one:
 ```
 npx databye anon-col csv \ 
   --file /home/file.csv \ 
   --column email \ 
-  mask
+  fake \
+  --source email
 ```
 
 # Anonymizers
 
 1. 🎭 **Mask** - Masks some or all of the letters of the previous value.
 2. 🔀 **Scramble** - Scrambles the order of characters inside a string randomly.
+1. 🍀 **Fake** - Generate fake data instead of the previous value
 
 Coming Soon:
 
-1. 🍀 **Fake** - Generate fake data instead of the previous value
-2. 🧽 **Erase**  - removes the entire data
-3. 👓 **Blur** – Adds random variation to numerical values while keeping them within a reasonable range.
-4. ✏️ **Replace** – Substitutes sensitive words or phrases with placeholders or predefined values.
-5. 🔐 **Hash** – Replaces the value with a cryptographic hash, making it irrecoverable.
+1. 🧽 **Remove**  - removes the entire data
+2. 🖋️ **Constant** – Substitutes sensitive words or phrases with placeholders or predefined values.
+3. 🔐 **Hash** – Replaces the value with a cryptographic hash, making it irrecoverable.
+4. 👓 **Blur** – Adds random variation to numerical values while keeping them within a reasonable range.
 
 # Support
 
