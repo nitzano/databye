@@ -1,5 +1,14 @@
 # @databye/mariadb
 
+## 1.0.6
+
+### Patch Changes
+
+- af6b062: remove anonymizers as depdency from processors
+- Updated dependencies [af6b062]
+  - @databye/knex-processor@1.0.6
+  - @databye/common@1.0.4
+
 ## 1.0.5
 
 ### Patch Changes

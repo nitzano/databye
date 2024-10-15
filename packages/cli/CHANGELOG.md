@@ -1,5 +1,21 @@
 # @databye/cli
 
+## 2.1.1
+
+### Patch Changes
+
+- af6b062: remove anonymizers as depdency from processors
+- Updated dependencies [af6b062]
+  - @databye/anonymizers@1.1.1
+  - @databye/postgres@1.0.6
+  - @databye/mariadb@1.0.6
+  - @databye/sqlite@0.0.5
+  - @databye/processor@1.0.6
+  - @databye/mongo@1.0.6
+  - @databye/mssql@1.0.6
+  - @databye/common@1.0.4
+  - @databye/csv@0.0.4
+
 ## 2.1.0
 
 ### Minor Changes
