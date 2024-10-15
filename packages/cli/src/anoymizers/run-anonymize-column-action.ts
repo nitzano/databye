@@ -5,7 +5,7 @@ import { createProcessor } from "../anon-col/helpers/create-processor.js";
 
 const logger = createLogger();
 
-export async function runAnonymizerCommand(
+export async function runAnonymizeColumnAction(
   engineCommand: Command,
   anonymizer: Anonymizer
 ) {

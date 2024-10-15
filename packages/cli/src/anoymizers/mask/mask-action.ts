@@ -4,7 +4,7 @@ import {
   type MaskOptions,
 } from "@databye/anonymizers";
 import { type Command } from "commander";
-import { runAnonymizerCommand } from "../run-anonymizer-command.js";
+import { runColumnAnonymizerAction } from "../run-anonymizer-command.js";
 
 
 export async function maskAction(this: Command) {
@@ -14,5 +14,5 @@ export async function maskAction(this: Command) {
 
   // // Build anonymizer
   const maskAnonymizer: MaskAnonymizer = createMaskAnonymizer(maskOptions);
-  await runAnonymizerCommand(this.parent!, maskAnonymizer);
+  await runColumnAnonymizerAction(this.parent!, maskAnonymizer);
 }
