@@ -1,5 +1,14 @@
 # @databye/sqlite
 
+## 0.0.4
+
+### Patch Changes
+
+- af6b062: remove anonymizers as depdency from processors
+- Updated dependencies [af6b062]
+  - @databye/processor@1.0.6
+  - @databye/common@1.0.4
+
 ## 0.0.3
 
 ### Patch Changes

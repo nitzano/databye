@@ -1,5 +1,13 @@
 # @databye/anonymizers
 
+## 1.1.1
+
+### Patch Changes
+
+- af6b062: remove anonymizers as depdency from processors
+- Updated dependencies [af6b062]
+  - @databye/common@1.0.4
+
 ## 1.1.0
 
 ### Minor Changes

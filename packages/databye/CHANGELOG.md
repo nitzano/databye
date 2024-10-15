@@ -1,5 +1,13 @@
 # databye
 
+## 2.0.6
+
+### Patch Changes
+
+- af6b062: remove anonymizers as depdency from processors
+- Updated dependencies [af6b062]
+  - @databye/cli@2.1.1
+
 ## 2.0.5
 
 ### Patch Changes

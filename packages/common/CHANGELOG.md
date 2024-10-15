@@ -1,5 +1,11 @@
 # @databye/common
 
+## 1.0.4
+
+### Patch Changes
+
+- af6b062: remove anonymizers as depdency from processors
+
 ## 1.0.3
 
 ### Patch Changes
