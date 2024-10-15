@@ -180,9 +180,6 @@ importers:
 
   packages/db/csv:
     dependencies:
-      '@databye/anonymizers':
-        specifier: workspace:^
-        version: link:../../anonymizers
       '@databye/common':
         specifier: workspace:^
         version: link:../../common
@@ -220,9 +217,6 @@ importers:
 
   packages/db/knex-processor:
     dependencies:
-      '@databye/anonymizers':
-        specifier: workspace:^
-        version: link:../../anonymizers
       '@databye/common':
         specifier: workspace:^
         version: link:../../common
@@ -285,9 +279,6 @@ importers:
 
   packages/db/mongo:
     dependencies:
-      '@databye/anonymizers':
-        specifier: workspace:^
-        version: link:../../anonymizers
       '@databye/common':
         specifier: workspace:^
         version: link:../../common
@@ -439,9 +430,6 @@ importers:
 
   packages/processor:
     dependencies:
-      '@databye/anonymizers':
-        specifier: workspace:^
-        version: link:../anonymizers
       '@databye/common':
         specifier: workspace:^
         version: link:../common
