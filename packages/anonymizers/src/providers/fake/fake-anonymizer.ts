@@ -1,7 +1,8 @@
-import {Chance} from 'chance';
-import {BaseAnonymizer} from '../base/base-anonymizer.js';
-import {type ProviderType} from '../base/types.js';
-import {type FakeOptions} from './fake-options.js';
+import { Chance } from 'chance';
+import { BaseAnonymizer } from '../base/base-anonymizer.js';
+import { type ProviderType } from '../base/types.js';
+import { type FakeOptions } from './fake-options.js';
+import { FakeProvider } from './types.js';
 
 const chance = new Chance();
 
@@ -13,30 +14,28 @@ export class FakeAnonymizer extends BaseAnonymizer {
 	}
 
 	anonymizeString(value: string): string {
-		switch (this.options.fakeValue) {
-			case 'firstName':
-			case 'first': {
+		switch (this.options.provider) {
+			case FakeProvider.First: {
 				return chance.first();
 			}
 
-			case 'lastName':
-			case 'last': {
+			case FakeProvider.Last: {
 				return chance.last();
 			}
 
-			case 'word': {
+			case FakeProvider.Word: {
 				return chance.word();
 			}
 
-			case 'name': {
+			case FakeProvider.Name: {
 				return chance.name();
 			}
 
-			case 'animal': {
+			case FakeProvider.Animal: {
 				return chance.animal();
 			}
 
-			case 'email': {
+			case FakeProvider.Email: {
 				return chance.email();
 			}
 
