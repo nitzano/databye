@@ -1,5 +1,4 @@
-import { Anonymizer } from "@databye/anonymizers";
-import { createLogger, EngineType } from "@databye/common";
+import { Anonymizer, createLogger, EngineType } from "@databye/common";
 import { Command } from "commander";
 import { ColumnProcessorRunner } from "../anon-col/column-processor-runner.js";
 import { createProcessor } from "../anon-col/helpers/create-processor.js";

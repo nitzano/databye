@@ -17,7 +17,6 @@
     "build:watch": "pnpm run build --watch"
   },
   "dependencies": {
-    "@databye/anonymizers": "workspace:^",
     "@databye/processor": "workspace:^",
     "@databye/common": "workspace:^",
     "dotenv": "^16.4.5",

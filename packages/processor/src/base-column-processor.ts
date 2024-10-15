@@ -1,5 +1,4 @@
-import { ColumnType, type Anonymizer } from "@databye/anonymizers";
-import { createLogger } from "@databye/common";
+import { Anonymizer, ColumnType, createLogger } from "@databye/common";
 import { type ColumnProcessor } from "./column-processor.js";
 
 const logger = createLogger();

@@ -1,7 +1,7 @@
-import {ColumnType} from './column-type.js';
-import {type ProviderType} from './types.js';
+import { Anonymizer, ColumnType } from '@databye/common';
+import { type ProviderType } from './types.js';
 
-export abstract class BaseAnonymizer {
+export abstract class BaseAnonymizer implements Anonymizer {
 	abstract name: ProviderType;
 
 	anonymizeString?(value: string): string;
