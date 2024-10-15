@@ -1,11 +1,14 @@
 import { FakeSource } from "@databye/anonymizers";
-import { Command, Option } from "commander";
+import { Argument, Command } from "commander";
 import { fakeAction } from "./fake-action.js";
 
 export function createFakeCommand(): Command {
-    return new Command("fake")
-        .description("Fill with a fake value")
-        .addOption(
-            new Option('--source <source>', 'Fake Provider').default(FakeSource.Word).choices(Object.values(FakeSource))
-        ).action(fakeAction)
+  return new Command("fake")
+    .description("Fill with a fake value")
+    .addArgument(
+      new Argument("<source>", "Fake Source")
+        .default(FakeSource.Word)
+        .choices(Object.values(FakeSource))
+    )
+    .action(fakeAction);
 }
