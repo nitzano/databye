@@ -1,5 +1,13 @@
 # databye
 
+## 2.1.1
+
+### Patch Changes
+
+- 47e71f1: improve logger format
+- Updated dependencies [47e71f1]
+  - @databye/cli@2.1.2
+
 ## 2.1.0
 
 ### Minor Changes

@@ -1,7 +1,7 @@
 {
   "name": "@databye/postgres",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "files": [
     "dist",
     "CHANGELOG.md"

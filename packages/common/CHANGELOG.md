@@ -1,5 +1,11 @@
 # @databye/common
 
+## 1.0.5
+
+### Patch Changes
+
+- 47e71f1: improve logger format
+
 ## 1.0.4
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @databye/mariadb
 
+## 1.0.7
+
+### Patch Changes
+
+- 47e71f1: improve logger format
+- Updated dependencies [47e71f1]
+  - @databye/knex-processor@1.0.7
+  - @databye/common@1.0.5
+
 ## 1.0.6
 
 ### Patch Changes

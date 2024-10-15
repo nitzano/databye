@@ -1,7 +1,7 @@
 {
   "name": "@databye/csv",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "files": [
     "dist",
     "CHANGELOG.md"
