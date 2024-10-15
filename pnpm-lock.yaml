@@ -18,7 +18,7 @@ importers:
         specifier: workspace:^
         version: link:../common
       chance:
-        specifier: ^1.1.8
+        specifier: ^1.1.12
         version: 1.1.12
       lodash-es:
         specifier: ^4.17.21
@@ -28,7 +28,7 @@ importers:
         specifier: ^20.1.4
         version: 20.1.4
       '@types/chance':
-        specifier: ^1.1.3
+        specifier: ^1.1.6
         version: 1.1.6
       '@types/lodash-es':
         specifier: ^4
