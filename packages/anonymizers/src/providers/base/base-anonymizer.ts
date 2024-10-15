@@ -1,5 +1,5 @@
-import {ColumnType} from './column-type.js';
-import {type ProviderType} from './types.js';
+import { ColumnType } from '@databye/common';
+import { type ProviderType } from './types.js';
 
 export abstract class BaseAnonymizer {
 	abstract name: ProviderType;
