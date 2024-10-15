@@ -1,7 +1,6 @@
-import { createLogger } from '@databye/common';
+import { createLogger, ProviderType } from '@databye/common';
 import { Chance } from 'chance';
 import { BaseAnonymizer } from '../base/base-anonymizer.js';
-import { type ProviderType } from '../base/types.js';
 import { type FakeOptions } from './fake-options.js';
 import { FakeSource } from './types.js';
 
@@ -10,7 +9,7 @@ const logger = createLogger()
 const chance = new Chance();
 
 export class FakeAnonymizer extends BaseAnonymizer {
-	name: ProviderType = 'fake';
+	name: ProviderType = ProviderType.Fake;
 
 	constructor(private readonly options: FakeOptions) {
 		super();
