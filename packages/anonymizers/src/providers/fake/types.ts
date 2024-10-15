@@ -18,29 +18,3 @@ export enum FakeProvider {
 }
 
 
-
-// @deprecated
-export const fakeTypes: string[] = [
-  "age",
-  "email",
-  "first",
-  "firstName",
-  "last",
-  "lastName",
-  "letter",
-  "name",
-  "word",
-];
-
-// @deprecated
-export type FakeType =
-  | "age"
-  | "animal"
-  | "email"
-  | "first"
-  | "firstName"
-  | "last"
-  | "lastName"
-  | "letter"
-  | "name"
-  | "word";
