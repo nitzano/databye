@@ -1,5 +1,11 @@
 # @databye/common
 
+## 1.0.6
+
+### Patch Changes
+
+- b036ef3: docs
+
 ## 1.0.5
 
 ### Patch Changes

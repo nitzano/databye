@@ -1,7 +1,7 @@
 {
   "name": "@databye/mongo",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "files": [
     "dist",
     "CHANGELOG.md"

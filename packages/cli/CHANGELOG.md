@@ -1,5 +1,21 @@
 # @databye/cli
 
+## 2.1.3
+
+### Patch Changes
+
+- 562cd53: change fake option to be argument
+- Updated dependencies [b036ef3]
+  - @databye/anonymizers@1.1.3
+  - @databye/common@1.0.6
+  - @databye/csv@0.0.6
+  - @databye/mariadb@1.0.8
+  - @databye/mongo@1.0.8
+  - @databye/mssql@1.0.8
+  - @databye/postgres@1.0.8
+  - @databye/sqlite@0.0.7
+  - @databye/processor@1.0.8
+
 ## 2.1.2
 
 ### Patch Changes
