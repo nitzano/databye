@@ -1,5 +1,4 @@
-import { Anonymizer, ColumnType } from '@databye/common';
-import { type ProviderType } from './types.js';
+import { Anonymizer, ColumnType, ProviderType } from '@databye/common';
 
 export abstract class BaseAnonymizer implements Anonymizer {
 	abstract name: ProviderType;

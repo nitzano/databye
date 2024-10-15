@@ -4,13 +4,11 @@ import Enquirer from "enquirer";
 const { prompt } = Enquirer;
 
 // Cyan
-const color = chalk.cyan;
+const color = chalk.yellowBright;
 
-export async function checkUserConfirm(column: string): Promise<boolean> {
+export async function checkUserConfirm(): Promise<boolean> {
   try {
-    let confirmMessage = `Are you sure you want to anonymize column "${color(
-      column
-    )}"`;
+    let confirmMessage = `${color("Run command")}?`;
 
     const answer = await prompt<{ run: boolean }>({
       type: "confirm",

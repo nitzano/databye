@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "pnpm -F cli dev",
     "build:all": "pnpm -r build",
-    "change:add": "pnpm changeset",
+    "change": "pnpm changeset",
     "changeset:publish": "pnpm changeset publish",
     "changeset:version": "pnpm changeset version",
     "release": "pnpm build:all && pnpm changeset:publish"

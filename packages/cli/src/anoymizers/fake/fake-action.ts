@@ -4,9 +4,11 @@ import {
     FakeOptions,
     FakeSource
 } from "@databye/anonymizers";
+import { createLogger } from "@databye/common";
 import { type Command } from "commander";
-import { runAnonymizerCommand } from "../run-anonymizer-command.js";
+import { runAnonymizeColumnAction } from "../run-anonymize-column-action.js";
 
+const logger = createLogger()
 
 export async function fakeAction(this: Command) {
     const fakeOptions: FakeOptions = {
@@ -14,5 +16,5 @@ export async function fakeAction(this: Command) {
     };
 
     const fakeAnonymizer: FakeAnonymizer = createFakeAnonymizer(fakeOptions);
-    await runAnonymizerCommand(this.parent!, fakeAnonymizer);
+    await runAnonymizeColumnAction(this.parent!, fakeAnonymizer);
 }

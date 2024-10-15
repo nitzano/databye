@@ -1,5 +1,4 @@
-import { Anonymizer } from '@databye/common';
-import { type ProviderType } from '../base/types.js';
+import { Anonymizer, ProviderType } from '@databye/common';
 import { FakeAnonymizer } from '../fake/fake-anonymizer.js';
 import { defaultFakeOptions, type FakeOptions } from '../fake/fake-options.js';
 import { MaskAnonymizer } from '../mask/mask-anonymizer.js';

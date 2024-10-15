@@ -7,7 +7,7 @@ import {
 } from 'winston';
 
 function isDevelopment(): boolean {
-	return process.env.NODE_ENV !== 'production';
+	return process.env.NODE_ENV === 'development';
 }
 
 export function createLogger(): Logger {
@@ -15,7 +15,7 @@ export function createLogger(): Logger {
 
 	const logger = createWinstonLogger({
 		level: process.env.LOG_LEVEL ?? defaultLogLevel,
-		format: format.combine(format.errors({stack: true}), format.cli()),
+		format: format.combine(format.errors({ stack: true }), format.cli()),
 		transports: [new transports.Console()],
 	});
 	return logger;
