@@ -1,1 +1,3 @@
-# # @databye/mariadb
+# @databye/mariadb
+
+Part of [DataBye](https://www.npmjs.com/package/databye) package
