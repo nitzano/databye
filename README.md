@@ -87,12 +87,13 @@ npx databye anon-col sqlite \
 
 ## CSV
 
-Mask `email` column in `file.csv`:
+Fake `email` column in `file.csv` with a fake one:
 ```
 npx databye anon-col csv \ 
   --file /home/file.csv \ 
   --column email \ 
-  mask
+  fake \
+  --source email
 ```
 
 # Anonymizers
