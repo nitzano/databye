@@ -1,5 +1,11 @@
 # databye
 
+## 2.1.0
+
+### Minor Changes
+
+- 4ca6710: add fake ability to databye
+
 ## 2.0.6
 
 ### Patch Changes
