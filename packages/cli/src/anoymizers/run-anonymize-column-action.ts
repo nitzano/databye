@@ -28,7 +28,7 @@ export async function runAnonymizeColumnAction(
   const isConfirmed = engineCommand.optsWithGlobals().confirm as boolean;
   const columnName = engineCommand.optsWithGlobals().column as string;
   // logger.info(`using ${chalk.cyan("🍀 fake")} anonymizer`)
-  logger.info(`Anonymizing ${chalk.green(columnName)} column with ${chalk.green(engineType)} engine`);
+  logger.info(`Anonymizing ${chalk.cyan(columnName)} column with ${chalk.cyan(engineType)} engine`);
   logger.info(`Using ${anonymizerToIcon[anonymizer.name]} ${chalk.magenta(anonymizer.name)} anonymizer`)
   await runner.processColumn(columnName, isConfirmed);
   logger.info('✅ Done!')
