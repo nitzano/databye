@@ -2,7 +2,7 @@ import { defaultMaskOptions } from "@databye/anonymizers";
 import { Command } from "commander";
 import { maskAction } from "./mask-action.js";
 
-export function getMaskCommand(): Command {
+export function createMaskCommand(): Command {
   return new Command("mask")
     .description("mask a single column")
     .option(
