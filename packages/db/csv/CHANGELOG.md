@@ -1,5 +1,14 @@
 # @datazar-cli/csv
 
+## 0.0.9
+
+### Patch Changes
+
+- 4200fdd: bump
+- Updated dependencies [4200fdd]
+  - @datazar-cli/common@1.0.9
+  - @datazar-cli/processor@1.0.11
+
 ## 0.0.8
 
 ### Patch Changes

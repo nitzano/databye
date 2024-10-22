@@ -1,6 +1,6 @@
 {
   "name": "@datazar-cli/cli",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "type": "module",
   "license": "AGPL-3.0-only",

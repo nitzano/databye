@@ -1,5 +1,11 @@
 # @datazar-cli/common
 
+## 1.0.9
+
+### Patch Changes
+
+- 4200fdd: bump
+
 ## 1.0.8
 
 ### Patch Changes
