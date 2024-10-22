@@ -1,5 +1,0 @@
----
-"datazar-cli": patch
----
-
-docs
