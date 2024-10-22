@@ -1,6 +1,6 @@
 {
   "name": "@datazar-cli/core",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "homepage": "https://github.com/nitzano/datazar",
   "repository": "git@github.com:nitzano/datazar.git",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",

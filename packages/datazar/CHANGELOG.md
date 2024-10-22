@@ -1,5 +1,11 @@
 # datazar
 
+## 2.1.8
+
+### Patch Changes
+
+- 5c12732: core
+
 ## 2.1.7
 
 ### Patch Changes
