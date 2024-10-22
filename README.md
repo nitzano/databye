@@ -5,11 +5,11 @@
 
 <div align="center">
 
-[![npm](https://img.shields.io/npm/v/@datazar-cli/core)](https://www.npmjs.com/package/@datazar-cli/core)
+[![npm](https://img.shields.io/npm/v/datazar-cli)](https://www.npmjs.com/package/datazar-cli)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 [![GitHub Repo stars](https://img.shields.io/github/stars/nitzano/datazar?style=flat)](https://github.com/nitzano/datazar/stargazers)
 ![GitHub License](https://img.shields.io/github/license/nitzano/datazar)
-![npm](https://img.shields.io/npm/dw/@datazar-cli/core)
+![npm](https://img.shields.io/npm/dw/datazar-cli)
 
 </div>
 
@@ -35,13 +35,13 @@ A command-line tool to anonymize and transform sensitive data in databases, file
 
 ```
 # npm
-npx @datazar-cli/core <command> [options]
+npx datazar-cli <command> [options]
 
 # pnpm
-pnpm dlx @datazar-cli/core <command> [options]
+pnpm dlx datazar-cli <command> [options]
 
 # yarn
-yarn dlx @datazar-cli/core <command> [options]
+yarn dlx datazar-cli <command> [options]
 ```
 
 # Examples
@@ -50,7 +50,7 @@ yarn dlx @datazar-cli/core <command> [options]
 
 Mask `firstName` column in `users` table in `test` db:
 ```
-npx @datazar-cli/core anon-col postgres \ 
+npx datazar-cli anon-col postgres \ 
   --uri postgresql:/localhost \
   --database test \
   --table users \
@@ -64,7 +64,7 @@ npx @datazar-cli/core anon-col postgres \
 
 Scramble `lastName` column in `users` table in `test` db:
 ```
-npx @datazar-cli/core anon-col mongo 
+npx datazar-cli anon-col mongo 
   --uri mongodb://localhost \
   --database test \ 
   --table users \ 
@@ -78,7 +78,7 @@ npx @datazar-cli/core anon-col mongo
 
 Mask `firstName` column in `users` table in `dev.db`:
 ```
-npx @datazar-cli/core anon-col sqlite \
+npx datazar-cli anon-col sqlite \
    --uri /home/dev.db \
    --table users \
    --column firstName \
@@ -89,7 +89,7 @@ npx @datazar-cli/core anon-col sqlite \
 
 Fake `email` column in `file.csv` with a fake one:
 ```
-npx @datazar-cli/core anon-col csv \ 
+npx datazar-cli anon-col csv \ 
   --file /home/file.csv \ 
   --column email \ 
   fake email
