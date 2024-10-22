@@ -1,6 +1,6 @@
 
 
-<h1 align="center">DataBye 📊👋</h1>
+<h1 align="center">DataZar 📊👋</h1>
 <h2 align="center">CLI Database & File Anonymizer</h2>
 
 <div align="center">
@@ -146,7 +146,7 @@ Usage: datazar anon-col <engine> [engine_options] <anonymizer> [anonymizer_optio
 
 # License
 
-DataBye
+DataZar
 Copyright (C) 2024 Nitzan Ohana
 
 This program is free software: you can redistribute it and/or modify

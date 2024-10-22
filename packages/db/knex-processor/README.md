@@ -1,3 +1,3 @@
 # @datazar-cli/knex-processor
 
-Part of [DataBye](https://www.npmjs.com/package/datazar) package
+Part of [DataZar](https://www.npmjs.com/package/datazar) package
