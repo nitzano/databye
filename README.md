@@ -5,7 +5,7 @@
 
 <div align="center">
 
-[![npm](https://img.shields.io/npm/v/@datazar-cli/core)](https://www.npmjs.com/package/datazar)
+[![npm](https://img.shields.io/npm/v/@datazar-cli/core)](https://www.npmjs.com/package/@datazar-cli/core)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 [![GitHub Repo stars](https://img.shields.io/github/stars/nitzano/datazar?style=flat)](https://github.com/nitzano/datazar/stargazers)
 ![GitHub License](https://img.shields.io/github/license/nitzano/datazar)
