@@ -1,4 +1,4 @@
-# databye
+# datazar
 
 ## 2.1.3
 
@@ -25,7 +25,7 @@
 
 ### Minor Changes
 
-- 4ca6710: add fake ability to databye
+- 4ca6710: add fake ability to datazar
 
 ## 2.0.6
 
@@ -58,7 +58,7 @@
 
 ### Patch Changes
 
-- 73c9d7c: remove col option from cli, update databye docs
+- 73c9d7c: remove col option from cli, update datazar docs
 - Updated dependencies [73c9d7c]
   - @datazar-cli/cli@2.0.2
 
@@ -72,7 +72,7 @@
 
 ### Major Changes
 
-- 34d75e9: new cli for databye
+- 34d75e9: new cli for datazar
 
 ## 1.2.3
 

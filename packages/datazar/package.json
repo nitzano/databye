@@ -37,13 +37,13 @@
     "readme:gen": "cp -f ../../README.md ./",
     "clean": "rimraf dist deploy cli",
     "build": "tsc",
-    "build:deps": "pnpm -F databye... build",
-    "build:deploy": "pnpm --filter=databye  --prod deploy ./deploy",
+    "build:deps": "pnpm -F datazar... build",
+    "build:deploy": "pnpm --filter=datazar  --prod deploy ./deploy",
     "build:watch": "tsc --watch",
-    "build:esbuild": "esbuild src/databye.ts --bundle --outdir=out --format=esm --platform=node",
+    "build:esbuild": "esbuild src/datazar.ts --bundle --outdir=out --format=esm --platform=node",
     "build:pkg": "pkg --no-bytecode  -t node*-linux-x64 --out-path cli ./dist/index.js",
-    "dev": "tsx -r dotenv/config src/databye.ts",
-    "start": "node dist/databye.js",
+    "dev": "tsx -r dotenv/config src/datazar.ts",
+    "start": "node dist/datazar.js",
     "prepare": "pnpm readme:gen"
   },
   "dependencies": {

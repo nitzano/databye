@@ -79,7 +79,7 @@
 
 ### Patch Changes
 
-- 73c9d7c: remove col option from cli, update databye docs
+- 73c9d7c: remove col option from cli, update datazar docs
 
 ## 2.0.1
 
