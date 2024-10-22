@@ -1,7 +1,7 @@
 {
   "name": "@datazar-cli/mongo",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "files": [
     "dist",
     "CHANGELOG.md"
