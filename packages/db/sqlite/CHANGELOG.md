@@ -1,5 +1,14 @@
 # @datazar-cli/sqlite
 
+## 1.0.3
+
+### Patch Changes
+
+- 4200fdd: bump
+- Updated dependencies [4200fdd]
+  - @datazar-cli/common@1.0.9
+  - @datazar-cli/knex-processor@1.0.11
+
 ## 1.0.2
 
 ### Patch Changes

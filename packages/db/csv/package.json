@@ -1,7 +1,7 @@
 {
   "name": "@datazar-cli/csv",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "files": [
     "dist",
     "CHANGELOG.md"

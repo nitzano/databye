@@ -1,5 +1,21 @@
 # @datazar-cli/cli
 
+## 2.1.7
+
+### Patch Changes
+
+- 4200fdd: bump
+- Updated dependencies [4200fdd]
+  - @datazar-cli/anonymizers@1.1.6
+  - @datazar-cli/common@1.0.9
+  - @datazar-cli/csv@0.0.9
+  - @datazar-cli/mariadb@1.0.11
+  - @datazar-cli/mongo@1.0.11
+  - @datazar-cli/mssql@1.0.11
+  - @datazar-cli/postgres@1.0.11
+  - @datazar-cli/sqlite@1.0.3
+  - @datazar-cli/processor@1.0.11
+
 ## 2.1.6
 
 ### Patch Changes

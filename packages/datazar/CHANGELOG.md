@@ -1,5 +1,13 @@
 # datazar
 
+## 2.1.10
+
+### Patch Changes
+
+- 4200fdd: bump
+- Updated dependencies [4200fdd]
+  - @datazar-cli/cli@2.1.7
+
 ## 2.1.9
 
 ### Patch Changes
