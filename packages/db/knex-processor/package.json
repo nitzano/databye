@@ -1,7 +1,7 @@
 {
   "name": "@datazar-cli/knex-processor",
   "type": "module",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "AGPL-3.0-only",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
