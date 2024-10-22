@@ -1,4 +1,4 @@
-import { createLogger, type ConnectionOptions } from "@databye/common";
+import { createLogger, type ConnectionOptions } from "@datazar-cli/common";
 
 export type CliConnectionOptions = {
   database: string;

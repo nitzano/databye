@@ -4,14 +4,14 @@
 
 ### Patch Changes
 
-- @databye/cli@2.1.4
+- @datazar-cli/cli@2.1.4
 
 ## 2.1.2
 
 ### Patch Changes
 
 - Updated dependencies [562cd53]
-  - @databye/cli@2.1.3
+  - @datazar-cli/cli@2.1.3
 
 ## 2.1.1
 
@@ -19,7 +19,7 @@
 
 - 47e71f1: improve logger format
 - Updated dependencies [47e71f1]
-  - @databye/cli@2.1.2
+  - @datazar-cli/cli@2.1.2
 
 ## 2.1.0
 
@@ -33,20 +33,20 @@
 
 - af6b062: remove anonymizers as depdency from processors
 - Updated dependencies [af6b062]
-  - @databye/cli@2.1.1
+  - @datazar-cli/cli@2.1.1
 
 ## 2.0.5
 
 ### Patch Changes
 
 - Updated dependencies [3280698]
-  - @databye/cli@2.1.0
+  - @datazar-cli/cli@2.1.0
 
 ## 2.0.4
 
 ### Patch Changes
 
-- @databye/cli@2.0.3
+- @datazar-cli/cli@2.0.3
 
 ## 2.0.3
 
@@ -60,13 +60,13 @@
 
 - 73c9d7c: remove col option from cli, update databye docs
 - Updated dependencies [73c9d7c]
-  - @databye/cli@2.0.2
+  - @datazar-cli/cli@2.0.2
 
 ## 2.0.1
 
 ### Patch Changes
 
-- @databye/cli@2.0.1
+- @datazar-cli/cli@2.0.1
 
 ## 2.0.0
 
@@ -79,7 +79,7 @@
 ### Patch Changes
 
 - Updated dependencies [b9740bc]
-  - @databye/cli@2.0.0
+  - @datazar-cli/cli@2.0.0
 
 ## 1.2.2
 
@@ -104,7 +104,7 @@
 ### Patch Changes
 
 - Updated dependencies [2d10e45]
-  - @databye/cli@1.0.6
+  - @datazar-cli/cli@1.0.6
 
 ## 1.1.0
 
@@ -115,7 +115,7 @@
 ### Patch Changes
 
 - Updated dependencies [8f0ac4e]
-  - @databye/cli@1.0.5
+  - @datazar-cli/cli@1.0.5
 
 ## 1.0.10
 
@@ -123,17 +123,17 @@
 
 - 492876a: move depdencies in cli to be required
 - Updated dependencies [492876a]
-  - @databye/cli@1.0.4
+  - @datazar-cli/cli@1.0.4
 
 ## 1.0.9
 
 ### Patch Changes
 
-- @databye/cli@1.0.3
-- @databye/mongo@1.0.3
-- @databye/mariadb@1.0.3
-- @databye/mssql@1.0.3
-- @databye/postgres@1.0.3
+- @datazar-cli/cli@1.0.3
+- @datazar-cli/mongo@1.0.3
+- @datazar-cli/mariadb@1.0.3
+- @datazar-cli/mssql@1.0.3
+- @datazar-cli/postgres@1.0.3
 
 ## 1.0.8
 
@@ -171,21 +171,21 @@
 
 ### Patch Changes
 
-- @databye/cli@1.0.2
-- @databye/mariadb@1.0.2
-- @databye/mongo@1.0.2
-- @databye/mssql@1.0.2
-- @databye/postgres@1.0.2
+- @datazar-cli/cli@1.0.2
+- @datazar-cli/mariadb@1.0.2
+- @datazar-cli/mongo@1.0.2
+- @datazar-cli/mssql@1.0.2
+- @datazar-cli/postgres@1.0.2
 
 ## 1.0.2
 
 ### Patch Changes
 
-- @databye/cli@1.0.1
-- @databye/mariadb@1.0.1
-- @databye/mongo@1.0.1
-- @databye/mssql@1.0.1
-- @databye/postgres@1.0.1
+- @datazar-cli/cli@1.0.1
+- @datazar-cli/mariadb@1.0.1
+- @datazar-cli/mongo@1.0.1
+- @datazar-cli/mssql@1.0.1
+- @datazar-cli/postgres@1.0.1
 
 ## 1.0.1
 
@@ -193,11 +193,11 @@
 
 - b15ea61: readme
 - Updated dependencies [b15ea61]
-  - @databye/cli@1.0.0
-  - @databye/mariadb@1.0.0
-  - @databye/mongo@1.0.0
-  - @databye/mssql@1.0.0
-  - @databye/postgres@1.0.0
+  - @datazar-cli/cli@1.0.0
+  - @datazar-cli/mariadb@1.0.0
+  - @datazar-cli/mongo@1.0.0
+  - @datazar-cli/mssql@1.0.0
+  - @datazar-cli/postgres@1.0.0
 
 ## 1.0.0
 

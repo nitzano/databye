@@ -1,5 +1,5 @@
 {
-  "name": "@databye/csv",
+  "name": "@datazar-cli/csv",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "version": "0.0.6",
   "files": [
@@ -28,8 +28,8 @@
     "db:seed": "tsx -r dotenv/config ./src/test/scripts/seed-db.ts dotenv_config_path=.dev.env"
   },
   "dependencies": {
-    "@databye/common": "workspace:^",
-    "@databye/processor": "workspace:^",
+    "@datazar-cli/common": "workspace:^",
+    "@datazar-cli/processor": "workspace:^",
     "papaparse": "^5.4.1"
   }
 }

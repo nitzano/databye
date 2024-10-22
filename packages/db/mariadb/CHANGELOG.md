@@ -1,4 +1,4 @@
-# @databye/mariadb
+# @datazar-cli/mariadb
 
 ## 1.0.8
 
@@ -6,8 +6,8 @@
 
 - b036ef3: docs
 - Updated dependencies [b036ef3]
-  - @databye/common@1.0.6
-  - @databye/knex-processor@1.0.8
+  - @datazar-cli/common@1.0.6
+  - @datazar-cli/knex-processor@1.0.8
 
 ## 1.0.7
 
@@ -15,8 +15,8 @@
 
 - 47e71f1: improve logger format
 - Updated dependencies [47e71f1]
-  - @databye/knex-processor@1.0.7
-  - @databye/common@1.0.5
+  - @datazar-cli/knex-processor@1.0.7
+  - @datazar-cli/common@1.0.5
 
 ## 1.0.6
 
@@ -24,14 +24,14 @@
 
 - af6b062: remove anonymizers as depdency from processors
 - Updated dependencies [af6b062]
-  - @databye/knex-processor@1.0.6
-  - @databye/common@1.0.4
+  - @datazar-cli/knex-processor@1.0.6
+  - @datazar-cli/common@1.0.4
 
 ## 1.0.5
 
 ### Patch Changes
 
-- @databye/knex-processor@1.0.5
+- @datazar-cli/knex-processor@1.0.5
 
 ## 1.0.4
 
@@ -39,30 +39,30 @@
 
 - 77c7705: bump all deps to refresh
 - Updated dependencies [77c7705]
-  - @databye/common@1.0.3
-  - @databye/knex-processor@1.0.4
+  - @datazar-cli/common@1.0.3
+  - @datazar-cli/knex-processor@1.0.4
 
 ## 1.0.3
 
 ### Patch Changes
 
-- @databye/knex-processor@1.0.3
+- @datazar-cli/knex-processor@1.0.3
 
 ## 1.0.2
 
 ### Patch Changes
 
 - Updated dependencies [957eb0e]
-  - @databye/common@1.0.2
-  - @databye/knex-processor@1.0.2
+  - @datazar-cli/common@1.0.2
+  - @datazar-cli/knex-processor@1.0.2
 
 ## 1.0.1
 
 ### Patch Changes
 
 - Updated dependencies [a6d3f7b]
-  - @databye/common@1.0.1
-  - @databye/knex-processor@1.0.1
+  - @datazar-cli/common@1.0.1
+  - @datazar-cli/knex-processor@1.0.1
 
 ## 1.0.0
 
@@ -73,8 +73,8 @@
 ### Patch Changes
 
 - Updated dependencies [b15ea61]
-  - @databye/common@1.0.0
-  - @databye/knex-processor@1.0.0
+  - @datazar-cli/common@1.0.0
+  - @datazar-cli/knex-processor@1.0.0
 
 ## 0.0.1
 

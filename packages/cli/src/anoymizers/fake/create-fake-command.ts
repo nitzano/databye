@@ -1,4 +1,4 @@
-import { FakeSource } from "@databye/anonymizers";
+import { FakeSource } from "@datazar-cli/anonymizers";
 import { Argument, Command } from "commander";
 import { fakeAction } from "./fake-action.js";
 

@@ -1,3 +1,3 @@
-# @databye/mariadb
+# @datazar-cli/mariadb
 
 Part of [DataBye](https://www.npmjs.com/package/databye) package

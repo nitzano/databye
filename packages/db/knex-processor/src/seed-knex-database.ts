@@ -1,5 +1,5 @@
 // Create a fake pg db
-import { userFactory } from "@databye/common";
+import { userFactory } from "@datazar-cli/common";
 import { type Knex } from "knex";
 
 const sampleTableName = "users";

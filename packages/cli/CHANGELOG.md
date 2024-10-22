@@ -1,11 +1,11 @@
-# @databye/cli
+# @datazar-cli/cli
 
 ## 2.1.4
 
 ### Patch Changes
 
 - Updated dependencies [97aef75]
-  - @databye/sqlite@1.0.0
+  - @datazar-cli/sqlite@1.0.0
 
 ## 2.1.3
 
@@ -13,15 +13,15 @@
 
 - 562cd53: change fake option to be argument
 - Updated dependencies [b036ef3]
-  - @databye/anonymizers@1.1.3
-  - @databye/common@1.0.6
-  - @databye/csv@0.0.6
-  - @databye/mariadb@1.0.8
-  - @databye/mongo@1.0.8
-  - @databye/mssql@1.0.8
-  - @databye/postgres@1.0.8
-  - @databye/sqlite@0.0.7
-  - @databye/processor@1.0.8
+  - @datazar-cli/anonymizers@1.1.3
+  - @datazar-cli/common@1.0.6
+  - @datazar-cli/csv@0.0.6
+  - @datazar-cli/mariadb@1.0.8
+  - @datazar-cli/mongo@1.0.8
+  - @datazar-cli/mssql@1.0.8
+  - @datazar-cli/postgres@1.0.8
+  - @datazar-cli/sqlite@0.0.7
+  - @datazar-cli/processor@1.0.8
 
 ## 2.1.2
 
@@ -29,15 +29,15 @@
 
 - 47e71f1: improve logger format
 - Updated dependencies [47e71f1]
-  - @databye/anonymizers@1.1.2
-  - @databye/postgres@1.0.7
-  - @databye/mariadb@1.0.7
-  - @databye/sqlite@0.0.6
-  - @databye/processor@1.0.7
-  - @databye/mongo@1.0.7
-  - @databye/mssql@1.0.7
-  - @databye/common@1.0.5
-  - @databye/csv@0.0.5
+  - @datazar-cli/anonymizers@1.1.2
+  - @datazar-cli/postgres@1.0.7
+  - @datazar-cli/mariadb@1.0.7
+  - @datazar-cli/sqlite@0.0.6
+  - @datazar-cli/processor@1.0.7
+  - @datazar-cli/mongo@1.0.7
+  - @datazar-cli/mssql@1.0.7
+  - @datazar-cli/common@1.0.5
+  - @datazar-cli/csv@0.0.5
 
 ## 2.1.1
 
@@ -45,15 +45,15 @@
 
 - af6b062: remove anonymizers as depdency from processors
 - Updated dependencies [af6b062]
-  - @databye/anonymizers@1.1.1
-  - @databye/postgres@1.0.6
-  - @databye/mariadb@1.0.6
-  - @databye/sqlite@0.0.5
-  - @databye/processor@1.0.6
-  - @databye/mongo@1.0.6
-  - @databye/mssql@1.0.6
-  - @databye/common@1.0.4
-  - @databye/csv@0.0.4
+  - @datazar-cli/anonymizers@1.1.1
+  - @datazar-cli/postgres@1.0.6
+  - @datazar-cli/mariadb@1.0.6
+  - @datazar-cli/sqlite@0.0.5
+  - @datazar-cli/processor@1.0.6
+  - @datazar-cli/mongo@1.0.6
+  - @datazar-cli/mssql@1.0.6
+  - @datazar-cli/common@1.0.4
+  - @datazar-cli/csv@0.0.4
 
 ## 2.1.0
 
@@ -66,14 +66,14 @@
 ### Patch Changes
 
 - Updated dependencies [306083d]
-  - @databye/anonymizers@1.1.0
-  - @databye/csv@0.0.3
-  - @databye/mongo@1.0.5
-  - @databye/processor@1.0.5
-  - @databye/mariadb@1.0.5
-  - @databye/mssql@1.0.5
-  - @databye/postgres@1.0.5
-  - @databye/sqlite@0.0.4
+  - @datazar-cli/anonymizers@1.1.0
+  - @datazar-cli/csv@0.0.3
+  - @datazar-cli/mongo@1.0.5
+  - @datazar-cli/processor@1.0.5
+  - @datazar-cli/mariadb@1.0.5
+  - @datazar-cli/mssql@1.0.5
+  - @datazar-cli/postgres@1.0.5
+  - @datazar-cli/sqlite@0.0.4
 
 ## 2.0.2
 
@@ -86,15 +86,15 @@
 ### Patch Changes
 
 - Updated dependencies [77c7705]
-  - @databye/anonymizers@1.0.3
-  - @databye/common@1.0.3
-  - @databye/csv@0.0.2
-  - @databye/mariadb@1.0.4
-  - @databye/mongo@1.0.4
-  - @databye/mssql@1.0.4
-  - @databye/postgres@1.0.4
-  - @databye/sqlite@0.0.3
-  - @databye/processor@1.0.4
+  - @datazar-cli/anonymizers@1.0.3
+  - @datazar-cli/common@1.0.3
+  - @datazar-cli/csv@0.0.2
+  - @datazar-cli/mariadb@1.0.4
+  - @datazar-cli/mongo@1.0.4
+  - @datazar-cli/mssql@1.0.4
+  - @datazar-cli/postgres@1.0.4
+  - @datazar-cli/sqlite@0.0.3
+  - @datazar-cli/processor@1.0.4
 
 ## 2.0.0
 
@@ -105,7 +105,7 @@
 ### Patch Changes
 
 - Updated dependencies [b9740bc]
-  - @databye/sqlite@0.0.2
+  - @datazar-cli/sqlite@0.0.2
 
 ## 1.0.6
 
@@ -114,7 +114,7 @@
 - 2d10e45: bind csv to cli
 - Updated dependencies [2d10e45]
 - Updated dependencies [3ac90ee]
-  - @databye/csv@0.0.1
+  - @datazar-cli/csv@0.0.1
 
 ## 1.0.5
 
@@ -133,25 +133,25 @@
 ### Patch Changes
 
 - Updated dependencies [ef888f9]
-  - @databye/processor@1.0.3
+  - @datazar-cli/processor@1.0.3
 
 ## 1.0.2
 
 ### Patch Changes
 
 - Updated dependencies [957eb0e]
-  - @databye/common@1.0.2
-  - @databye/anonymizers@1.0.2
-  - @databye/processor@1.0.2
+  - @datazar-cli/common@1.0.2
+  - @datazar-cli/anonymizers@1.0.2
+  - @datazar-cli/processor@1.0.2
 
 ## 1.0.1
 
 ### Patch Changes
 
 - Updated dependencies [a6d3f7b]
-  - @databye/common@1.0.1
-  - @databye/anonymizers@1.0.1
-  - @databye/processor@1.0.1
+  - @datazar-cli/common@1.0.1
+  - @datazar-cli/anonymizers@1.0.1
+  - @datazar-cli/processor@1.0.1
 
 ## 1.0.0
 
@@ -162,9 +162,9 @@
 ### Patch Changes
 
 - Updated dependencies [b15ea61]
-  - @databye/anonymizers@1.0.0
-  - @databye/common@1.0.0
-  - @databye/processor@1.0.0
+  - @datazar-cli/anonymizers@1.0.0
+  - @datazar-cli/common@1.0.0
+  - @datazar-cli/processor@1.0.0
 
 ## 0.0.1
 

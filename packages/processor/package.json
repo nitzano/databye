@@ -1,5 +1,5 @@
 {
-  "name": "@databye/processor",
+  "name": "@datazar-cli/processor",
   "type": "module",
   "version": "1.0.8",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
@@ -22,6 +22,6 @@
     "build:watch": "pnpm run build --watch"
   },
   "dependencies": {
-    "@databye/common": "workspace:^"
+    "@datazar-cli/common": "workspace:^"
   }
 }

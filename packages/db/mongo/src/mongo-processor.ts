@@ -1,5 +1,5 @@
-import { Anonymizer, ColumnType, createLogger } from "@databye/common";
-import { BaseColumnProcessor } from "@databye/processor";
+import { Anonymizer, ColumnType, createLogger } from "@datazar-cli/common";
+import { BaseColumnProcessor } from "@datazar-cli/processor";
 import { MongoClient, type Db } from "mongodb";
 
 const logger = createLogger();

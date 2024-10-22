@@ -1,4 +1,4 @@
-# @databye/common
+# @datazar-cli/common
 
 ## 1.0.6
 

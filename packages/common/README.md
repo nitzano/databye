@@ -1,4 +1,4 @@
-# @databye/common
+# @datazar-cli/common
 
 Common Types and Enums for `databye` package
 

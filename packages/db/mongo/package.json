@@ -1,5 +1,5 @@
 {
-  "name": "@databye/mongo",
+  "name": "@datazar-cli/mongo",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "version": "1.0.8",
   "files": [
@@ -29,8 +29,8 @@
     "dev:seed": "tsx -r dotenv/config ./src/test/scripts/seed-mongo.ts dotenv_config_path=.dev.env"
   },
   "dependencies": {
-    "@databye/processor": "workspace:^",
-    "@databye/common": "workspace:^",
+    "@datazar-cli/processor": "workspace:^",
+    "@datazar-cli/common": "workspace:^",
     "chalk": "^5.3.0",
     "mongodb": "^4.3.0"
   }

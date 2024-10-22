@@ -1,4 +1,4 @@
-# @databye/sqlite
+# @datazar-cli/sqlite
 
 ## 1.0.0
 
@@ -12,8 +12,8 @@
 
 - b036ef3: docs
 - Updated dependencies [b036ef3]
-  - @databye/common@1.0.6
-  - @databye/knex-processor@1.0.8
+  - @datazar-cli/common@1.0.6
+  - @datazar-cli/knex-processor@1.0.8
 
 ## 0.0.6
 
@@ -21,8 +21,8 @@
 
 - 47e71f1: improve logger format
 - Updated dependencies [47e71f1]
-  - @databye/knex-processor@1.0.7
-  - @databye/common@1.0.5
+  - @datazar-cli/knex-processor@1.0.7
+  - @datazar-cli/common@1.0.5
 
 ## 0.0.5
 
@@ -30,14 +30,14 @@
 
 - af6b062: remove anonymizers as depdency from processors
 - Updated dependencies [af6b062]
-  - @databye/knex-processor@1.0.6
-  - @databye/common@1.0.4
+  - @datazar-cli/knex-processor@1.0.6
+  - @datazar-cli/common@1.0.4
 
 ## 0.0.4
 
 ### Patch Changes
 
-- @databye/knex-processor@1.0.5
+- @datazar-cli/knex-processor@1.0.5
 
 ## 0.0.3
 
@@ -45,8 +45,8 @@
 
 - 77c7705: bump all deps to refresh
 - Updated dependencies [77c7705]
-  - @databye/common@1.0.3
-  - @databye/knex-processor@1.0.4
+  - @datazar-cli/common@1.0.3
+  - @datazar-cli/knex-processor@1.0.4
 
 ## 0.0.2
 

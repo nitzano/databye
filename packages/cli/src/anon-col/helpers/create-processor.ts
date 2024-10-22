@@ -1,11 +1,11 @@
-import { EngineType, FileOptions, createLogger } from "@databye/common";
-import { CSVProcessor } from "@databye/csv";
-import { MariaDatabaseProcessor } from "@databye/mariadb";
-import { MongoProcessor } from "@databye/mongo";
-import { MsSqlProcessor } from "@databye/mssql";
-import { PostgresProcessor } from "@databye/postgres";
-import { BaseColumnProcessor } from "@databye/processor";
-import { SQLiteProcessor } from "@databye/sqlite";
+import { EngineType, FileOptions, createLogger } from "@datazar-cli/common";
+import { CSVProcessor } from "@datazar-cli/csv";
+import { MariaDatabaseProcessor } from "@datazar-cli/mariadb";
+import { MongoProcessor } from "@datazar-cli/mongo";
+import { MsSqlProcessor } from "@datazar-cli/mssql";
+import { PostgresProcessor } from "@datazar-cli/postgres";
+import { BaseColumnProcessor } from "@datazar-cli/processor";
+import { SQLiteProcessor } from "@datazar-cli/sqlite";
 import {
   CliConnectionOptions,
   extractConnectionOptions,

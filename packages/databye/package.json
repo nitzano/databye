@@ -47,7 +47,7 @@
     "prepare": "pnpm readme:gen"
   },
   "dependencies": {
-    "@databye/cli": "workspace:^",
+    "@datazar-cli/cli": "workspace:^",
     "commander": "^12.1.0",
     "winston": "^3.13.0"
   },
