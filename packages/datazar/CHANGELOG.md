@@ -1,5 +1,11 @@
 # datazar
 
+## 2.1.5
+
+### Patch Changes
+
+- 551c27a: core
+
 ## 2.1.4
 
 ### Patch Changes
