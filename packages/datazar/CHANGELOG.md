@@ -1,5 +1,11 @@
 # datazar
 
+## 2.1.9
+
+### Patch Changes
+
+- c411b67: docs
+
 ## 2.1.8
 
 ### Patch Changes
