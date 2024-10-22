@@ -1,4 +1,4 @@
-import { defaultMaskOptions } from "@databye/anonymizers";
+import { defaultMaskOptions } from "@datazar-cli/anonymizers";
 import { Command } from "commander";
 import { maskAction } from "./mask-action.js";
 

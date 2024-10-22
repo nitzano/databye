@@ -1,5 +1,5 @@
 // Create a fake pg db
-import { seedKnexDatabase } from "@databye/knex-processor";
+import { seedKnexDatabase } from "@datazar-cli/knex-processor";
 import "dotenv/config"; // eslint-disable-line import/no-unassigned-import
 import knex, { type Knex } from "knex";
 import process from "node:process";

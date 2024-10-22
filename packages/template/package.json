@@ -1,5 +1,5 @@
 {
-    "name": "@databye/template",
+    "name": "@datazar-cli/template",
     "private": true,
     "type": "module",
     "exports": "./dist/index.js",

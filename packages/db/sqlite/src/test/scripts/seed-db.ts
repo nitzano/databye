@@ -1,5 +1,5 @@
 // Create a fake sqlite db
-import { userFactory } from "@databye/common";
+import { userFactory } from "@datazar-cli/common";
 import "dotenv/config"; // eslint-disable-line import/no-unassigned-import
 import knex, { type Knex } from "knex";
 import process from "node:process";

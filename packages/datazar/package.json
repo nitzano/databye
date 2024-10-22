@@ -1,8 +1,8 @@
 {
-  "name": "databye",
+  "name": "datazar",
   "version": "2.1.3",
-  "homepage": "https://github.com/nitzano/databye",
-  "repository": "git@github.com:nitzano/databye.git",
+  "homepage": "https://github.com/nitzano/datazar",
+  "repository": "git@github.com:nitzano/datazar.git",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "license": "AGPL-3.0-only",
   "type": "module",
@@ -20,8 +20,8 @@
     "CHANGELOG.md"
   ],
   "bin": {
-    "dbye": "./dist/databye.js",
-    "databye": "./dist/databye.js"
+    "dz": "./dist/cli.js",
+    "datazar": "./dist/cli.js"
   },
   "keywords": [
     "anonymizer",
@@ -37,17 +37,17 @@
     "readme:gen": "cp -f ../../README.md ./",
     "clean": "rimraf dist deploy cli",
     "build": "tsc",
-    "build:deps": "pnpm -F databye... build",
-    "build:deploy": "pnpm --filter=databye  --prod deploy ./deploy",
+    "build:deps": "pnpm -F datazar... build",
+    "build:deploy": "pnpm --filter=datazar  --prod deploy ./deploy",
     "build:watch": "tsc --watch",
-    "build:esbuild": "esbuild src/databye.ts --bundle --outdir=out --format=esm --platform=node",
+    "build:esbuild": "esbuild src/datazar.ts --bundle --outdir=out --format=esm --platform=node",
     "build:pkg": "pkg --no-bytecode  -t node*-linux-x64 --out-path cli ./dist/index.js",
-    "dev": "tsx -r dotenv/config src/databye.ts",
-    "start": "node dist/databye.js",
+    "dev": "tsx -r dotenv/config src/datazar.ts",
+    "start": "node dist/datazar.js",
     "prepare": "pnpm readme:gen"
   },
   "dependencies": {
-    "@databye/cli": "workspace:^",
+    "@datazar-cli/cli": "workspace:^",
     "commander": "^12.1.0",
     "winston": "^3.13.0"
   },

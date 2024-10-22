@@ -1,3 +1,3 @@
-# @databye/postgres
+# @datazar-cli/postgres
 
-Part of [DataBye](https://www.npmjs.com/package/databye) package
+Part of [DataZar](https://www.npmjs.com/package/datazar) package

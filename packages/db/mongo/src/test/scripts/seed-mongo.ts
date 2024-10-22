@@ -4,7 +4,7 @@ import {
   userFactory,
   type Product,
   type User,
-} from "@databye/common";
+} from "@datazar-cli/common";
 import chalk from "chalk";
 import "dotenv/config"; // eslint-disable-line import/no-unassigned-import
 import { MongoClient } from "mongodb";

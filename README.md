@@ -1,15 +1,15 @@
 
 
-<h1 align="center">DataBye 📊👋</h1>
+<h1 align="center">DataZar 📊👋</h1>
 <h2 align="center">CLI Database & File Anonymizer</h2>
 
 <div align="center">
 
-[![npm](https://img.shields.io/npm/v/databye)](https://www.npmjs.com/package/databye)
+[![npm](https://img.shields.io/npm/v/datazar)](https://www.npmjs.com/package/datazar)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
-[![GitHub Repo stars](https://img.shields.io/github/stars/nitzano/databye?style=flat)](https://github.com/nitzano/databye/stargazers)
-![GitHub License](https://img.shields.io/github/license/nitzano/databye)
-![npm](https://img.shields.io/npm/dw/databye)
+[![GitHub Repo stars](https://img.shields.io/github/stars/nitzano/datazar?style=flat)](https://github.com/nitzano/datazar/stargazers)
+![GitHub License](https://img.shields.io/github/license/nitzano/datazar)
+![npm](https://img.shields.io/npm/dw/datazar)
 
 </div>
 
@@ -35,13 +35,13 @@ A command-line tool to anonymize and transform sensitive data in databases, file
 
 ```
 # npm
-npx databye <command> [options]
+npx datazar <command> [options]
 
 # pnpm
-pnpm dlx databye <command> [options]
+pnpm dlx datazar <command> [options]
 
 # yarn
-yarn dlx databye <command> [options]
+yarn dlx datazar <command> [options]
 ```
 
 # Examples
@@ -50,7 +50,7 @@ yarn dlx databye <command> [options]
 
 Mask `firstName` column in `users` table in `test` db:
 ```
-npx databye anon-col postgres \ 
+npx datazar anon-col postgres \ 
   --uri postgresql:/localhost \
   --database test \
   --table users \
@@ -64,7 +64,7 @@ npx databye anon-col postgres \
 
 Scramble `lastName` column in `users` table in `test` db:
 ```
-npx databye anon-col mongo 
+npx datazar anon-col mongo 
   --uri mongodb://localhost \
   --database test \ 
   --table users \ 
@@ -78,7 +78,7 @@ npx databye anon-col mongo
 
 Mask `firstName` column in `users` table in `dev.db`:
 ```
-npx databye anon-col sqlite \
+npx datazar anon-col sqlite \
    --uri /home/dev.db \
    --table users \
    --column firstName \
@@ -89,7 +89,7 @@ npx databye anon-col sqlite \
 
 Fake `email` column in `file.csv` with a fake one:
 ```
-npx databye anon-col csv \ 
+npx datazar anon-col csv \ 
   --file /home/file.csv \ 
   --column email \ 
   fake email
@@ -141,12 +141,12 @@ Coming Soon:
 Anonymize a single column in a table
 
 ```
-Usage: databye anon-col <engine> [engine_options] <anonymizer> [anonymizer_options]
+Usage: datazar anon-col <engine> [engine_options] <anonymizer> [anonymizer_options]
 ```
 
 # License
 
-DataBye
+DataZar
 Copyright (C) 2024 Nitzan Ohana
 
 This program is free software: you can redistribute it and/or modify

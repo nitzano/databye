@@ -1,1 +1,1 @@
-# # @databye/sqlite
+# # @datazar-cli/sqlite

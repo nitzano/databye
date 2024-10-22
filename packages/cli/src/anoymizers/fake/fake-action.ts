@@ -3,8 +3,8 @@ import {
   FakeAnonymizer,
   FakeOptions,
   FakeSource,
-} from "@databye/anonymizers";
-import { createLogger } from "@databye/common";
+} from "@datazar-cli/anonymizers";
+import { createLogger } from "@datazar-cli/common";
 import { type Command } from "commander";
 import { runAnonymizeColumnAction } from "../run-anonymize-column-action.js";
 

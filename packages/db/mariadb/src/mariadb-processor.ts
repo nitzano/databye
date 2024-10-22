@@ -1,4 +1,4 @@
-import { KnexProcessor } from "@databye/knex-processor";
+import { KnexProcessor } from "@datazar-cli/knex-processor";
 import knex, { type Knex } from "knex";
 
 export class MariaDatabaseProcessor extends KnexProcessor {

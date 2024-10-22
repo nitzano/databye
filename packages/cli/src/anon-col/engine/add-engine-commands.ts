@@ -1,4 +1,4 @@
-import { EngineType } from "@databye/common";
+import { EngineType } from "@datazar-cli/common";
 import { Command } from "commander";
 import { addAnonymizerCommands } from "../../anoymizers/add-anonymizer-commands.js";
 import { addColumnOption } from "../helpers/add-column-option.js";

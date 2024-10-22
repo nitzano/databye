@@ -1,7 +1,7 @@
 import {
   createScrambleAnonymizer,
   ScrambleAnonymizer,
-} from "@databye/anonymizers";
+} from "@datazar-cli/anonymizers";
 import { type Command } from "commander";
 import { runAnonymizeColumnAction } from "../run-anonymize-column-action.js";
 

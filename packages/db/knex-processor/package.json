@@ -1,5 +1,5 @@
 {
-  "name": "@databye/knex-processor",
+  "name": "@datazar-cli/knex-processor",
   "type": "module",
   "version": "1.0.8",
   "license": "AGPL-3.0-only",
@@ -17,8 +17,8 @@
     "build:watch": "pnpm run build --watch"
   },
   "dependencies": {
-    "@databye/processor": "workspace:^",
-    "@databye/common": "workspace:^",
+    "@datazar-cli/processor": "workspace:^",
+    "@datazar-cli/common": "workspace:^",
     "dotenv": "^16.4.5",
     "knex": "^3.1.0"
   }

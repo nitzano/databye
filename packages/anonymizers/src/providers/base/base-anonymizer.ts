@@ -1,41 +1,41 @@
-import { Anonymizer, ColumnType, ProviderType } from '@databye/common';
+import { Anonymizer, ColumnType, ProviderType } from "@datazar-cli/common";
 
 export abstract class BaseAnonymizer implements Anonymizer {
-	abstract name: ProviderType;
+  abstract name: ProviderType;
 
-	anonymizeString?(value: string): string;
-	anonymizeNumber?(value: number): number;
-	anonymizeBoolean?(value: boolean): boolean;
+  anonymizeString?(value: string): string;
+  anonymizeNumber?(value: number): number;
+  anonymizeBoolean?(value: boolean): boolean;
 
-	anonymize(value: any, columnType?: ColumnType): any {
-		switch (columnType) {
-			case ColumnType.String: {
-				if (this.anonymizeString) {
-					return this.anonymizeString(value as string);
-				}
+  anonymize(value: any, columnType?: ColumnType): any {
+    switch (columnType) {
+      case ColumnType.String: {
+        if (this.anonymizeString) {
+          return this.anonymizeString(value as string);
+        }
 
-				break;
-			}
+        break;
+      }
 
-			case ColumnType.Number: {
-				if (this.anonymizeNumber) {
-					return this.anonymizeNumber(value as number);
-				}
+      case ColumnType.Number: {
+        if (this.anonymizeNumber) {
+          return this.anonymizeNumber(value as number);
+        }
 
-				break;
-			}
+        break;
+      }
 
-			case ColumnType.Boolean: {
-				if (this.anonymizeBoolean) {
-					return this.anonymizeBoolean(value as boolean);
-				}
+      case ColumnType.Boolean: {
+        if (this.anonymizeBoolean) {
+          return this.anonymizeBoolean(value as boolean);
+        }
 
-				break;
-			}
+        break;
+      }
 
-			default: {
-				throw new Error('could not detect column type');
-			}
-		}
-	}
+      default: {
+        throw new Error("could not detect column type");
+      }
+    }
+  }
 }

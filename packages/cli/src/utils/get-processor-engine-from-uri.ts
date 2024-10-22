@@ -1,4 +1,4 @@
-import { createLogger, EngineType } from "@databye/common";
+import { createLogger, EngineType } from "@datazar-cli/common";
 import { ConnectionString } from "connection-string";
 
 const logger = createLogger();

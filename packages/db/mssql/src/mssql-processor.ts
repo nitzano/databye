@@ -1,5 +1,5 @@
-import { createLogger } from "@databye/common";
-import { KnexProcessor } from "@databye/knex-processor";
+import { createLogger } from "@datazar-cli/common";
+import { KnexProcessor } from "@datazar-cli/knex-processor";
 import knex, { type Knex } from "knex";
 
 const logger = createLogger();

@@ -1,5 +1,5 @@
 {
-  "name": "@databye/mariadb",
+  "name": "@datazar-cli/mariadb",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
   "version": "1.0.8",
   "files": [
@@ -25,8 +25,8 @@
     "db:seed": "node --no-warnings=ExperimentalWarning --loader ts-node/esm -r dotenv/config ./src/test/scripts/seed-mariadb.ts dotenv_config_path=.dev.env"
   },
   "dependencies": {
-    "@databye/common": "workspace:^",
-    "@databye/knex-processor": "workspace:^",
+    "@datazar-cli/common": "workspace:^",
+    "@datazar-cli/knex-processor": "workspace:^",
     "knex": "^3.1.0",
     "mysql": "^2.18.1"
   }

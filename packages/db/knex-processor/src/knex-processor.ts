@@ -1,5 +1,10 @@
-import { Anonymizer, ColumnType, createLogger, type ConnectionOptions } from "@databye/common";
-import { BaseColumnProcessor } from "@databye/processor";
+import {
+  Anonymizer,
+  ColumnType,
+  createLogger,
+  type ConnectionOptions,
+} from "@datazar-cli/common";
+import { BaseColumnProcessor } from "@datazar-cli/processor";
 import { type Knex } from "knex";
 
 const logger = createLogger();
