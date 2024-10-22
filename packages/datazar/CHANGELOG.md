@@ -1,5 +1,13 @@
 # datazar
 
+## 2.1.6
+
+### Patch Changes
+
+- 6aed201: patch all
+- Updated dependencies [6aed201]
+  - @datazar-cli/cli@2.1.6
+
 ## 2.1.5
 
 ### Patch Changes
