@@ -35,13 +35,13 @@ A command-line tool to anonymize and transform sensitive data in databases, file
 
 ```
 # npm
-npx datazar <command> [options]
+npx @datazar-cli/core <command> [options]
 
 # pnpm
-pnpm dlx datazar <command> [options]
+pnpm dlx @datazar-cli/core <command> [options]
 
 # yarn
-yarn dlx datazar <command> [options]
+yarn dlx @datazar-cli/core <command> [options]
 ```
 
 # Examples
@@ -50,7 +50,7 @@ yarn dlx datazar <command> [options]
 
 Mask `firstName` column in `users` table in `test` db:
 ```
-npx datazar anon-col postgres \ 
+npx @datazar-cli/core anon-col postgres \ 
   --uri postgresql:/localhost \
   --database test \
   --table users \
@@ -64,7 +64,7 @@ npx datazar anon-col postgres \
 
 Scramble `lastName` column in `users` table in `test` db:
 ```
-npx datazar anon-col mongo 
+npx @datazar-cli/core anon-col mongo 
   --uri mongodb://localhost \
   --database test \ 
   --table users \ 
@@ -78,7 +78,7 @@ npx datazar anon-col mongo
 
 Mask `firstName` column in `users` table in `dev.db`:
 ```
-npx datazar anon-col sqlite \
+npx @datazar-cli/core anon-col sqlite \
    --uri /home/dev.db \
    --table users \
    --column firstName \
@@ -89,7 +89,7 @@ npx datazar anon-col sqlite \
 
 Fake `email` column in `file.csv` with a fake one:
 ```
-npx datazar anon-col csv \ 
+npx @datazar-cli/core anon-col csv \ 
   --file /home/file.csv \ 
   --column email \ 
   fake email
@@ -141,7 +141,7 @@ Coming Soon:
 Anonymize a single column in a table
 
 ```
-Usage: datazar anon-col <engine> [engine_options] <anonymizer> [anonymizer_options]
+Usage: anon-col <engine> [engine_options] <anonymizer> [anonymizer_options]
 ```
 
 # License
