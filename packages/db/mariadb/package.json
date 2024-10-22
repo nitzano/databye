@@ -1,7 +1,7 @@
 {
   "name": "@datazar-cli/mariadb",
   "author": "Nitzan Ohana <16689354+nitzano@users.noreply.github.com>",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "files": [
     "dist",
     "CHANGELOG.md"

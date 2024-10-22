@@ -1,5 +1,14 @@
 # @datazar-cli/csv
 
+## 0.0.8
+
+### Patch Changes
+
+- 6aed201: patch all
+- Updated dependencies [6aed201]
+  - @datazar-cli/common@1.0.8
+  - @datazar-cli/processor@1.0.10
+
 ## 0.0.7
 
 ### Patch Changes
